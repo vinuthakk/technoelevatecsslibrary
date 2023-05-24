@@ -1,0 +1,14 @@
+@use 'sass:math';
+.ty_card{
+    display: block;
+    padding:$base-padding;
+    border:1px solid $input-border-color;
+    box-shadow: $base-box-shadow;
+    border-radius: math.div($base-border-radius,5);
+}
+.ty_card .card-title{
+    font-size: $font-size-lg;
+    // font: 400 24px/32px Roboto, "Helvetica Neue", sans-serif;
+    letter-spacing: normal;
+    text-align: center;
+}
