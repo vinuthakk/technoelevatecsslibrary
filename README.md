@@ -1,4 +1,4 @@
  # installation
- `npm i technoelevatecss --save`
+ `npm i technoelevate_css --save`
 
 
