@@ -1,6 +1,4 @@
  # installation
+ `npm i technoelevatecss --save`
 
- `npm i technoelevatecsslibrary --save`
 
-
- import {technoelevatecsslibrary } from 'technoelevatecsslibrary'
