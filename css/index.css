@@ -1,6 +1,65 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap");
+:root {
+  --bs-blue: #0d6efd;
+  --bs-indigo: #6610f2;
+  --bs-purple: #6f42c1;
+  --bs-pink: #d63384;
+  --bs-red: #dc3545;
+  --bs-orange: #fd7e14;
+  --bs-yellow: #ffc107;
+  --bs-green: #198754;
+  --bs-teal: #20c997;
+  --bs-cyan: #0dcaf0;
+  --bs-black: #000;
+  --bs-white: #fff;
+  --bs-gray: #6c757d;
+  --bs-gray-dark: #343a40;
+  --bs-gray-100: #f8f9fa;
+  --bs-gray-200: #e9ecef;
+  --bs-gray-300: #dee2e6;
+  --bs-gray-400: #ced4da;
+  --bs-gray-500: #adb5bd;
+  --bs-gray-600: #6c757d;
+  --bs-gray-700: #495057;
+  --bs-gray-800: #343a40;
+  --bs-gray-900: #212529;
+  --bs-primary: #0d6efd;
+  --bs-secondary: #6c757d;
+  --bs-success: #198754;
+  --bs-info: #0dcaf0;
+  --bs-warning: #ffc107;
+  --bs-danger: #dc3545;
+  --bs-light: #f8f9fa;
+  --bs-dark: #212529;
+  --header-background-rgb:225, 234, 239;
+  --sidenav-background-rgba:20, 99, 136, 0.1;
+  --error: #f44336;
+  --secondary: #ff9800;
+  --table-header-background: 20, 99, 136, 0.1;
+  --title-color: #13357b;
+  --input-border-color: rgba(0, 0, 0, .12);
+  --primary: #146389;
+  --danger: #b11a1a;
+  --card-primary: #EAE7FA;
+  --card-secondary: #D8E1E7;
+  --blue: #14145E;
+  --clr-one: #DFF6F1;
+  --clr-two: #EFEBE0;
+  --clr-three: #F7D6D0;
+  --clr-four: #EAE6F0;
+  --bs-primary-rgb: 13, 110, 253;
+  --bs-secondary-rgb: 108, 117, 125;
+  --bs-success-rgb: 25, 135, 84;
+  --bs-info-rgb: 13, 202, 240;
+  --bs-warning-rgb: 255, 193, 7;
+  --bs-danger-rgb: 220, 53, 69;
+}
+
 * {
   font-family: "Roboto", Helvetica, sans-serif;
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
 }
 
 ul {
@@ -123,6 +182,11 @@ a {
   border-bottom-left-radius: 10px;
 }
 
+.otp-background {
+  background-color: #ef950f;
+  background-image: linear-gradient(-37deg, #cccccc, transparent);
+}
+
 .loginbackground {
   min-height: 100vh;
   display: flex;
@@ -185,6 +249,9 @@ a {
   justify-content: space-between;
   border-bottom: 1px solid lightgray;
 }
+.navbar .container-fluid {
+  padding: 0px 30px;
+}
 
 .sidebar {
   width: 80px !important;
@@ -195,24 +262,45 @@ a {
   margin-top: 10px;
   background-color: rgba(20, 99, 136, 0.1);
 }
-
-.side-nav-content {
+.sidebar .sidebar-inner-container {
+  overflow: hidden;
+  width: 100%;
+  height: 100%;
+}
+.sidebar .side-nav-content {
   width: 100%;
   padding: 10px;
 }
-
-.nav-list {
+.sidebar .list-base {
   padding-top: 0px !important;
   overflow: hidden;
   height: 100vh;
   overflow-y: scroll;
 }
-
-.nav-list-text {
+.sidebar .nav-list-text {
   color: #146389;
   font-size: 11px;
   margin-bottom: 20px;
   text-align: center;
+}
+.sidebar .list-base.active {
+  background: #146389;
+  width: 100%;
+  font-weight: 500;
+  border-left: 2px solid;
+  border-radius: 10px;
+  text-align: center;
+  height: 60px;
+}
+.sidebar .list-base.active img {
+  width: 30px !important;
+  height: 30px;
+}
+.sidebar .icon {
+  width: 25px;
+  font-size: 25px;
+  margin: 0px 10px 0px 8px;
+  line-height: 25px;
 }
 
 .ty_card {
@@ -995,4 +1083,3965 @@ a {
   font-size: 0.75rem;
   font-weight: normal;
   color: white;
+}
+
+.ty-text-primary {
+  color: #146389;
+}
+
+.ty-text-hover-primary:hover {
+  color: #146389;
+}
+
+.ty-bg-primary {
+  background-color: #146389;
+}
+
+.ty-text-primary-light-1 {
+  color: #2c7395;
+}
+
+.ty-text-hover-primary-light-1:hover {
+  color: #2c7395;
+}
+
+.ty-bg-primary-light-1 {
+  background-color: #8ab1c4;
+}
+
+.ty-text-primary-light-2 {
+  color: #4382a1;
+}
+
+.ty-text-hover-primary-light-2:hover {
+  color: #4382a1;
+}
+
+.ty-bg-primary-light-2 {
+  background-color: #8ab1c4;
+}
+
+.ty-text-primary-light-3 {
+  color: #5b92ac;
+}
+
+.ty-text-hover-primary-light-3:hover {
+  color: #5b92ac;
+}
+
+.ty-bg-primary-light-3 {
+  background-color: #8ab1c4;
+}
+
+.ty-text-primary-light-4 {
+  color: #72a1b8;
+}
+
+.ty-text-hover-primary-light-4:hover {
+  color: #72a1b8;
+}
+
+.ty-bg-primary-light-4 {
+  background-color: #8ab1c4;
+}
+
+.ty-text-primary-light-5 {
+  color: #8ab1c4;
+}
+
+.ty-text-hover-primary-light-5:hover {
+  color: #8ab1c4;
+}
+
+.ty-bg-primary-light-5 {
+  background-color: #8ab1c4;
+}
+
+.ty-text-primary-light-6 {
+  color: #a1c1d0;
+}
+
+.ty-text-hover-primary-light-6:hover {
+  color: #a1c1d0;
+}
+
+.ty-bg-primary-light-6 {
+  background-color: #8ab1c4;
+}
+
+.ty-text-primary-light-7 {
+  color: #b9d0dc;
+}
+
+.ty-text-hover-primary-light-7:hover {
+  color: #b9d0dc;
+}
+
+.ty-bg-primary-light-7 {
+  background-color: #8ab1c4;
+}
+
+.ty-text-primary-light-8 {
+  color: #d0e0e7;
+}
+
+.ty-text-hover-primary-light-8:hover {
+  color: #d0e0e7;
+}
+
+.ty-bg-primary-light-8 {
+  background-color: #8ab1c4;
+}
+
+.ty-text-primary-light-9 {
+  color: #e8eff3;
+}
+
+.ty-text-hover-primary-light-9:hover {
+  color: #e8eff3;
+}
+
+.ty-bg-primary-light-9 {
+  background-color: #8ab1c4;
+}
+
+.ty-text-primary-dark-1 {
+  color: #12597b;
+}
+
+.ty-text-hover-primary-light-1:hover {
+  color: #12597b;
+}
+
+.ty-bg-primary-dark-1 {
+  background-color: #12597b;
+}
+
+.ty-text-primary-dark-2 {
+  color: #104f6e;
+}
+
+.ty-text-hover-primary-light-2:hover {
+  color: #104f6e;
+}
+
+.ty-bg-primary-dark-2 {
+  background-color: #104f6e;
+}
+
+.ty-text-primary-dark-3 {
+  color: #0e4560;
+}
+
+.ty-text-hover-primary-light-3:hover {
+  color: #0e4560;
+}
+
+.ty-bg-primary-dark-3 {
+  background-color: #0e4560;
+}
+
+.ty-text-primary-dark-4 {
+  color: #0c3b52;
+}
+
+.ty-text-hover-primary-light-4:hover {
+  color: #0c3b52;
+}
+
+.ty-bg-primary-dark-4 {
+  background-color: #0c3b52;
+}
+
+.ty-text-primary-dark-5 {
+  color: #0a3245;
+}
+
+.ty-text-hover-primary-light-5:hover {
+  color: #0a3245;
+}
+
+.ty-bg-primary-dark-5 {
+  background-color: #0a3245;
+}
+
+.ty-text-primary-dark-6 {
+  color: #082837;
+}
+
+.ty-text-hover-primary-light-6:hover {
+  color: #082837;
+}
+
+.ty-bg-primary-dark-6 {
+  background-color: #082837;
+}
+
+.ty-text-primary-dark-7 {
+  color: #061e29;
+}
+
+.ty-text-hover-primary-light-7:hover {
+  color: #061e29;
+}
+
+.ty-bg-primary-dark-7 {
+  background-color: #061e29;
+}
+
+.ty-text-primary-dark-8 {
+  color: #04141b;
+}
+
+.ty-text-hover-primary-light-8:hover {
+  color: #04141b;
+}
+
+.ty-bg-primary-dark-8 {
+  background-color: #04141b;
+}
+
+.ty-text-primary-dark-9 {
+  color: #020a0e;
+}
+
+.ty-text-hover-primary-light-9:hover {
+  color: #020a0e;
+}
+
+.ty-bg-primary-dark-9 {
+  background-color: #020a0e;
+}
+
+.ty-text-secondaey {
+  color: #ff9800;
+}
+
+.ty-text-hover-secondaey:hover {
+  color: #ff9800;
+}
+
+.ty-bg-secondaey {
+  background-color: #ff9800;
+}
+
+.ty-text-secondaey-light-1 {
+  color: #ffa21a;
+}
+
+.ty-text-hover-secondaey-light-1:hover {
+  color: #ffa21a;
+}
+
+.ty-bg-secondaey-light-1 {
+  background-color: #ffcc80;
+}
+
+.ty-text-secondaey-light-2 {
+  color: #ffad33;
+}
+
+.ty-text-hover-secondaey-light-2:hover {
+  color: #ffad33;
+}
+
+.ty-bg-secondaey-light-2 {
+  background-color: #ffcc80;
+}
+
+.ty-text-secondaey-light-3 {
+  color: #ffb74d;
+}
+
+.ty-text-hover-secondaey-light-3:hover {
+  color: #ffb74d;
+}
+
+.ty-bg-secondaey-light-3 {
+  background-color: #ffcc80;
+}
+
+.ty-text-secondaey-light-4 {
+  color: #ffc166;
+}
+
+.ty-text-hover-secondaey-light-4:hover {
+  color: #ffc166;
+}
+
+.ty-bg-secondaey-light-4 {
+  background-color: #ffcc80;
+}
+
+.ty-text-secondaey-light-5 {
+  color: #ffcc80;
+}
+
+.ty-text-hover-secondaey-light-5:hover {
+  color: #ffcc80;
+}
+
+.ty-bg-secondaey-light-5 {
+  background-color: #ffcc80;
+}
+
+.ty-text-secondaey-light-6 {
+  color: #ffd699;
+}
+
+.ty-text-hover-secondaey-light-6:hover {
+  color: #ffd699;
+}
+
+.ty-bg-secondaey-light-6 {
+  background-color: #ffcc80;
+}
+
+.ty-text-secondaey-light-7 {
+  color: #ffe0b3;
+}
+
+.ty-text-hover-secondaey-light-7:hover {
+  color: #ffe0b3;
+}
+
+.ty-bg-secondaey-light-7 {
+  background-color: #ffcc80;
+}
+
+.ty-text-secondaey-light-8 {
+  color: #ffeacc;
+}
+
+.ty-text-hover-secondaey-light-8:hover {
+  color: #ffeacc;
+}
+
+.ty-bg-secondaey-light-8 {
+  background-color: #ffcc80;
+}
+
+.ty-text-secondaey-light-9 {
+  color: #fff5e6;
+}
+
+.ty-text-hover-secondaey-light-9:hover {
+  color: #fff5e6;
+}
+
+.ty-bg-secondaey-light-9 {
+  background-color: #ffcc80;
+}
+
+.ty-text-secondaey-dark-1 {
+  color: #e68900;
+}
+
+.ty-text-hover-secondaey-light-1:hover {
+  color: #e68900;
+}
+
+.ty-bg-secondaey-dark-1 {
+  background-color: #e68900;
+}
+
+.ty-text-secondaey-dark-2 {
+  color: #cc7a00;
+}
+
+.ty-text-hover-secondaey-light-2:hover {
+  color: #cc7a00;
+}
+
+.ty-bg-secondaey-dark-2 {
+  background-color: #cc7a00;
+}
+
+.ty-text-secondaey-dark-3 {
+  color: #b36a00;
+}
+
+.ty-text-hover-secondaey-light-3:hover {
+  color: #b36a00;
+}
+
+.ty-bg-secondaey-dark-3 {
+  background-color: #b36a00;
+}
+
+.ty-text-secondaey-dark-4 {
+  color: #995b00;
+}
+
+.ty-text-hover-secondaey-light-4:hover {
+  color: #995b00;
+}
+
+.ty-bg-secondaey-dark-4 {
+  background-color: #995b00;
+}
+
+.ty-text-secondaey-dark-5 {
+  color: #804c00;
+}
+
+.ty-text-hover-secondaey-light-5:hover {
+  color: #804c00;
+}
+
+.ty-bg-secondaey-dark-5 {
+  background-color: #804c00;
+}
+
+.ty-text-secondaey-dark-6 {
+  color: #663d00;
+}
+
+.ty-text-hover-secondaey-light-6:hover {
+  color: #663d00;
+}
+
+.ty-bg-secondaey-dark-6 {
+  background-color: #663d00;
+}
+
+.ty-text-secondaey-dark-7 {
+  color: #4d2e00;
+}
+
+.ty-text-hover-secondaey-light-7:hover {
+  color: #4d2e00;
+}
+
+.ty-bg-secondaey-dark-7 {
+  background-color: #4d2e00;
+}
+
+.ty-text-secondaey-dark-8 {
+  color: #331e00;
+}
+
+.ty-text-hover-secondaey-light-8:hover {
+  color: #331e00;
+}
+
+.ty-bg-secondaey-dark-8 {
+  background-color: #331e00;
+}
+
+.ty-text-secondaey-dark-9 {
+  color: #1a0f00;
+}
+
+.ty-text-hover-secondaey-light-9:hover {
+  color: #1a0f00;
+}
+
+.ty-bg-secondaey-dark-9 {
+  background-color: #1a0f00;
+}
+
+.ty-text-error {
+  color: #f44336;
+}
+
+.ty-text-hover-error:hover {
+  color: #f44336;
+}
+
+.ty-bg-error {
+  background-color: #f44336;
+}
+
+.ty-text-error-light-1 {
+  color: #f5564a;
+}
+
+.ty-text-hover-error-light-1:hover {
+  color: #f5564a;
+}
+
+.ty-bg-error-light-1 {
+  background-color: #faa19b;
+}
+
+.ty-text-error-light-2 {
+  color: #f6695e;
+}
+
+.ty-text-hover-error-light-2:hover {
+  color: #f6695e;
+}
+
+.ty-bg-error-light-2 {
+  background-color: #faa19b;
+}
+
+.ty-text-error-light-3 {
+  color: #f77b72;
+}
+
+.ty-text-hover-error-light-3:hover {
+  color: #f77b72;
+}
+
+.ty-bg-error-light-3 {
+  background-color: #faa19b;
+}
+
+.ty-text-error-light-4 {
+  color: #f88e86;
+}
+
+.ty-text-hover-error-light-4:hover {
+  color: #f88e86;
+}
+
+.ty-bg-error-light-4 {
+  background-color: #faa19b;
+}
+
+.ty-text-error-light-5 {
+  color: #faa19b;
+}
+
+.ty-text-hover-error-light-5:hover {
+  color: #faa19b;
+}
+
+.ty-bg-error-light-5 {
+  background-color: #faa19b;
+}
+
+.ty-text-error-light-6 {
+  color: #fbb4af;
+}
+
+.ty-text-hover-error-light-6:hover {
+  color: #fbb4af;
+}
+
+.ty-bg-error-light-6 {
+  background-color: #faa19b;
+}
+
+.ty-text-error-light-7 {
+  color: #fcc7c3;
+}
+
+.ty-text-hover-error-light-7:hover {
+  color: #fcc7c3;
+}
+
+.ty-bg-error-light-7 {
+  background-color: #faa19b;
+}
+
+.ty-text-error-light-8 {
+  color: #fdd9d7;
+}
+
+.ty-text-hover-error-light-8:hover {
+  color: #fdd9d7;
+}
+
+.ty-bg-error-light-8 {
+  background-color: #faa19b;
+}
+
+.ty-text-error-light-9 {
+  color: #feeceb;
+}
+
+.ty-text-hover-error-light-9:hover {
+  color: #feeceb;
+}
+
+.ty-bg-error-light-9 {
+  background-color: #faa19b;
+}
+
+.ty-text-error-dark-1 {
+  color: #dc3c31;
+}
+
+.ty-text-hover-error-light-1:hover {
+  color: #dc3c31;
+}
+
+.ty-bg-error-dark-1 {
+  background-color: #dc3c31;
+}
+
+.ty-text-error-dark-2 {
+  color: #c3362b;
+}
+
+.ty-text-hover-error-light-2:hover {
+  color: #c3362b;
+}
+
+.ty-bg-error-dark-2 {
+  background-color: #c3362b;
+}
+
+.ty-text-error-dark-3 {
+  color: #ab2f26;
+}
+
+.ty-text-hover-error-light-3:hover {
+  color: #ab2f26;
+}
+
+.ty-bg-error-dark-3 {
+  background-color: #ab2f26;
+}
+
+.ty-text-error-dark-4 {
+  color: #922820;
+}
+
+.ty-text-hover-error-light-4:hover {
+  color: #922820;
+}
+
+.ty-bg-error-dark-4 {
+  background-color: #922820;
+}
+
+.ty-text-error-dark-5 {
+  color: #7a221b;
+}
+
+.ty-text-hover-error-light-5:hover {
+  color: #7a221b;
+}
+
+.ty-bg-error-dark-5 {
+  background-color: #7a221b;
+}
+
+.ty-text-error-dark-6 {
+  color: #621b16;
+}
+
+.ty-text-hover-error-light-6:hover {
+  color: #621b16;
+}
+
+.ty-bg-error-dark-6 {
+  background-color: #621b16;
+}
+
+.ty-text-error-dark-7 {
+  color: #491410;
+}
+
+.ty-text-hover-error-light-7:hover {
+  color: #491410;
+}
+
+.ty-bg-error-dark-7 {
+  background-color: #491410;
+}
+
+.ty-text-error-dark-8 {
+  color: #310d0b;
+}
+
+.ty-text-hover-error-light-8:hover {
+  color: #310d0b;
+}
+
+.ty-bg-error-dark-8 {
+  background-color: #310d0b;
+}
+
+.ty-text-error-dark-9 {
+  color: #180705;
+}
+
+.ty-text-hover-error-light-9:hover {
+  color: #180705;
+}
+
+.ty-bg-error-dark-9 {
+  background-color: #180705;
+}
+
+.ty-text-info {
+  color: #13357b;
+}
+
+.ty-text-hover-info:hover {
+  color: #13357b;
+}
+
+.ty-bg-info {
+  background-color: #13357b;
+}
+
+.ty-text-info-light-1 {
+  color: #2b4988;
+}
+
+.ty-text-hover-info-light-1:hover {
+  color: #2b4988;
+}
+
+.ty-bg-info-light-1 {
+  background-color: #899abd;
+}
+
+.ty-text-info-light-2 {
+  color: #425d95;
+}
+
+.ty-text-hover-info-light-2:hover {
+  color: #425d95;
+}
+
+.ty-bg-info-light-2 {
+  background-color: #899abd;
+}
+
+.ty-text-info-light-3 {
+  color: #5a72a3;
+}
+
+.ty-text-hover-info-light-3:hover {
+  color: #5a72a3;
+}
+
+.ty-bg-info-light-3 {
+  background-color: #899abd;
+}
+
+.ty-text-info-light-4 {
+  color: #7186b0;
+}
+
+.ty-text-hover-info-light-4:hover {
+  color: #7186b0;
+}
+
+.ty-bg-info-light-4 {
+  background-color: #899abd;
+}
+
+.ty-text-info-light-5 {
+  color: #899abd;
+}
+
+.ty-text-hover-info-light-5:hover {
+  color: #899abd;
+}
+
+.ty-bg-info-light-5 {
+  background-color: #899abd;
+}
+
+.ty-text-info-light-6 {
+  color: #a1aeca;
+}
+
+.ty-text-hover-info-light-6:hover {
+  color: #a1aeca;
+}
+
+.ty-bg-info-light-6 {
+  background-color: #899abd;
+}
+
+.ty-text-info-light-7 {
+  color: #b8c2d7;
+}
+
+.ty-text-hover-info-light-7:hover {
+  color: #b8c2d7;
+}
+
+.ty-bg-info-light-7 {
+  background-color: #899abd;
+}
+
+.ty-text-info-light-8 {
+  color: #d0d7e5;
+}
+
+.ty-text-hover-info-light-8:hover {
+  color: #d0d7e5;
+}
+
+.ty-bg-info-light-8 {
+  background-color: #899abd;
+}
+
+.ty-text-info-light-9 {
+  color: #e7ebf2;
+}
+
+.ty-text-hover-info-light-9:hover {
+  color: #e7ebf2;
+}
+
+.ty-bg-info-light-9 {
+  background-color: #899abd;
+}
+
+.ty-text-info-dark-1 {
+  color: #11306f;
+}
+
+.ty-text-hover-info-light-1:hover {
+  color: #11306f;
+}
+
+.ty-bg-info-dark-1 {
+  background-color: #11306f;
+}
+
+.ty-text-info-dark-2 {
+  color: #0f2a62;
+}
+
+.ty-text-hover-info-light-2:hover {
+  color: #0f2a62;
+}
+
+.ty-bg-info-dark-2 {
+  background-color: #0f2a62;
+}
+
+.ty-text-info-dark-3 {
+  color: #0d2556;
+}
+
+.ty-text-hover-info-light-3:hover {
+  color: #0d2556;
+}
+
+.ty-bg-info-dark-3 {
+  background-color: #0d2556;
+}
+
+.ty-text-info-dark-4 {
+  color: #0b204a;
+}
+
+.ty-text-hover-info-light-4:hover {
+  color: #0b204a;
+}
+
+.ty-bg-info-dark-4 {
+  background-color: #0b204a;
+}
+
+.ty-text-info-dark-5 {
+  color: #0a1b3e;
+}
+
+.ty-text-hover-info-light-5:hover {
+  color: #0a1b3e;
+}
+
+.ty-bg-info-dark-5 {
+  background-color: #0a1b3e;
+}
+
+.ty-text-info-dark-6 {
+  color: #081531;
+}
+
+.ty-text-hover-info-light-6:hover {
+  color: #081531;
+}
+
+.ty-bg-info-dark-6 {
+  background-color: #081531;
+}
+
+.ty-text-info-dark-7 {
+  color: #061025;
+}
+
+.ty-text-hover-info-light-7:hover {
+  color: #061025;
+}
+
+.ty-bg-info-dark-7 {
+  background-color: #061025;
+}
+
+.ty-text-info-dark-8 {
+  color: #040b19;
+}
+
+.ty-text-hover-info-light-8:hover {
+  color: #040b19;
+}
+
+.ty-bg-info-dark-8 {
+  background-color: #040b19;
+}
+
+.ty-text-info-dark-9 {
+  color: #02050c;
+}
+
+.ty-text-hover-info-light-9:hover {
+  color: #02050c;
+}
+
+.ty-bg-info-dark-9 {
+  background-color: #02050c;
+}
+
+.ty-text-blue {
+  color: #14145E;
+}
+
+.ty-text-hover-blue:hover {
+  color: #14145E;
+}
+
+.ty-bg-blue {
+  background-color: #14145E;
+}
+
+.ty-text-blue-light-1 {
+  color: #2c2c6e;
+}
+
+.ty-text-hover-blue-light-1:hover {
+  color: #2c2c6e;
+}
+
+.ty-bg-blue-light-1 {
+  background-color: #8a8aaf;
+}
+
+.ty-text-blue-light-2 {
+  color: #43437e;
+}
+
+.ty-text-hover-blue-light-2:hover {
+  color: #43437e;
+}
+
+.ty-bg-blue-light-2 {
+  background-color: #8a8aaf;
+}
+
+.ty-text-blue-light-3 {
+  color: #5b5b8e;
+}
+
+.ty-text-hover-blue-light-3:hover {
+  color: #5b5b8e;
+}
+
+.ty-bg-blue-light-3 {
+  background-color: #8a8aaf;
+}
+
+.ty-text-blue-light-4 {
+  color: #72729e;
+}
+
+.ty-text-hover-blue-light-4:hover {
+  color: #72729e;
+}
+
+.ty-bg-blue-light-4 {
+  background-color: #8a8aaf;
+}
+
+.ty-text-blue-light-5 {
+  color: #8a8aaf;
+}
+
+.ty-text-hover-blue-light-5:hover {
+  color: #8a8aaf;
+}
+
+.ty-bg-blue-light-5 {
+  background-color: #8a8aaf;
+}
+
+.ty-text-blue-light-6 {
+  color: #a1a1bf;
+}
+
+.ty-text-hover-blue-light-6:hover {
+  color: #a1a1bf;
+}
+
+.ty-bg-blue-light-6 {
+  background-color: #8a8aaf;
+}
+
+.ty-text-blue-light-7 {
+  color: #b9b9cf;
+}
+
+.ty-text-hover-blue-light-7:hover {
+  color: #b9b9cf;
+}
+
+.ty-bg-blue-light-7 {
+  background-color: #8a8aaf;
+}
+
+.ty-text-blue-light-8 {
+  color: #d0d0df;
+}
+
+.ty-text-hover-blue-light-8:hover {
+  color: #d0d0df;
+}
+
+.ty-bg-blue-light-8 {
+  background-color: #8a8aaf;
+}
+
+.ty-text-blue-light-9 {
+  color: #e8e8ef;
+}
+
+.ty-text-hover-blue-light-9:hover {
+  color: #e8e8ef;
+}
+
+.ty-bg-blue-light-9 {
+  background-color: #8a8aaf;
+}
+
+.ty-text-blue-dark-1 {
+  color: #121255;
+}
+
+.ty-text-hover-blue-light-1:hover {
+  color: #121255;
+}
+
+.ty-bg-blue-dark-1 {
+  background-color: #121255;
+}
+
+.ty-text-blue-dark-2 {
+  color: #10104b;
+}
+
+.ty-text-hover-blue-light-2:hover {
+  color: #10104b;
+}
+
+.ty-bg-blue-dark-2 {
+  background-color: #10104b;
+}
+
+.ty-text-blue-dark-3 {
+  color: #0e0e42;
+}
+
+.ty-text-hover-blue-light-3:hover {
+  color: #0e0e42;
+}
+
+.ty-bg-blue-dark-3 {
+  background-color: #0e0e42;
+}
+
+.ty-text-blue-dark-4 {
+  color: #0c0c38;
+}
+
+.ty-text-hover-blue-light-4:hover {
+  color: #0c0c38;
+}
+
+.ty-bg-blue-dark-4 {
+  background-color: #0c0c38;
+}
+
+.ty-text-blue-dark-5 {
+  color: #0a0a2f;
+}
+
+.ty-text-hover-blue-light-5:hover {
+  color: #0a0a2f;
+}
+
+.ty-bg-blue-dark-5 {
+  background-color: #0a0a2f;
+}
+
+.ty-text-blue-dark-6 {
+  color: #080826;
+}
+
+.ty-text-hover-blue-light-6:hover {
+  color: #080826;
+}
+
+.ty-bg-blue-dark-6 {
+  background-color: #080826;
+}
+
+.ty-text-blue-dark-7 {
+  color: #06061c;
+}
+
+.ty-text-hover-blue-light-7:hover {
+  color: #06061c;
+}
+
+.ty-bg-blue-dark-7 {
+  background-color: #06061c;
+}
+
+.ty-text-blue-dark-8 {
+  color: #040413;
+}
+
+.ty-text-hover-blue-light-8:hover {
+  color: #040413;
+}
+
+.ty-bg-blue-dark-8 {
+  background-color: #040413;
+}
+
+.ty-text-blue-dark-9 {
+  color: #020209;
+}
+
+.ty-text-hover-blue-light-9:hover {
+  color: #020209;
+}
+
+.ty-bg-blue-dark-9 {
+  background-color: #020209;
+}
+
+.ty-text-red {
+  color: #ed0000;
+}
+
+.ty-text-hover-red:hover {
+  color: #ed0000;
+}
+
+.ty-bg-red {
+  background-color: #ed0000;
+}
+
+.ty-text-red-light-1 {
+  color: #ef1a1a;
+}
+
+.ty-text-hover-red-light-1:hover {
+  color: #ef1a1a;
+}
+
+.ty-bg-red-light-1 {
+  background-color: #f68080;
+}
+
+.ty-text-red-light-2 {
+  color: #f13333;
+}
+
+.ty-text-hover-red-light-2:hover {
+  color: #f13333;
+}
+
+.ty-bg-red-light-2 {
+  background-color: #f68080;
+}
+
+.ty-text-red-light-3 {
+  color: #f24d4d;
+}
+
+.ty-text-hover-red-light-3:hover {
+  color: #f24d4d;
+}
+
+.ty-bg-red-light-3 {
+  background-color: #f68080;
+}
+
+.ty-text-red-light-4 {
+  color: #f46666;
+}
+
+.ty-text-hover-red-light-4:hover {
+  color: #f46666;
+}
+
+.ty-bg-red-light-4 {
+  background-color: #f68080;
+}
+
+.ty-text-red-light-5 {
+  color: #f68080;
+}
+
+.ty-text-hover-red-light-5:hover {
+  color: #f68080;
+}
+
+.ty-bg-red-light-5 {
+  background-color: #f68080;
+}
+
+.ty-text-red-light-6 {
+  color: #f89999;
+}
+
+.ty-text-hover-red-light-6:hover {
+  color: #f89999;
+}
+
+.ty-bg-red-light-6 {
+  background-color: #f68080;
+}
+
+.ty-text-red-light-7 {
+  color: #fab3b3;
+}
+
+.ty-text-hover-red-light-7:hover {
+  color: #fab3b3;
+}
+
+.ty-bg-red-light-7 {
+  background-color: #f68080;
+}
+
+.ty-text-red-light-8 {
+  color: #fbcccc;
+}
+
+.ty-text-hover-red-light-8:hover {
+  color: #fbcccc;
+}
+
+.ty-bg-red-light-8 {
+  background-color: #f68080;
+}
+
+.ty-text-red-light-9 {
+  color: #fde6e6;
+}
+
+.ty-text-hover-red-light-9:hover {
+  color: #fde6e6;
+}
+
+.ty-bg-red-light-9 {
+  background-color: #f68080;
+}
+
+.ty-text-red-dark-1 {
+  color: #d50000;
+}
+
+.ty-text-hover-red-light-1:hover {
+  color: #d50000;
+}
+
+.ty-bg-red-dark-1 {
+  background-color: #d50000;
+}
+
+.ty-text-red-dark-2 {
+  color: #be0000;
+}
+
+.ty-text-hover-red-light-2:hover {
+  color: #be0000;
+}
+
+.ty-bg-red-dark-2 {
+  background-color: #be0000;
+}
+
+.ty-text-red-dark-3 {
+  color: #a60000;
+}
+
+.ty-text-hover-red-light-3:hover {
+  color: #a60000;
+}
+
+.ty-bg-red-dark-3 {
+  background-color: #a60000;
+}
+
+.ty-text-red-dark-4 {
+  color: #8e0000;
+}
+
+.ty-text-hover-red-light-4:hover {
+  color: #8e0000;
+}
+
+.ty-bg-red-dark-4 {
+  background-color: #8e0000;
+}
+
+.ty-text-red-dark-5 {
+  color: #770000;
+}
+
+.ty-text-hover-red-light-5:hover {
+  color: #770000;
+}
+
+.ty-bg-red-dark-5 {
+  background-color: #770000;
+}
+
+.ty-text-red-dark-6 {
+  color: #5f0000;
+}
+
+.ty-text-hover-red-light-6:hover {
+  color: #5f0000;
+}
+
+.ty-bg-red-dark-6 {
+  background-color: #5f0000;
+}
+
+.ty-text-red-dark-7 {
+  color: #470000;
+}
+
+.ty-text-hover-red-light-7:hover {
+  color: #470000;
+}
+
+.ty-bg-red-dark-7 {
+  background-color: #470000;
+}
+
+.ty-text-red-dark-8 {
+  color: #2f0000;
+}
+
+.ty-text-hover-red-light-8:hover {
+  color: #2f0000;
+}
+
+.ty-bg-red-dark-8 {
+  background-color: #2f0000;
+}
+
+.ty-text-red-dark-9 {
+  color: #180000;
+}
+
+.ty-text-hover-red-light-9:hover {
+  color: #180000;
+}
+
+.ty-bg-red-dark-9 {
+  background-color: #180000;
+}
+
+.ty-text-yellow {
+  color: #e6e619;
+}
+
+.ty-text-hover-yellow:hover {
+  color: #e6e619;
+}
+
+.ty-bg-yellow {
+  background-color: #e6e619;
+}
+
+.ty-text-yellow-light-1 {
+  color: #e9e930;
+}
+
+.ty-text-hover-yellow-light-1:hover {
+  color: #e9e930;
+}
+
+.ty-bg-yellow-light-1 {
+  background-color: #f3f38c;
+}
+
+.ty-text-yellow-light-2 {
+  color: #ebeb47;
+}
+
+.ty-text-hover-yellow-light-2:hover {
+  color: #ebeb47;
+}
+
+.ty-bg-yellow-light-2 {
+  background-color: #f3f38c;
+}
+
+.ty-text-yellow-light-3 {
+  color: #eeee5e;
+}
+
+.ty-text-hover-yellow-light-3:hover {
+  color: #eeee5e;
+}
+
+.ty-bg-yellow-light-3 {
+  background-color: #f3f38c;
+}
+
+.ty-text-yellow-light-4 {
+  color: #f0f075;
+}
+
+.ty-text-hover-yellow-light-4:hover {
+  color: #f0f075;
+}
+
+.ty-bg-yellow-light-4 {
+  background-color: #f3f38c;
+}
+
+.ty-text-yellow-light-5 {
+  color: #f3f38c;
+}
+
+.ty-text-hover-yellow-light-5:hover {
+  color: #f3f38c;
+}
+
+.ty-bg-yellow-light-5 {
+  background-color: #f3f38c;
+}
+
+.ty-text-yellow-light-6 {
+  color: #f5f5a3;
+}
+
+.ty-text-hover-yellow-light-6:hover {
+  color: #f5f5a3;
+}
+
+.ty-bg-yellow-light-6 {
+  background-color: #f3f38c;
+}
+
+.ty-text-yellow-light-7 {
+  color: #f8f8ba;
+}
+
+.ty-text-hover-yellow-light-7:hover {
+  color: #f8f8ba;
+}
+
+.ty-bg-yellow-light-7 {
+  background-color: #f3f38c;
+}
+
+.ty-text-yellow-light-8 {
+  color: #fafad1;
+}
+
+.ty-text-hover-yellow-light-8:hover {
+  color: #fafad1;
+}
+
+.ty-bg-yellow-light-8 {
+  background-color: #f3f38c;
+}
+
+.ty-text-yellow-light-9 {
+  color: #fdfde8;
+}
+
+.ty-text-hover-yellow-light-9:hover {
+  color: #fdfde8;
+}
+
+.ty-bg-yellow-light-9 {
+  background-color: #f3f38c;
+}
+
+.ty-text-yellow-dark-1 {
+  color: #cfcf17;
+}
+
+.ty-text-hover-yellow-light-1:hover {
+  color: #cfcf17;
+}
+
+.ty-bg-yellow-dark-1 {
+  background-color: #cfcf17;
+}
+
+.ty-text-yellow-dark-2 {
+  color: #b8b814;
+}
+
+.ty-text-hover-yellow-light-2:hover {
+  color: #b8b814;
+}
+
+.ty-bg-yellow-dark-2 {
+  background-color: #b8b814;
+}
+
+.ty-text-yellow-dark-3 {
+  color: #a1a112;
+}
+
+.ty-text-hover-yellow-light-3:hover {
+  color: #a1a112;
+}
+
+.ty-bg-yellow-dark-3 {
+  background-color: #a1a112;
+}
+
+.ty-text-yellow-dark-4 {
+  color: #8a8a0f;
+}
+
+.ty-text-hover-yellow-light-4:hover {
+  color: #8a8a0f;
+}
+
+.ty-bg-yellow-dark-4 {
+  background-color: #8a8a0f;
+}
+
+.ty-text-yellow-dark-5 {
+  color: #73730d;
+}
+
+.ty-text-hover-yellow-light-5:hover {
+  color: #73730d;
+}
+
+.ty-bg-yellow-dark-5 {
+  background-color: #73730d;
+}
+
+.ty-text-yellow-dark-6 {
+  color: #5c5c0a;
+}
+
+.ty-text-hover-yellow-light-6:hover {
+  color: #5c5c0a;
+}
+
+.ty-bg-yellow-dark-6 {
+  background-color: #5c5c0a;
+}
+
+.ty-text-yellow-dark-7 {
+  color: #454508;
+}
+
+.ty-text-hover-yellow-light-7:hover {
+  color: #454508;
+}
+
+.ty-bg-yellow-dark-7 {
+  background-color: #454508;
+}
+
+.ty-text-yellow-dark-8 {
+  color: #2e2e05;
+}
+
+.ty-text-hover-yellow-light-8:hover {
+  color: #2e2e05;
+}
+
+.ty-bg-yellow-dark-8 {
+  background-color: #2e2e05;
+}
+
+.ty-text-yellow-dark-9 {
+  color: #171703;
+}
+
+.ty-text-hover-yellow-light-9:hover {
+  color: #171703;
+}
+
+.ty-bg-yellow-dark-9 {
+  background-color: #171703;
+}
+
+.ty-text-green {
+  color: #19e635;
+}
+
+.ty-text-hover-green:hover {
+  color: #19e635;
+}
+
+.ty-bg-green {
+  background-color: #19e635;
+}
+
+.ty-text-green-light-1 {
+  color: #30e949;
+}
+
+.ty-text-hover-green-light-1:hover {
+  color: #30e949;
+}
+
+.ty-bg-green-light-1 {
+  background-color: #8cf39a;
+}
+
+.ty-text-green-light-2 {
+  color: #47eb5d;
+}
+
+.ty-text-hover-green-light-2:hover {
+  color: #47eb5d;
+}
+
+.ty-bg-green-light-2 {
+  background-color: #8cf39a;
+}
+
+.ty-text-green-light-3 {
+  color: #5eee72;
+}
+
+.ty-text-hover-green-light-3:hover {
+  color: #5eee72;
+}
+
+.ty-bg-green-light-3 {
+  background-color: #8cf39a;
+}
+
+.ty-text-green-light-4 {
+  color: #75f086;
+}
+
+.ty-text-hover-green-light-4:hover {
+  color: #75f086;
+}
+
+.ty-bg-green-light-4 {
+  background-color: #8cf39a;
+}
+
+.ty-text-green-light-5 {
+  color: #8cf39a;
+}
+
+.ty-text-hover-green-light-5:hover {
+  color: #8cf39a;
+}
+
+.ty-bg-green-light-5 {
+  background-color: #8cf39a;
+}
+
+.ty-text-green-light-6 {
+  color: #a3f5ae;
+}
+
+.ty-text-hover-green-light-6:hover {
+  color: #a3f5ae;
+}
+
+.ty-bg-green-light-6 {
+  background-color: #8cf39a;
+}
+
+.ty-text-green-light-7 {
+  color: #baf8c2;
+}
+
+.ty-text-hover-green-light-7:hover {
+  color: #baf8c2;
+}
+
+.ty-bg-green-light-7 {
+  background-color: #8cf39a;
+}
+
+.ty-text-green-light-8 {
+  color: #d1fad7;
+}
+
+.ty-text-hover-green-light-8:hover {
+  color: #d1fad7;
+}
+
+.ty-bg-green-light-8 {
+  background-color: #8cf39a;
+}
+
+.ty-text-green-light-9 {
+  color: #e8fdeb;
+}
+
+.ty-text-hover-green-light-9:hover {
+  color: #e8fdeb;
+}
+
+.ty-bg-green-light-9 {
+  background-color: #8cf39a;
+}
+
+.ty-text-green-dark-1 {
+  color: #17cf30;
+}
+
+.ty-text-hover-green-light-1:hover {
+  color: #17cf30;
+}
+
+.ty-bg-green-dark-1 {
+  background-color: #17cf30;
+}
+
+.ty-text-green-dark-2 {
+  color: #14b82a;
+}
+
+.ty-text-hover-green-light-2:hover {
+  color: #14b82a;
+}
+
+.ty-bg-green-dark-2 {
+  background-color: #14b82a;
+}
+
+.ty-text-green-dark-3 {
+  color: #12a125;
+}
+
+.ty-text-hover-green-light-3:hover {
+  color: #12a125;
+}
+
+.ty-bg-green-dark-3 {
+  background-color: #12a125;
+}
+
+.ty-text-green-dark-4 {
+  color: #0f8a20;
+}
+
+.ty-text-hover-green-light-4:hover {
+  color: #0f8a20;
+}
+
+.ty-bg-green-dark-4 {
+  background-color: #0f8a20;
+}
+
+.ty-text-green-dark-5 {
+  color: #0d731b;
+}
+
+.ty-text-hover-green-light-5:hover {
+  color: #0d731b;
+}
+
+.ty-bg-green-dark-5 {
+  background-color: #0d731b;
+}
+
+.ty-text-green-dark-6 {
+  color: #0a5c15;
+}
+
+.ty-text-hover-green-light-6:hover {
+  color: #0a5c15;
+}
+
+.ty-bg-green-dark-6 {
+  background-color: #0a5c15;
+}
+
+.ty-text-green-dark-7 {
+  color: #084510;
+}
+
+.ty-text-hover-green-light-7:hover {
+  color: #084510;
+}
+
+.ty-bg-green-dark-7 {
+  background-color: #084510;
+}
+
+.ty-text-green-dark-8 {
+  color: #052e0b;
+}
+
+.ty-text-hover-green-light-8:hover {
+  color: #052e0b;
+}
+
+.ty-bg-green-dark-8 {
+  background-color: #052e0b;
+}
+
+.ty-text-green-dark-9 {
+  color: #031705;
+}
+
+.ty-text-hover-green-light-9:hover {
+  color: #031705;
+}
+
+.ty-bg-green-dark-9 {
+  background-color: #031705;
+}
+
+.ty-text-orange {
+  color: #ffa600;
+}
+
+.ty-text-hover-orange:hover {
+  color: #ffa600;
+}
+
+.ty-bg-orange {
+  background-color: #ffa600;
+}
+
+.ty-text-orange-light-1 {
+  color: #ffaf1a;
+}
+
+.ty-text-hover-orange-light-1:hover {
+  color: #ffaf1a;
+}
+
+.ty-bg-orange-light-1 {
+  background-color: #ffd380;
+}
+
+.ty-text-orange-light-2 {
+  color: #ffb833;
+}
+
+.ty-text-hover-orange-light-2:hover {
+  color: #ffb833;
+}
+
+.ty-bg-orange-light-2 {
+  background-color: #ffd380;
+}
+
+.ty-text-orange-light-3 {
+  color: #ffc14d;
+}
+
+.ty-text-hover-orange-light-3:hover {
+  color: #ffc14d;
+}
+
+.ty-bg-orange-light-3 {
+  background-color: #ffd380;
+}
+
+.ty-text-orange-light-4 {
+  color: #ffca66;
+}
+
+.ty-text-hover-orange-light-4:hover {
+  color: #ffca66;
+}
+
+.ty-bg-orange-light-4 {
+  background-color: #ffd380;
+}
+
+.ty-text-orange-light-5 {
+  color: #ffd380;
+}
+
+.ty-text-hover-orange-light-5:hover {
+  color: #ffd380;
+}
+
+.ty-bg-orange-light-5 {
+  background-color: #ffd380;
+}
+
+.ty-text-orange-light-6 {
+  color: #ffdb99;
+}
+
+.ty-text-hover-orange-light-6:hover {
+  color: #ffdb99;
+}
+
+.ty-bg-orange-light-6 {
+  background-color: #ffd380;
+}
+
+.ty-text-orange-light-7 {
+  color: #ffe4b3;
+}
+
+.ty-text-hover-orange-light-7:hover {
+  color: #ffe4b3;
+}
+
+.ty-bg-orange-light-7 {
+  background-color: #ffd380;
+}
+
+.ty-text-orange-light-8 {
+  color: #ffedcc;
+}
+
+.ty-text-hover-orange-light-8:hover {
+  color: #ffedcc;
+}
+
+.ty-bg-orange-light-8 {
+  background-color: #ffd380;
+}
+
+.ty-text-orange-light-9 {
+  color: #fff6e6;
+}
+
+.ty-text-hover-orange-light-9:hover {
+  color: #fff6e6;
+}
+
+.ty-bg-orange-light-9 {
+  background-color: #ffd380;
+}
+
+.ty-text-orange-dark-1 {
+  color: #e69500;
+}
+
+.ty-text-hover-orange-light-1:hover {
+  color: #e69500;
+}
+
+.ty-bg-orange-dark-1 {
+  background-color: #e69500;
+}
+
+.ty-text-orange-dark-2 {
+  color: #cc8500;
+}
+
+.ty-text-hover-orange-light-2:hover {
+  color: #cc8500;
+}
+
+.ty-bg-orange-dark-2 {
+  background-color: #cc8500;
+}
+
+.ty-text-orange-dark-3 {
+  color: #b37400;
+}
+
+.ty-text-hover-orange-light-3:hover {
+  color: #b37400;
+}
+
+.ty-bg-orange-dark-3 {
+  background-color: #b37400;
+}
+
+.ty-text-orange-dark-4 {
+  color: #996400;
+}
+
+.ty-text-hover-orange-light-4:hover {
+  color: #996400;
+}
+
+.ty-bg-orange-dark-4 {
+  background-color: #996400;
+}
+
+.ty-text-orange-dark-5 {
+  color: #805300;
+}
+
+.ty-text-hover-orange-light-5:hover {
+  color: #805300;
+}
+
+.ty-bg-orange-dark-5 {
+  background-color: #805300;
+}
+
+.ty-text-orange-dark-6 {
+  color: #664200;
+}
+
+.ty-text-hover-orange-light-6:hover {
+  color: #664200;
+}
+
+.ty-bg-orange-dark-6 {
+  background-color: #664200;
+}
+
+.ty-text-orange-dark-7 {
+  color: #4d3200;
+}
+
+.ty-text-hover-orange-light-7:hover {
+  color: #4d3200;
+}
+
+.ty-bg-orange-dark-7 {
+  background-color: #4d3200;
+}
+
+.ty-text-orange-dark-8 {
+  color: #332100;
+}
+
+.ty-text-hover-orange-light-8:hover {
+  color: #332100;
+}
+
+.ty-bg-orange-dark-8 {
+  background-color: #332100;
+}
+
+.ty-text-orange-dark-9 {
+  color: #1a1100;
+}
+
+.ty-text-hover-orange-light-9:hover {
+  color: #1a1100;
+}
+
+.ty-bg-orange-dark-9 {
+  background-color: #1a1100;
+}
+
+.ty-text-purple {
+  color: #9900ff;
+}
+
+.ty-text-hover-purple:hover {
+  color: #9900ff;
+}
+
+.ty-bg-purple {
+  background-color: #9900ff;
+}
+
+.ty-text-purple-light-1 {
+  color: #a31aff;
+}
+
+.ty-text-hover-purple-light-1:hover {
+  color: #a31aff;
+}
+
+.ty-bg-purple-light-1 {
+  background-color: #cc80ff;
+}
+
+.ty-text-purple-light-2 {
+  color: #ad33ff;
+}
+
+.ty-text-hover-purple-light-2:hover {
+  color: #ad33ff;
+}
+
+.ty-bg-purple-light-2 {
+  background-color: #cc80ff;
+}
+
+.ty-text-purple-light-3 {
+  color: #b84dff;
+}
+
+.ty-text-hover-purple-light-3:hover {
+  color: #b84dff;
+}
+
+.ty-bg-purple-light-3 {
+  background-color: #cc80ff;
+}
+
+.ty-text-purple-light-4 {
+  color: #c266ff;
+}
+
+.ty-text-hover-purple-light-4:hover {
+  color: #c266ff;
+}
+
+.ty-bg-purple-light-4 {
+  background-color: #cc80ff;
+}
+
+.ty-text-purple-light-5 {
+  color: #cc80ff;
+}
+
+.ty-text-hover-purple-light-5:hover {
+  color: #cc80ff;
+}
+
+.ty-bg-purple-light-5 {
+  background-color: #cc80ff;
+}
+
+.ty-text-purple-light-6 {
+  color: #d699ff;
+}
+
+.ty-text-hover-purple-light-6:hover {
+  color: #d699ff;
+}
+
+.ty-bg-purple-light-6 {
+  background-color: #cc80ff;
+}
+
+.ty-text-purple-light-7 {
+  color: #e0b3ff;
+}
+
+.ty-text-hover-purple-light-7:hover {
+  color: #e0b3ff;
+}
+
+.ty-bg-purple-light-7 {
+  background-color: #cc80ff;
+}
+
+.ty-text-purple-light-8 {
+  color: #ebccff;
+}
+
+.ty-text-hover-purple-light-8:hover {
+  color: #ebccff;
+}
+
+.ty-bg-purple-light-8 {
+  background-color: #cc80ff;
+}
+
+.ty-text-purple-light-9 {
+  color: #f5e6ff;
+}
+
+.ty-text-hover-purple-light-9:hover {
+  color: #f5e6ff;
+}
+
+.ty-bg-purple-light-9 {
+  background-color: #cc80ff;
+}
+
+.ty-text-purple-dark-1 {
+  color: #8a00e6;
+}
+
+.ty-text-hover-purple-light-1:hover {
+  color: #8a00e6;
+}
+
+.ty-bg-purple-dark-1 {
+  background-color: #8a00e6;
+}
+
+.ty-text-purple-dark-2 {
+  color: #7a00cc;
+}
+
+.ty-text-hover-purple-light-2:hover {
+  color: #7a00cc;
+}
+
+.ty-bg-purple-dark-2 {
+  background-color: #7a00cc;
+}
+
+.ty-text-purple-dark-3 {
+  color: #6b00b3;
+}
+
+.ty-text-hover-purple-light-3:hover {
+  color: #6b00b3;
+}
+
+.ty-bg-purple-dark-3 {
+  background-color: #6b00b3;
+}
+
+.ty-text-purple-dark-4 {
+  color: #5c0099;
+}
+
+.ty-text-hover-purple-light-4:hover {
+  color: #5c0099;
+}
+
+.ty-bg-purple-dark-4 {
+  background-color: #5c0099;
+}
+
+.ty-text-purple-dark-5 {
+  color: #4d0080;
+}
+
+.ty-text-hover-purple-light-5:hover {
+  color: #4d0080;
+}
+
+.ty-bg-purple-dark-5 {
+  background-color: #4d0080;
+}
+
+.ty-text-purple-dark-6 {
+  color: #3d0066;
+}
+
+.ty-text-hover-purple-light-6:hover {
+  color: #3d0066;
+}
+
+.ty-bg-purple-dark-6 {
+  background-color: #3d0066;
+}
+
+.ty-text-purple-dark-7 {
+  color: #2e004d;
+}
+
+.ty-text-hover-purple-light-7:hover {
+  color: #2e004d;
+}
+
+.ty-bg-purple-dark-7 {
+  background-color: #2e004d;
+}
+
+.ty-text-purple-dark-8 {
+  color: #1f0033;
+}
+
+.ty-text-hover-purple-light-8:hover {
+  color: #1f0033;
+}
+
+.ty-bg-purple-dark-8 {
+  background-color: #1f0033;
+}
+
+.ty-text-purple-dark-9 {
+  color: #0f001a;
+}
+
+.ty-text-hover-purple-light-9:hover {
+  color: #0f001a;
+}
+
+.ty-bg-purple-dark-9 {
+  background-color: #0f001a;
+}
+
+.ty-text-gray {
+  color: #808080;
+}
+
+.ty-text-hover-gray:hover {
+  color: #808080;
+}
+
+.ty-bg-gray {
+  background-color: #808080;
+}
+
+.ty-text-gray-light-1 {
+  color: #8d8d8d;
+}
+
+.ty-text-hover-gray-light-1:hover {
+  color: #8d8d8d;
+}
+
+.ty-bg-gray-light-1 {
+  background-color: silver;
+}
+
+.ty-text-gray-light-2 {
+  color: #999999;
+}
+
+.ty-text-hover-gray-light-2:hover {
+  color: #999999;
+}
+
+.ty-bg-gray-light-2 {
+  background-color: silver;
+}
+
+.ty-text-gray-light-3 {
+  color: #a6a6a6;
+}
+
+.ty-text-hover-gray-light-3:hover {
+  color: #a6a6a6;
+}
+
+.ty-bg-gray-light-3 {
+  background-color: silver;
+}
+
+.ty-text-gray-light-4 {
+  color: #b3b3b3;
+}
+
+.ty-text-hover-gray-light-4:hover {
+  color: #b3b3b3;
+}
+
+.ty-bg-gray-light-4 {
+  background-color: silver;
+}
+
+.ty-text-gray-light-5 {
+  color: silver;
+}
+
+.ty-text-hover-gray-light-5:hover {
+  color: silver;
+}
+
+.ty-bg-gray-light-5 {
+  background-color: silver;
+}
+
+.ty-text-gray-light-6 {
+  color: #cccccc;
+}
+
+.ty-text-hover-gray-light-6:hover {
+  color: #cccccc;
+}
+
+.ty-bg-gray-light-6 {
+  background-color: silver;
+}
+
+.ty-text-gray-light-7 {
+  color: #d9d9d9;
+}
+
+.ty-text-hover-gray-light-7:hover {
+  color: #d9d9d9;
+}
+
+.ty-bg-gray-light-7 {
+  background-color: silver;
+}
+
+.ty-text-gray-light-8 {
+  color: #e6e6e6;
+}
+
+.ty-text-hover-gray-light-8:hover {
+  color: #e6e6e6;
+}
+
+.ty-bg-gray-light-8 {
+  background-color: silver;
+}
+
+.ty-text-gray-light-9 {
+  color: #f2f2f2;
+}
+
+.ty-text-hover-gray-light-9:hover {
+  color: #f2f2f2;
+}
+
+.ty-bg-gray-light-9 {
+  background-color: silver;
+}
+
+.ty-text-gray-dark-1 {
+  color: #737373;
+}
+
+.ty-text-hover-gray-light-1:hover {
+  color: #737373;
+}
+
+.ty-bg-gray-dark-1 {
+  background-color: #737373;
+}
+
+.ty-text-gray-dark-2 {
+  color: #666666;
+}
+
+.ty-text-hover-gray-light-2:hover {
+  color: #666666;
+}
+
+.ty-bg-gray-dark-2 {
+  background-color: #666666;
+}
+
+.ty-text-gray-dark-3 {
+  color: #5a5a5a;
+}
+
+.ty-text-hover-gray-light-3:hover {
+  color: #5a5a5a;
+}
+
+.ty-bg-gray-dark-3 {
+  background-color: #5a5a5a;
+}
+
+.ty-text-gray-dark-4 {
+  color: #4d4d4d;
+}
+
+.ty-text-hover-gray-light-4:hover {
+  color: #4d4d4d;
+}
+
+.ty-bg-gray-dark-4 {
+  background-color: #4d4d4d;
+}
+
+.ty-text-gray-dark-5 {
+  color: #404040;
+}
+
+.ty-text-hover-gray-light-5:hover {
+  color: #404040;
+}
+
+.ty-bg-gray-dark-5 {
+  background-color: #404040;
+}
+
+.ty-text-gray-dark-6 {
+  color: #333333;
+}
+
+.ty-text-hover-gray-light-6:hover {
+  color: #333333;
+}
+
+.ty-bg-gray-dark-6 {
+  background-color: #333333;
+}
+
+.ty-text-gray-dark-7 {
+  color: #262626;
+}
+
+.ty-text-hover-gray-light-7:hover {
+  color: #262626;
+}
+
+.ty-bg-gray-dark-7 {
+  background-color: #262626;
+}
+
+.ty-text-gray-dark-8 {
+  color: #1a1a1a;
+}
+
+.ty-text-hover-gray-light-8:hover {
+  color: #1a1a1a;
+}
+
+.ty-bg-gray-dark-8 {
+  background-color: #1a1a1a;
+}
+
+.ty-text-gray-dark-9 {
+  color: #0d0d0d;
+}
+
+.ty-text-hover-gray-light-9:hover {
+  color: #0d0d0d;
+}
+
+.ty-bg-gray-dark-9 {
+  background-color: #0d0d0d;
+}
+
+.ty-text-black {
+  color: black;
+}
+
+.ty-text-hover-black:hover {
+  color: black;
+}
+
+.ty-bg-black {
+  background-color: black;
+}
+
+.ty-text-white {
+  color: white;
+}
+
+.ty-text-hover-white:hover {
+  color: white;
+}
+
+.ty-bg-white {
+  background-color: white;
+}
+
+.ty-text-pink {
+  color: #d63384;
+}
+
+.ty-text-hover-pink:hover {
+  color: #d63384;
+}
+
+.ty-bg-pink {
+  background-color: #d63384;
+}
+
+.ty-text-pink-light-1 {
+  color: #da4790;
+}
+
+.ty-text-hover-pink-light-1:hover {
+  color: #da4790;
+}
+
+.ty-bg-pink-light-1 {
+  background-color: #eb99c2;
+}
+
+.ty-text-pink-light-2 {
+  color: #de5c9d;
+}
+
+.ty-text-hover-pink-light-2:hover {
+  color: #de5c9d;
+}
+
+.ty-bg-pink-light-2 {
+  background-color: #eb99c2;
+}
+
+.ty-text-pink-light-3 {
+  color: #e270a9;
+}
+
+.ty-text-hover-pink-light-3:hover {
+  color: #e270a9;
+}
+
+.ty-bg-pink-light-3 {
+  background-color: #eb99c2;
+}
+
+.ty-text-pink-light-4 {
+  color: #e685b5;
+}
+
+.ty-text-hover-pink-light-4:hover {
+  color: #e685b5;
+}
+
+.ty-bg-pink-light-4 {
+  background-color: #eb99c2;
+}
+
+.ty-text-pink-light-5 {
+  color: #eb99c2;
+}
+
+.ty-text-hover-pink-light-5:hover {
+  color: #eb99c2;
+}
+
+.ty-bg-pink-light-5 {
+  background-color: #eb99c2;
+}
+
+.ty-text-pink-light-6 {
+  color: #efadce;
+}
+
+.ty-text-hover-pink-light-6:hover {
+  color: #efadce;
+}
+
+.ty-bg-pink-light-6 {
+  background-color: #eb99c2;
+}
+
+.ty-text-pink-light-7 {
+  color: #f3c2da;
+}
+
+.ty-text-hover-pink-light-7:hover {
+  color: #f3c2da;
+}
+
+.ty-bg-pink-light-7 {
+  background-color: #eb99c2;
+}
+
+.ty-text-pink-light-8 {
+  color: #f7d6e6;
+}
+
+.ty-text-hover-pink-light-8:hover {
+  color: #f7d6e6;
+}
+
+.ty-bg-pink-light-8 {
+  background-color: #eb99c2;
+}
+
+.ty-text-pink-light-9 {
+  color: #fbebf3;
+}
+
+.ty-text-hover-pink-light-9:hover {
+  color: #fbebf3;
+}
+
+.ty-bg-pink-light-9 {
+  background-color: #eb99c2;
+}
+
+.ty-text-pink-dark-1 {
+  color: #c12e77;
+}
+
+.ty-text-hover-pink-light-1:hover {
+  color: #c12e77;
+}
+
+.ty-bg-pink-dark-1 {
+  background-color: #c12e77;
+}
+
+.ty-text-pink-dark-2 {
+  color: #ab296a;
+}
+
+.ty-text-hover-pink-light-2:hover {
+  color: #ab296a;
+}
+
+.ty-bg-pink-dark-2 {
+  background-color: #ab296a;
+}
+
+.ty-text-pink-dark-3 {
+  color: #96245c;
+}
+
+.ty-text-hover-pink-light-3:hover {
+  color: #96245c;
+}
+
+.ty-bg-pink-dark-3 {
+  background-color: #96245c;
+}
+
+.ty-text-pink-dark-4 {
+  color: #801f4f;
+}
+
+.ty-text-hover-pink-light-4:hover {
+  color: #801f4f;
+}
+
+.ty-bg-pink-dark-4 {
+  background-color: #801f4f;
+}
+
+.ty-text-pink-dark-5 {
+  color: #6b1a42;
+}
+
+.ty-text-hover-pink-light-5:hover {
+  color: #6b1a42;
+}
+
+.ty-bg-pink-dark-5 {
+  background-color: #6b1a42;
+}
+
+.ty-text-pink-dark-6 {
+  color: #561435;
+}
+
+.ty-text-hover-pink-light-6:hover {
+  color: #561435;
+}
+
+.ty-bg-pink-dark-6 {
+  background-color: #561435;
+}
+
+.ty-text-pink-dark-7 {
+  color: #400f28;
+}
+
+.ty-text-hover-pink-light-7:hover {
+  color: #400f28;
+}
+
+.ty-bg-pink-dark-7 {
+  background-color: #400f28;
+}
+
+.ty-text-pink-dark-8 {
+  color: #2b0a1a;
+}
+
+.ty-text-hover-pink-light-8:hover {
+  color: #2b0a1a;
+}
+
+.ty-bg-pink-dark-8 {
+  background-color: #2b0a1a;
+}
+
+.ty-text-pink-dark-9 {
+  color: #15050d;
+}
+
+.ty-text-hover-pink-light-9:hover {
+  color: #15050d;
+}
+
+.ty-bg-pink-dark-9 {
+  background-color: #15050d;
+}
+
+.ty-text-indigo {
+  color: #6610f2;
+}
+
+.ty-text-hover-indigo:hover {
+  color: #6610f2;
+}
+
+.ty-bg-indigo {
+  background-color: #6610f2;
+}
+
+.ty-text-indigo-light-1 {
+  color: #7528f3;
+}
+
+.ty-text-hover-indigo-light-1:hover {
+  color: #7528f3;
+}
+
+.ty-bg-indigo-light-1 {
+  background-color: #b388f9;
+}
+
+.ty-text-indigo-light-2 {
+  color: #8540f5;
+}
+
+.ty-text-hover-indigo-light-2:hover {
+  color: #8540f5;
+}
+
+.ty-bg-indigo-light-2 {
+  background-color: #b388f9;
+}
+
+.ty-text-indigo-light-3 {
+  color: #9458f6;
+}
+
+.ty-text-hover-indigo-light-3:hover {
+  color: #9458f6;
+}
+
+.ty-bg-indigo-light-3 {
+  background-color: #b388f9;
+}
+
+.ty-text-indigo-light-4 {
+  color: #a370f7;
+}
+
+.ty-text-hover-indigo-light-4:hover {
+  color: #a370f7;
+}
+
+.ty-bg-indigo-light-4 {
+  background-color: #b388f9;
+}
+
+.ty-text-indigo-light-5 {
+  color: #b388f9;
+}
+
+.ty-text-hover-indigo-light-5:hover {
+  color: #b388f9;
+}
+
+.ty-bg-indigo-light-5 {
+  background-color: #b388f9;
+}
+
+.ty-text-indigo-light-6 {
+  color: #c29ffa;
+}
+
+.ty-text-hover-indigo-light-6:hover {
+  color: #c29ffa;
+}
+
+.ty-bg-indigo-light-6 {
+  background-color: #b388f9;
+}
+
+.ty-text-indigo-light-7 {
+  color: #d1b7fb;
+}
+
+.ty-text-hover-indigo-light-7:hover {
+  color: #d1b7fb;
+}
+
+.ty-bg-indigo-light-7 {
+  background-color: #b388f9;
+}
+
+.ty-text-indigo-light-8 {
+  color: #e0cffc;
+}
+
+.ty-text-hover-indigo-light-8:hover {
+  color: #e0cffc;
+}
+
+.ty-bg-indigo-light-8 {
+  background-color: #b388f9;
+}
+
+.ty-text-indigo-light-9 {
+  color: #f0e7fe;
+}
+
+.ty-text-hover-indigo-light-9:hover {
+  color: #f0e7fe;
+}
+
+.ty-bg-indigo-light-9 {
+  background-color: #b388f9;
+}
+
+.ty-text-indigo-dark-1 {
+  color: #5c0eda;
+}
+
+.ty-text-hover-indigo-light-1:hover {
+  color: #5c0eda;
+}
+
+.ty-bg-indigo-dark-1 {
+  background-color: #5c0eda;
+}
+
+.ty-text-indigo-dark-2 {
+  color: #520dc2;
+}
+
+.ty-text-hover-indigo-light-2:hover {
+  color: #520dc2;
+}
+
+.ty-bg-indigo-dark-2 {
+  background-color: #520dc2;
+}
+
+.ty-text-indigo-dark-3 {
+  color: #470ba9;
+}
+
+.ty-text-hover-indigo-light-3:hover {
+  color: #470ba9;
+}
+
+.ty-bg-indigo-dark-3 {
+  background-color: #470ba9;
+}
+
+.ty-text-indigo-dark-4 {
+  color: #3d0a91;
+}
+
+.ty-text-hover-indigo-light-4:hover {
+  color: #3d0a91;
+}
+
+.ty-bg-indigo-dark-4 {
+  background-color: #3d0a91;
+}
+
+.ty-text-indigo-dark-5 {
+  color: #330879;
+}
+
+.ty-text-hover-indigo-light-5:hover {
+  color: #330879;
+}
+
+.ty-bg-indigo-dark-5 {
+  background-color: #330879;
+}
+
+.ty-text-indigo-dark-6 {
+  color: #290661;
+}
+
+.ty-text-hover-indigo-light-6:hover {
+  color: #290661;
+}
+
+.ty-bg-indigo-dark-6 {
+  background-color: #290661;
+}
+
+.ty-text-indigo-dark-7 {
+  color: #1f0549;
+}
+
+.ty-text-hover-indigo-light-7:hover {
+  color: #1f0549;
+}
+
+.ty-bg-indigo-dark-7 {
+  background-color: #1f0549;
+}
+
+.ty-text-indigo-dark-8 {
+  color: #140330;
+}
+
+.ty-text-hover-indigo-light-8:hover {
+  color: #140330;
+}
+
+.ty-bg-indigo-dark-8 {
+  background-color: #140330;
+}
+
+.ty-text-indigo-dark-9 {
+  color: #0a0218;
+}
+
+.ty-text-hover-indigo-light-9:hover {
+  color: #0a0218;
+}
+
+.ty-bg-indigo-dark-9 {
+  background-color: #0a0218;
+}
+
+.ty-text-cyan {
+  color: #0dcaf0;
+}
+
+.ty-text-hover-cyan:hover {
+  color: #0dcaf0;
+}
+
+.ty-bg-cyan {
+  background-color: #0dcaf0;
+}
+
+.ty-text-cyan-light-1 {
+  color: #25cff2;
+}
+
+.ty-text-hover-cyan-light-1:hover {
+  color: #25cff2;
+}
+
+.ty-bg-cyan-light-1 {
+  background-color: #86e5f8;
+}
+
+.ty-text-cyan-light-2 {
+  color: #3dd5f3;
+}
+
+.ty-text-hover-cyan-light-2:hover {
+  color: #3dd5f3;
+}
+
+.ty-bg-cyan-light-2 {
+  background-color: #86e5f8;
+}
+
+.ty-text-cyan-light-3 {
+  color: #56daf5;
+}
+
+.ty-text-hover-cyan-light-3:hover {
+  color: #56daf5;
+}
+
+.ty-bg-cyan-light-3 {
+  background-color: #86e5f8;
+}
+
+.ty-text-cyan-light-4 {
+  color: #6edff6;
+}
+
+.ty-text-hover-cyan-light-4:hover {
+  color: #6edff6;
+}
+
+.ty-bg-cyan-light-4 {
+  background-color: #86e5f8;
+}
+
+.ty-text-cyan-light-5 {
+  color: #86e5f8;
+}
+
+.ty-text-hover-cyan-light-5:hover {
+  color: #86e5f8;
+}
+
+.ty-bg-cyan-light-5 {
+  background-color: #86e5f8;
+}
+
+.ty-text-cyan-light-6 {
+  color: #9eeaf9;
+}
+
+.ty-text-hover-cyan-light-6:hover {
+  color: #9eeaf9;
+}
+
+.ty-bg-cyan-light-6 {
+  background-color: #86e5f8;
+}
+
+.ty-text-cyan-light-7 {
+  color: #b6effb;
+}
+
+.ty-text-hover-cyan-light-7:hover {
+  color: #b6effb;
+}
+
+.ty-bg-cyan-light-7 {
+  background-color: #86e5f8;
+}
+
+.ty-text-cyan-light-8 {
+  color: #cff4fc;
+}
+
+.ty-text-hover-cyan-light-8:hover {
+  color: #cff4fc;
+}
+
+.ty-bg-cyan-light-8 {
+  background-color: #86e5f8;
+}
+
+.ty-text-cyan-light-9 {
+  color: #e7fafe;
+}
+
+.ty-text-hover-cyan-light-9:hover {
+  color: #e7fafe;
+}
+
+.ty-bg-cyan-light-9 {
+  background-color: #86e5f8;
+}
+
+.ty-text-cyan-dark-1 {
+  color: #0cb6d8;
+}
+
+.ty-text-hover-cyan-light-1:hover {
+  color: #0cb6d8;
+}
+
+.ty-bg-cyan-dark-1 {
+  background-color: #0cb6d8;
+}
+
+.ty-text-cyan-dark-2 {
+  color: #0aa2c0;
+}
+
+.ty-text-hover-cyan-light-2:hover {
+  color: #0aa2c0;
+}
+
+.ty-bg-cyan-dark-2 {
+  background-color: #0aa2c0;
+}
+
+.ty-text-cyan-dark-3 {
+  color: #098da8;
+}
+
+.ty-text-hover-cyan-light-3:hover {
+  color: #098da8;
+}
+
+.ty-bg-cyan-dark-3 {
+  background-color: #098da8;
+}
+
+.ty-text-cyan-dark-4 {
+  color: #087990;
+}
+
+.ty-text-hover-cyan-light-4:hover {
+  color: #087990;
+}
+
+.ty-bg-cyan-dark-4 {
+  background-color: #087990;
+}
+
+.ty-text-cyan-dark-5 {
+  color: #076578;
+}
+
+.ty-text-hover-cyan-light-5:hover {
+  color: #076578;
+}
+
+.ty-bg-cyan-dark-5 {
+  background-color: #076578;
+}
+
+.ty-text-cyan-dark-6 {
+  color: #055160;
+}
+
+.ty-text-hover-cyan-light-6:hover {
+  color: #055160;
+}
+
+.ty-bg-cyan-dark-6 {
+  background-color: #055160;
+}
+
+.ty-text-cyan-dark-7 {
+  color: #043d48;
+}
+
+.ty-text-hover-cyan-light-7:hover {
+  color: #043d48;
+}
+
+.ty-bg-cyan-dark-7 {
+  background-color: #043d48;
+}
+
+.ty-text-cyan-dark-8 {
+  color: #032830;
+}
+
+.ty-text-hover-cyan-light-8:hover {
+  color: #032830;
+}
+
+.ty-bg-cyan-dark-8 {
+  background-color: #032830;
+}
+
+.ty-text-cyan-dark-9 {
+  color: #011418;
+}
+
+.ty-text-hover-cyan-light-9:hover {
+  color: #011418;
+}
+
+.ty-bg-cyan-dark-9 {
+  background-color: #011418;
+}
+
+.ty-navbar .ty-container, .navbar-cyan .ty-container, .navbar-indigo .ty-container, .navbar-pink .ty-container, .navbar-white .ty-container, .navbar-black .ty-container, .navbar-gray .ty-container, .navbar-purple .ty-container, .navbar-orange .ty-container, .navbar-green .ty-container, .navbar-yellow .ty-container, .navbar-red .ty-container, .navbar-blue .ty-container, .navbar-info .ty-container, .navbar-error .ty-container, .navbar-secondaey .ty-container, .navbar-primary .ty-container, .ty-navbar, .navbar-cyan, .navbar-indigo, .navbar-pink, .navbar-white, .navbar-black, .navbar-gray, .navbar-purple, .navbar-orange, .navbar-green, .navbar-yellow, .navbar-red, .navbar-blue, .navbar-info, .navbar-error, .navbar-secondaey, .navbar-primary {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  box-sizing: border-box;
+}
+
+.ty-navbar, .navbar-cyan, .navbar-indigo, .navbar-pink, .navbar-white, .navbar-black, .navbar-gray, .navbar-purple, .navbar-orange, .navbar-green, .navbar-yellow, .navbar-red, .navbar-blue, .navbar-info, .navbar-error, .navbar-secondaey, .navbar-primary {
+  padding: 0.75rem 2.25rem;
+  box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.4);
+}
+.ty-navbar .site-title, .navbar-cyan .site-title, .navbar-indigo .site-title, .navbar-pink .site-title, .navbar-white .site-title, .navbar-black .site-title, .navbar-gray .site-title, .navbar-purple .site-title, .navbar-orange .site-title, .navbar-green .site-title, .navbar-yellow .site-title, .navbar-red .site-title, .navbar-blue .site-title, .navbar-info .site-title, .navbar-error .site-title, .navbar-secondaey .site-title, .navbar-primary .site-title {
+  font-size: 1.5rem;
+}
+.navbar-primary {
+  background-color: #146389;
+}
+
+.navbar-secondaey {
+  background-color: #ff9800;
+}
+
+.navbar-error {
+  background-color: #f44336;
+}
+
+.navbar-info {
+  background-color: #13357b;
+}
+
+.navbar-blue {
+  background-color: #14145E;
+}
+
+.navbar-red {
+  background-color: #ed0000;
+}
+
+.navbar-yellow {
+  background-color: #e6e619;
+}
+
+.navbar-green {
+  background-color: #19e635;
+}
+
+.navbar-orange {
+  background-color: #ffa600;
+}
+
+.navbar-purple {
+  background-color: #9900ff;
+}
+
+.navbar-gray {
+  background-color: #808080;
+}
+
+.navbar-black {
+  background-color: black;
+}
+
+.navbar-white {
+  background-color: white;
+}
+
+.navbar-pink {
+  background-color: #d63384;
+}
+
+.navbar-indigo {
+  background-color: #6610f2;
+}
+
+.navbar-cyan {
+  background-color: #0dcaf0;
+}
+
+.ty-btn {
+  text-decoration: none;
+  cursor: pointer;
+  display: inline-block;
+  border: 0;
+  padding: 0.75rem 0.75rem 1.5rem;
+  border-radius: 50px;
+  background-color: #e2e2e2;
+}
+
+.ty-btn-primary {
+  text-decoration: none;
+  cursor: pointer;
+  display: inline-block;
+  border: 0;
+  padding: 0.75rem 0.75rem 1.5rem;
+  border-radius: 50px;
+  background-color: #146389;
+}
+.ty-btn-primary:hover {
+  background-color: #17739f;
+}
+
+.ty-btn-outlined-primary {
+  text-decoration: none;
+  cursor: pointer;
+  display: inline-block;
+  border: 0;
+  padding: 0.75rem 0.75rem 1.5rem;
+  border-radius: 50px;
+  background-color: #fff;
+  border: 1px solid #146389;
+}
+.ty-btn-outlined-primary:hover {
+  background-color: #146389;
+}
+
+.ty-btn-complement-primary {
+  text-decoration: none;
+  cursor: pointer;
+  display: inline-block;
+  border: 0;
+  padding: 0.75rem 0.75rem 1.5rem;
+  border-radius: 50px;
+  background-color: #146389;
+  color: light-comp();
+}
+.ty-btn-complement-primary:hover {
+  color: #146389;
+}
+
+.ty-btn-secondaey {
+  text-decoration: none;
+  cursor: pointer;
+  display: inline-block;
+  border: 0;
+  padding: 0.75rem 0.75rem 1.5rem;
+  border-radius: 50px;
+  background-color: #ff9800;
+}
+.ty-btn-secondaey:hover {
+  background-color: #ffa21a;
+}
+
+.ty-btn-outlined-secondaey {
+  text-decoration: none;
+  cursor: pointer;
+  display: inline-block;
+  border: 0;
+  padding: 0.75rem 0.75rem 1.5rem;
+  border-radius: 50px;
+  background-color: #fff;
+  border: 1px solid #ff9800;
+}
+.ty-btn-outlined-secondaey:hover {
+  background-color: #ff9800;
+}
+
+.ty-btn-complement-secondaey {
+  text-decoration: none;
+  cursor: pointer;
+  display: inline-block;
+  border: 0;
+  padding: 0.75rem 0.75rem 1.5rem;
+  border-radius: 50px;
+  background-color: #ff9800;
+  color: light-comp();
+}
+.ty-btn-complement-secondaey:hover {
+  color: #ff9800;
+}
+
+.ty-btn-error {
+  text-decoration: none;
+  cursor: pointer;
+  display: inline-block;
+  border: 0;
+  padding: 0.75rem 0.75rem 1.5rem;
+  border-radius: 50px;
+  background-color: #f44336;
+}
+.ty-btn-error:hover {
+  background-color: #f55a4e;
+}
+
+.ty-btn-outlined-error {
+  text-decoration: none;
+  cursor: pointer;
+  display: inline-block;
+  border: 0;
+  padding: 0.75rem 0.75rem 1.5rem;
+  border-radius: 50px;
+  background-color: #fff;
+  border: 1px solid #f44336;
+}
+.ty-btn-outlined-error:hover {
+  background-color: #f44336;
+}
+
+.ty-btn-complement-error {
+  text-decoration: none;
+  cursor: pointer;
+  display: inline-block;
+  border: 0;
+  padding: 0.75rem 0.75rem 1.5rem;
+  border-radius: 50px;
+  background-color: #f44336;
+  color: light-comp();
+}
+.ty-btn-complement-error:hover {
+  color: #f44336;
+}
+
+.ty-btn-info {
+  text-decoration: none;
+  cursor: pointer;
+  display: inline-block;
+  border: 0;
+  padding: 0.75rem 0.75rem 1.5rem;
+  border-radius: 50px;
+  background-color: #13357b;
+}
+.ty-btn-info:hover {
+  background-color: #163f91;
+}
+
+.ty-btn-outlined-info {
+  text-decoration: none;
+  cursor: pointer;
+  display: inline-block;
+  border: 0;
+  padding: 0.75rem 0.75rem 1.5rem;
+  border-radius: 50px;
+  background-color: #fff;
+  border: 1px solid #13357b;
+}
+.ty-btn-outlined-info:hover {
+  background-color: #13357b;
+}
+
+.ty-btn-complement-info {
+  text-decoration: none;
+  cursor: pointer;
+  display: inline-block;
+  border: 0;
+  padding: 0.75rem 0.75rem 1.5rem;
+  border-radius: 50px;
+  background-color: #13357b;
+  color: light-comp();
+}
+.ty-btn-complement-info:hover {
+  color: #13357b;
+}
+
+.ty-btn-blue {
+  text-decoration: none;
+  cursor: pointer;
+  display: inline-block;
+  border: 0;
+  padding: 0.75rem 0.75rem 1.5rem;
+  border-radius: 50px;
+  background-color: #14145E;
+}
+.ty-btn-blue:hover {
+  background-color: #181873;
+}
+
+.ty-btn-outlined-blue {
+  text-decoration: none;
+  cursor: pointer;
+  display: inline-block;
+  border: 0;
+  padding: 0.75rem 0.75rem 1.5rem;
+  border-radius: 50px;
+  background-color: #fff;
+  border: 1px solid #14145E;
+}
+.ty-btn-outlined-blue:hover {
+  background-color: #14145E;
+}
+
+.ty-btn-complement-blue {
+  text-decoration: none;
+  cursor: pointer;
+  display: inline-block;
+  border: 0;
+  padding: 0.75rem 0.75rem 1.5rem;
+  border-radius: 50px;
+  background-color: #14145E;
+  color: light-comp();
+}
+.ty-btn-complement-blue:hover {
+  color: #14145E;
+}
+
+.ty-btn-red {
+  text-decoration: none;
+  cursor: pointer;
+  display: inline-block;
+  border: 0;
+  padding: 0.75rem 0.75rem 1.5rem;
+  border-radius: 50px;
+  background-color: #ed0000;
+}
+.ty-btn-red:hover {
+  background-color: #ff0808;
+}
+
+.ty-btn-outlined-red {
+  text-decoration: none;
+  cursor: pointer;
+  display: inline-block;
+  border: 0;
+  padding: 0.75rem 0.75rem 1.5rem;
+  border-radius: 50px;
+  background-color: #fff;
+  border: 1px solid #ed0000;
+}
+.ty-btn-outlined-red:hover {
+  background-color: #ed0000;
+}
+
+.ty-btn-complement-red {
+  text-decoration: none;
+  cursor: pointer;
+  display: inline-block;
+  border: 0;
+  padding: 0.75rem 0.75rem 1.5rem;
+  border-radius: 50px;
+  background-color: #ed0000;
+  color: light-comp();
+}
+.ty-btn-complement-red:hover {
+  color: #ed0000;
+}
+
+.ty-btn-yellow {
+  text-decoration: none;
+  cursor: pointer;
+  display: inline-block;
+  border: 0;
+  padding: 0.75rem 0.75rem 1.5rem;
+  border-radius: 50px;
+  background-color: #e6e619;
+}
+.ty-btn-yellow:hover {
+  background-color: #e9e930;
+}
+
+.ty-btn-outlined-yellow {
+  text-decoration: none;
+  cursor: pointer;
+  display: inline-block;
+  border: 0;
+  padding: 0.75rem 0.75rem 1.5rem;
+  border-radius: 50px;
+  background-color: #fff;
+  border: 1px solid #e6e619;
+}
+.ty-btn-outlined-yellow:hover {
+  background-color: #e6e619;
+}
+
+.ty-btn-complement-yellow {
+  text-decoration: none;
+  cursor: pointer;
+  display: inline-block;
+  border: 0;
+  padding: 0.75rem 0.75rem 1.5rem;
+  border-radius: 50px;
+  background-color: #e6e619;
+  color: light-comp();
+}
+.ty-btn-complement-yellow:hover {
+  color: #e6e619;
+}
+
+.ty-btn-green {
+  text-decoration: none;
+  cursor: pointer;
+  display: inline-block;
+  border: 0;
+  padding: 0.75rem 0.75rem 1.5rem;
+  border-radius: 50px;
+  background-color: #19e635;
+}
+.ty-btn-green:hover {
+  background-color: #30e949;
+}
+
+.ty-btn-outlined-green {
+  text-decoration: none;
+  cursor: pointer;
+  display: inline-block;
+  border: 0;
+  padding: 0.75rem 0.75rem 1.5rem;
+  border-radius: 50px;
+  background-color: #fff;
+  border: 1px solid #19e635;
+}
+.ty-btn-outlined-green:hover {
+  background-color: #19e635;
+}
+
+.ty-btn-complement-green {
+  text-decoration: none;
+  cursor: pointer;
+  display: inline-block;
+  border: 0;
+  padding: 0.75rem 0.75rem 1.5rem;
+  border-radius: 50px;
+  background-color: #19e635;
+  color: light-comp();
+}
+.ty-btn-complement-green:hover {
+  color: #19e635;
+}
+
+.ty-btn-orange {
+  text-decoration: none;
+  cursor: pointer;
+  display: inline-block;
+  border: 0;
+  padding: 0.75rem 0.75rem 1.5rem;
+  border-radius: 50px;
+  background-color: #ffa600;
+}
+.ty-btn-orange:hover {
+  background-color: #ffaf1a;
+}
+
+.ty-btn-outlined-orange {
+  text-decoration: none;
+  cursor: pointer;
+  display: inline-block;
+  border: 0;
+  padding: 0.75rem 0.75rem 1.5rem;
+  border-radius: 50px;
+  background-color: #fff;
+  border: 1px solid #ffa600;
+}
+.ty-btn-outlined-orange:hover {
+  background-color: #ffa600;
+}
+
+.ty-btn-complement-orange {
+  text-decoration: none;
+  cursor: pointer;
+  display: inline-block;
+  border: 0;
+  padding: 0.75rem 0.75rem 1.5rem;
+  border-radius: 50px;
+  background-color: #ffa600;
+  color: light-comp();
+}
+.ty-btn-complement-orange:hover {
+  color: #ffa600;
+}
+
+.ty-btn-purple {
+  text-decoration: none;
+  cursor: pointer;
+  display: inline-block;
+  border: 0;
+  padding: 0.75rem 0.75rem 1.5rem;
+  border-radius: 50px;
+  background-color: #9900ff;
+}
+.ty-btn-purple:hover {
+  background-color: #a31aff;
+}
+
+.ty-btn-outlined-purple {
+  text-decoration: none;
+  cursor: pointer;
+  display: inline-block;
+  border: 0;
+  padding: 0.75rem 0.75rem 1.5rem;
+  border-radius: 50px;
+  background-color: #fff;
+  border: 1px solid #9900ff;
+}
+.ty-btn-outlined-purple:hover {
+  background-color: #9900ff;
+}
+
+.ty-btn-complement-purple {
+  text-decoration: none;
+  cursor: pointer;
+  display: inline-block;
+  border: 0;
+  padding: 0.75rem 0.75rem 1.5rem;
+  border-radius: 50px;
+  background-color: #9900ff;
+  color: light-comp();
+}
+.ty-btn-complement-purple:hover {
+  color: #9900ff;
+}
+
+.ty-btn-gray {
+  text-decoration: none;
+  cursor: pointer;
+  display: inline-block;
+  border: 0;
+  padding: 0.75rem 0.75rem 1.5rem;
+  border-radius: 50px;
+  background-color: #808080;
+}
+.ty-btn-gray:hover {
+  background-color: #8d8d8d;
+}
+
+.ty-btn-outlined-gray {
+  text-decoration: none;
+  cursor: pointer;
+  display: inline-block;
+  border: 0;
+  padding: 0.75rem 0.75rem 1.5rem;
+  border-radius: 50px;
+  background-color: #fff;
+  border: 1px solid #808080;
+}
+.ty-btn-outlined-gray:hover {
+  background-color: #808080;
+}
+
+.ty-btn-complement-gray {
+  text-decoration: none;
+  cursor: pointer;
+  display: inline-block;
+  border: 0;
+  padding: 0.75rem 0.75rem 1.5rem;
+  border-radius: 50px;
+  background-color: #808080;
+  color: light-comp();
+}
+.ty-btn-complement-gray:hover {
+  color: #808080;
+}
+
+.ty-btn-black {
+  text-decoration: none;
+  cursor: pointer;
+  display: inline-block;
+  border: 0;
+  padding: 0.75rem 0.75rem 1.5rem;
+  border-radius: 50px;
+  background-color: black;
+}
+.ty-btn-black:hover {
+  background-color: #0d0d0d;
+}
+
+.ty-btn-outlined-black {
+  text-decoration: none;
+  cursor: pointer;
+  display: inline-block;
+  border: 0;
+  padding: 0.75rem 0.75rem 1.5rem;
+  border-radius: 50px;
+  background-color: #fff;
+  border: 1px solid black;
+}
+.ty-btn-outlined-black:hover {
+  background-color: black;
+}
+
+.ty-btn-complement-black {
+  text-decoration: none;
+  cursor: pointer;
+  display: inline-block;
+  border: 0;
+  padding: 0.75rem 0.75rem 1.5rem;
+  border-radius: 50px;
+  background-color: black;
+  color: light-comp();
+}
+.ty-btn-complement-black:hover {
+  color: black;
+}
+
+.ty-btn-white {
+  text-decoration: none;
+  cursor: pointer;
+  display: inline-block;
+  border: 0;
+  padding: 0.75rem 0.75rem 1.5rem;
+  border-radius: 50px;
+  background-color: white;
+}
+.ty-btn-white:hover {
+  background-color: white;
+}
+
+.ty-btn-outlined-white {
+  text-decoration: none;
+  cursor: pointer;
+  display: inline-block;
+  border: 0;
+  padding: 0.75rem 0.75rem 1.5rem;
+  border-radius: 50px;
+  background-color: #fff;
+  border: 1px solid white;
+}
+.ty-btn-outlined-white:hover {
+  background-color: white;
+}
+
+.ty-btn-complement-white {
+  text-decoration: none;
+  cursor: pointer;
+  display: inline-block;
+  border: 0;
+  padding: 0.75rem 0.75rem 1.5rem;
+  border-radius: 50px;
+  background-color: white;
+  color: light-comp();
+}
+.ty-btn-complement-white:hover {
+  color: white;
+}
+
+.ty-btn-pink {
+  text-decoration: none;
+  cursor: pointer;
+  display: inline-block;
+  border: 0;
+  padding: 0.75rem 0.75rem 1.5rem;
+  border-radius: 50px;
+  background-color: #d63384;
+}
+.ty-btn-pink:hover {
+  background-color: #da4891;
+}
+
+.ty-btn-outlined-pink {
+  text-decoration: none;
+  cursor: pointer;
+  display: inline-block;
+  border: 0;
+  padding: 0.75rem 0.75rem 1.5rem;
+  border-radius: 50px;
+  background-color: #fff;
+  border: 1px solid #d63384;
+}
+.ty-btn-outlined-pink:hover {
+  background-color: #d63384;
+}
+
+.ty-btn-complement-pink {
+  text-decoration: none;
+  cursor: pointer;
+  display: inline-block;
+  border: 0;
+  padding: 0.75rem 0.75rem 1.5rem;
+  border-radius: 50px;
+  background-color: #d63384;
+  color: light-comp();
+}
+.ty-btn-complement-pink:hover {
+  color: #d63384;
+}
+
+.ty-btn-indigo {
+  text-decoration: none;
+  cursor: pointer;
+  display: inline-block;
+  border: 0;
+  padding: 0.75rem 0.75rem 1.5rem;
+  border-radius: 50px;
+  background-color: #6610f2;
+}
+.ty-btn-indigo:hover {
+  background-color: #7528f3;
+}
+
+.ty-btn-outlined-indigo {
+  text-decoration: none;
+  cursor: pointer;
+  display: inline-block;
+  border: 0;
+  padding: 0.75rem 0.75rem 1.5rem;
+  border-radius: 50px;
+  background-color: #fff;
+  border: 1px solid #6610f2;
+}
+.ty-btn-outlined-indigo:hover {
+  background-color: #6610f2;
+}
+
+.ty-btn-complement-indigo {
+  text-decoration: none;
+  cursor: pointer;
+  display: inline-block;
+  border: 0;
+  padding: 0.75rem 0.75rem 1.5rem;
+  border-radius: 50px;
+  background-color: #6610f2;
+  color: light-comp();
+}
+.ty-btn-complement-indigo:hover {
+  color: #6610f2;
+}
+
+.ty-btn-cyan {
+  text-decoration: none;
+  cursor: pointer;
+  display: inline-block;
+  border: 0;
+  padding: 0.75rem 0.75rem 1.5rem;
+  border-radius: 50px;
+  background-color: #0dcaf0;
+}
+.ty-btn-cyan:hover {
+  background-color: #23d0f3;
+}
+
+.ty-btn-outlined-cyan {
+  text-decoration: none;
+  cursor: pointer;
+  display: inline-block;
+  border: 0;
+  padding: 0.75rem 0.75rem 1.5rem;
+  border-radius: 50px;
+  background-color: #fff;
+  border: 1px solid #0dcaf0;
+}
+.ty-btn-outlined-cyan:hover {
+  background-color: #0dcaf0;
+}
+
+.ty-btn-complement-cyan {
+  text-decoration: none;
+  cursor: pointer;
+  display: inline-block;
+  border: 0;
+  padding: 0.75rem 0.75rem 1.5rem;
+  border-radius: 50px;
+  background-color: #0dcaf0;
+  color: light-comp();
+}
+.ty-btn-complement-cyan:hover {
+  color: #0dcaf0;
 }

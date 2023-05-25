@@ -1,0 +1,43 @@
+@each $key, $val in $colors{
+    .ty-text-#{$key} {
+        color: $val
+    }
+    .ty-text-hover-#{$key}{
+        &:hover{
+            color:$val
+        }
+    }
+    .ty-bg-#{$key}{
+        background-color: $val;
+    }
+    @if($val !=black and $val != white){
+        @for $i from 1 through 9 {
+            .ty-text-#{$key}-light-#{$i}{
+                color: mix(white, $val, $i * 10);
+            }
+            .ty-text-hover-#{$key}-light-#{$i}{
+                &:hover{
+                    color:mix(white,$val,$i * 10)
+                }
+            }
+            .ty-bg-#{$key}-light-#{$i}{
+               background-color: mix(white, $val );
+            }
+            }
+            @for $i from 1 through 9 {
+                .ty-text-#{$key}-dark-#{$i}{
+                    color: mix(black, $val, $i * 10);
+                }
+                .ty-text-hover-#{$key}-light-#{$i}{
+                    &:hover{
+                        color:mix(black,$val,$i * 10)
+                    }
+                }
+                .ty-bg-#{$key}-dark-#{$i}{
+                    background-color: mix(black, $val, $i * 10);
+                }
+                }
+    }
+    
+      
+}

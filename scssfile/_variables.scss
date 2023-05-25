@@ -17,6 +17,33 @@ $clr-three:#F7D6D0;
 $clr-four:#EAE6F0;
 
 
+//color palette
+$colors:(
+    "primary":$primary,
+    "secondaey":$secondary,
+    "error":$error,
+    "info":$title-color,
+    "blue":$blue,
+    "red":#ed0000,
+    "yellow":#e6e619,
+    "green":#19e635,
+    "orange":#ffa600,
+    "purple":#9900ff,
+    "gray":#808080,
+    "black":black,
+    "white":white,
+    "pink":#d63384,
+    "indigo": #6610f2,
+    "cyan":#0dcaf0,
+);
+
+
+@debug map-get($colors, "primary");
+@debug map-has-key($colors, "secondary");
+@debug map-has-key($colors, "info");
+
+
+
 $input-border-radius:6px;
 $base-border-radius:50px;
 $search-input-border-radius:35px;

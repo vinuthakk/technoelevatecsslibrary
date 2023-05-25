@@ -1,0 +1,27 @@
+%flex-layout{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    box-sizing: border-box;
+}
+
+
+.ty-navbar{
+    @extend %flex-layout;
+    padding:$base-padding $base-padding * 3;
+    box-shadow: $base-box-shadow;
+    .site-title{
+         font-size: $font-size-lg;
+    }
+    .ty-container{
+        @extend %flex-layout;
+    }
+}
+
+@each $key, $val in $colors{
+    .navbar-#{$key}{
+        @extend .ty-navbar;
+        background-color: $val;
+    }
+}
