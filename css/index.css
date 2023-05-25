@@ -37,7 +37,7 @@
   --secondary: #ff9800;
   --table-header-background: 20, 99, 136, 0.1;
   --title-color: #13357b;
-  --input-border-color: rgba(0, 0, 0, .12);
+  --input-border-color-rgba:0, 0, 0, .12;
   --primary: #146389;
   --danger: #b11a1a;
   --card-primary: #EAE7FA;
@@ -192,7 +192,6 @@ a {
   display: flex;
   align-items: center;
   justify-content: center;
-  background-image: url(background_.webp);
   background-repeat: no-repeat;
   width: 100%;
   height: 100%;
