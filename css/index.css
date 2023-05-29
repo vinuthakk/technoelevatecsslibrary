@@ -70,7 +70,7 @@ ul {
 a {
   text-decoration: none;
 }
-/*search*/
+
 .search-input {
   margin: 16px;
   border-radius: 35px;
@@ -107,7 +107,7 @@ a {
 .search-input input::placeholder {
   font-style: italic;
 }
-/*button-color*/
+
 .add-btn {
   background-color: #ff9800;
   margin: 0px 10px;
@@ -118,7 +118,22 @@ a {
   border-radius: 20px;
 }
 
+.icon-active {
+  background: #146389;
+  width: 100%;
+  font-weight: 500;
+  border-left: 2px solid;
+  border-radius: 10px;
+  text-align: center;
+  height: 60px;
+}
 
+.sidenav-icon-text {
+  color: #146389;
+  font-size: 11px;
+  margin-bottom: 20px;
+  text-align: center;
+}
 
 .login-btn {
   outline: none;
@@ -171,7 +186,7 @@ a {
   background-color: #ef950f;
   background-image: linear-gradient(-37deg, #cccccc, transparent);
 }
-/*login*/
+
 .loginbackground {
   min-height: 100vh;
   display: flex;
@@ -221,14 +236,11 @@ a {
   width: 35px;
   background: #ff9800;
 }
-/*login-end*/
 
-
-/*navbar*/
 .navbar {
   background-color: rgb(225, 234, 239);
   height: 70px;
-  padding: 0px 2rem !important;
+  padding: 0px 10px !important;
   position: relative;
   display: flex;
   flex-wrap: wrap;
@@ -236,10 +248,10 @@ a {
   justify-content: space-between;
   border-bottom: 1px solid lightgray;
 }
-/*navbar-end*/
+.navbar .container-fluid {
+  padding: 0px 30px;
+}
 
-
-/*sidebar*/
 .sidebar {
   width: 80px !important;
   visibility: visible !important;
@@ -289,9 +301,7 @@ a {
   margin: 0px 10px 0px 8px;
   line-height: 25px;
 }
-/*sidebar-end*/
 
-/*card*/
 .ty_card {
   display: block;
   padding: 0.75rem;
@@ -305,10 +315,7 @@ a {
   letter-spacing: normal;
   text-align: center;
 }
-/*card-end*/
 
-
-/*padding*/
 .ty-p-0 {
   padding: 0;
 }
@@ -428,10 +435,7 @@ a {
 .ty-pb-5 {
   padding-bottom: 6rem;
 }
-/*padding-end*/
 
-
-/*margin*/
 .ty-m-0 {
   margin: 0;
 }
@@ -551,9 +555,7 @@ a {
 .ty-mb-5 {
   margin-bottom: 6rem;
 }
-/*margin-end*/
 
-/*opacity*/
 .ty-o-10 {
   opacity: 0.1;
 }
@@ -593,9 +595,7 @@ a {
 .ty-o-100 {
   opacity: 1;
 }
-/*opacity-end*/
 
-/*border-radius*/
 .ty-br {
   border-radius: 50px;
 }
@@ -619,9 +619,7 @@ a {
 .ty-br-full {
   border-radius: 50%;
 }
-/*border-radius*/
 
-/*display*/
 .ty-d-n {
   display: none;
 }
@@ -641,9 +639,7 @@ a {
 .ty-d-i-b {
   display: inline-block;
 }
-/*display-end*/
 
-/*font*/
 .ty-font-sm {
   font-size: 0.75rem;
 }
@@ -663,9 +659,7 @@ a {
 .ty-font-xxl {
   font-size: 3rem;
 }
-/*ty-dend*/
 
-/*grid*/
 .ty-container {
   width: 100%;
   max-width: 1320px;
@@ -714,9 +708,7 @@ a {
   margin-left: -30px;
   margin-right: -30px;
 }
-/*grid*/
 
-/*flex-justify*/
 .ty-justify-flex-start {
   justify-content: flex-start;
 }
@@ -744,9 +736,7 @@ a {
 .ty-justify-right {
   justify-content: right;
 }
-/*flex-justify*/
 
-/*flex-align*/
 .ty-align-items-start {
   align-items: start;
 }
@@ -774,9 +764,7 @@ a {
 .ty-align-items-center {
   align-items: center;
 }
-/*flex-align-end*/
 
-/*breakpoints*/
 @media (min-width: 0) {
   .tycol-1-xs {
     box-sizing: border-box;
@@ -1087,7 +1075,6 @@ a {
     width: 100%;
   }
 }
-/*breakpoints-end*/
 .badge {
   border-radius: 50%;
   background-color: #146389;
@@ -1097,7 +1084,6 @@ a {
   color: white;
 }
 
-/*text*/
 .ty-text-primary {
   color: #146389;
 }
@@ -4313,9 +4299,7 @@ a {
 .ty-bg-cyan-dark-9 {
   background-color: #011418;
 }
-/*text-end*/
 
-/*navbar*/
 .ty-navbar .ty-container, .navbar-cyan .ty-container, .navbar-indigo .ty-container, .navbar-pink .ty-container, .navbar-white .ty-container, .navbar-black .ty-container, .navbar-gray .ty-container, .navbar-purple .ty-container, .navbar-orange .ty-container, .navbar-green .ty-container, .navbar-yellow .ty-container, .navbar-red .ty-container, .navbar-blue .ty-container, .navbar-info .ty-container, .navbar-error .ty-container, .navbar-secondaey .ty-container, .navbar-primary .ty-container, .ty-navbar, .navbar-cyan, .navbar-indigo, .navbar-pink, .navbar-white, .navbar-black, .navbar-gray, .navbar-purple, .navbar-orange, .navbar-green, .navbar-yellow, .navbar-red, .navbar-blue, .navbar-info, .navbar-error, .navbar-secondaey, .navbar-primary {
   width: 100%;
   display: flex;
@@ -4394,9 +4378,7 @@ a {
 .navbar-cyan {
   background-color: #0dcaf0;
 }
-/*navbar-end*/
 
-/*button*/
 .ty-btn {
   text-decoration: none;
   cursor: pointer;
@@ -5062,4 +5044,3 @@ a {
 .ty-btn-complement-cyan:hover {
   color: #0dcaf0;
 }
-/*btn-end*/
