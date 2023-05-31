@@ -2,28 +2,32 @@
 $header-background:rgb(225, 234, 239);
 $sidenav-background:rgba(20, 99, 136, 0.1);
 $error:#f44336;
-$secondary:#ff9800;
+$clr-five:#ff9800;
 $table-header-background:20,99,136,0.1;
 $title-color:#13357b;
-$input-border-color:rgba(0, 0, 0, .12);
-$primary:#146389;
-$danger:#b11a1a;
+$input-border-color-rgba:rgba(0, 0, 0, .12);
+$border-color-rgba:rgba(0, 0, 0, .175);
+$blue-01:#146389;
+$red-01:#b11a1a;
 $card-primary:#EAE7FA;
 $card-secondary:#D8E1E7;
-$blue:#14145E;
+$blue-02:#14145E;
 $clr-one:#DFF6F1;
 $clr-two:#EFEBE0;
 $clr-three:#F7D6D0;
 $clr-four:#EAE6F0;
+$clr-six:#629462;
+$clr-seven:#dba94f;
+$clr-eight:#eb6e6e;
 
 
 //color palette
 $colors:(
-    "primary":$primary,
-    "secondaey":$secondary,
+    "blue-01":$blue-01,
+    "clr-five":$clr-five,
     "error":$error,
-    "info":$title-color,
-    "blue":$blue,
+    "title-color":$title-color,
+    "blue-02":$blue-02,
     "red":#ed0000,
     "yellow":#e6e619,
     "green":#19e635,
@@ -33,17 +37,12 @@ $colors:(
     "black":black,
     "white":white,
     "pink":#d63384,
-    "indigo": #6610f2,
-    "cyan":#0dcaf0,
+    "indigo-01": #6610f2,
+    "cyan-01":#0dcaf0,
+    "clr-six":#629462,
+    "clr-seven":#dba94f,
+    "clr-eight":#eb6e6e,
 );
-
-
-@debug map-get($colors, "primary");
-@debug map-has-key($colors, "secondary");
-@debug map-has-key($colors, "info");
-
-
-
 $input-border-radius:6px;
 $base-border-radius:50px;
 $search-input-border-radius:35px;

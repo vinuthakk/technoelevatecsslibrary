@@ -19,6 +19,11 @@ $align-values:start,end,stretch,baseline,flex-start,flex-end,center;
     padding:0 20px;
     box-sizing: border-box;
 }
+.ty-container-fluid{
+    width: 100%;
+    padding: 0px 20px;
+    
+}
 .ty-row{
     display: flex;
     flex-flow: row wrap;
@@ -68,6 +73,16 @@ $align-values:start,end,stretch,baseline,flex-start,flex-end,center;
     }
 }
 
+
+@include md{
+    @for $i from 1 through $grid-columns{
+        .tycol-#{$i}-md{
+            box-sizing: border-box;
+            flex-grow: 0;
+            width: math.div($i * 100%, $grid-columns);
+        }
+    }
+}
 @include lg{
     @for $i from 1 through $grid-columns{
         .tycol-#{$i}-lg{

@@ -2,13 +2,29 @@
 .ty_card{
     display: block;
     padding:$base-padding;
-    border:1px solid $input-border-color;
-    box-shadow: $base-box-shadow;
-    border-radius: math.div($base-border-radius,5);
+    border:1px solid $border-color-rgba;
+    position: relative;
+    border-radius: $submit-btn-border-radius;
+}
+.ty_card h3{
+    font-weight: 500;
+    font-size: 16px;
+    margin-bottom: 0px;
+    font-family: "Roboto";
 }
 .ty_card .card-title{
     font-size: $font-size-lg;
-    // font: 400 24px/32px Roboto, "Helvetica Neue", sans-serif;
     letter-spacing: normal;
     text-align: center;
 }
+.card-br::before {
+    content: "";
+    position: absolute;
+    width: 10px;
+    height: 60px;
+    background-color: #14145E;
+    right: 0px;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    top: 8px;
+  }

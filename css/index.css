@@ -47,6 +47,9 @@
   --clr-two: #EFEBE0;
   --clr-three: #F7D6D0;
   --clr-four: #EAE6F0;
+  --clr-six:#629462;
+  --clr-seven:#dba94f;
+  --clr-eight:#eb6e6e;
   --bs-primary-rgb: 13, 110, 253;
   --bs-secondary-rgb: 108, 117, 125;
   --bs-success-rgb: 25, 135, 84;
@@ -305,15 +308,34 @@ a {
 .ty_card {
   display: block;
   padding: 0.75rem;
-  border: 1px solid rgba(0, 0, 0, 0.12);
-  box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.4);
-  border-radius: 10px;
+  border: 1px solid rgba(0, 0, 0, 0.175);
+  position: relative;
+  border-radius: 0.375rem;
+}
+
+.ty_card h3 {
+  font-weight: 500;
+  font-size: 16px;
+  margin-bottom: 0px;
+  font-family: "Roboto";
 }
 
 .ty_card .card-title {
   font-size: 1.5rem;
   letter-spacing: normal;
   text-align: center;
+}
+
+.card-br::before {
+  content: "";
+  position: absolute;
+  width: 10px;
+  height: 60px;
+  background-color: #14145E;
+  right: 0px;
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+  top: 8px;
 }
 
 .ty-p-0 {
@@ -668,6 +690,11 @@ a {
   box-sizing: border-box;
 }
 
+.ty-container-fluid {
+  width: 100%;
+  padding: 0px 20px;
+}
+
 .ty-row {
   display: flex;
   flex-flow: row wrap;
@@ -889,6 +916,68 @@ a {
     width: 100%;
   }
 }
+@media (min-width: 768px) {
+  .tycol-1-md {
+    box-sizing: border-box;
+    flex-grow: 0;
+    width: 8.3333333333%;
+  }
+  .tycol-2-md {
+    box-sizing: border-box;
+    flex-grow: 0;
+    width: 16.6666666667%;
+  }
+  .tycol-3-md {
+    box-sizing: border-box;
+    flex-grow: 0;
+    width: 25%;
+  }
+  .tycol-4-md {
+    box-sizing: border-box;
+    flex-grow: 0;
+    width: 33.3333333333%;
+  }
+  .tycol-5-md {
+    box-sizing: border-box;
+    flex-grow: 0;
+    width: 41.6666666667%;
+  }
+  .tycol-6-md {
+    box-sizing: border-box;
+    flex-grow: 0;
+    width: 50%;
+  }
+  .tycol-7-md {
+    box-sizing: border-box;
+    flex-grow: 0;
+    width: 58.3333333333%;
+  }
+  .tycol-8-md {
+    box-sizing: border-box;
+    flex-grow: 0;
+    width: 66.6666666667%;
+  }
+  .tycol-9-md {
+    box-sizing: border-box;
+    flex-grow: 0;
+    width: 75%;
+  }
+  .tycol-10-md {
+    box-sizing: border-box;
+    flex-grow: 0;
+    width: 83.3333333333%;
+  }
+  .tycol-11-md {
+    box-sizing: border-box;
+    flex-grow: 0;
+    width: 91.6666666667%;
+  }
+  .tycol-12-md {
+    box-sizing: border-box;
+    flex-grow: 0;
+    width: 100%;
+  }
+}
 @media (min-width: 992px) {
   .tycol-1-lg {
     box-sizing: border-box;
@@ -1077,466 +1166,466 @@ a {
 }
 .badge {
   border-radius: 50%;
-  background-color: #146389;
+  background-color: #14145E;
   padding: 0.1875rem 0.375rem;
   font-size: 0.75rem;
   font-weight: normal;
   color: white;
 }
 
-.ty-text-primary {
+.ty-text-blue-01 {
   color: #146389;
 }
 
-.ty-text-hover-primary:hover {
+.ty-text-hover-blue-01:hover {
   color: #146389;
 }
 
-.ty-bg-primary {
+.ty-bg-blue-01 {
   background-color: #146389;
 }
 
-.ty-text-primary-light-1 {
+.ty-text-blue-01-light-1 {
   color: #2c7395;
 }
 
-.ty-text-hover-primary-light-1:hover {
+.ty-text-hover-blue-01-light-1:hover {
   color: #2c7395;
 }
 
-.ty-bg-primary-light-1 {
+.ty-bg-blue-01-light-1 {
   background-color: #8ab1c4;
 }
 
-.ty-text-primary-light-2 {
+.ty-text-blue-01-light-2 {
   color: #4382a1;
 }
 
-.ty-text-hover-primary-light-2:hover {
+.ty-text-hover-blue-01-light-2:hover {
   color: #4382a1;
 }
 
-.ty-bg-primary-light-2 {
+.ty-bg-blue-01-light-2 {
   background-color: #8ab1c4;
 }
 
-.ty-text-primary-light-3 {
+.ty-text-blue-01-light-3 {
   color: #5b92ac;
 }
 
-.ty-text-hover-primary-light-3:hover {
+.ty-text-hover-blue-01-light-3:hover {
   color: #5b92ac;
 }
 
-.ty-bg-primary-light-3 {
+.ty-bg-blue-01-light-3 {
   background-color: #8ab1c4;
 }
 
-.ty-text-primary-light-4 {
+.ty-text-blue-01-light-4 {
   color: #72a1b8;
 }
 
-.ty-text-hover-primary-light-4:hover {
+.ty-text-hover-blue-01-light-4:hover {
   color: #72a1b8;
 }
 
-.ty-bg-primary-light-4 {
+.ty-bg-blue-01-light-4 {
   background-color: #8ab1c4;
 }
 
-.ty-text-primary-light-5 {
+.ty-text-blue-01-light-5 {
   color: #8ab1c4;
 }
 
-.ty-text-hover-primary-light-5:hover {
+.ty-text-hover-blue-01-light-5:hover {
   color: #8ab1c4;
 }
 
-.ty-bg-primary-light-5 {
+.ty-bg-blue-01-light-5 {
   background-color: #8ab1c4;
 }
 
-.ty-text-primary-light-6 {
+.ty-text-blue-01-light-6 {
   color: #a1c1d0;
 }
 
-.ty-text-hover-primary-light-6:hover {
+.ty-text-hover-blue-01-light-6:hover {
   color: #a1c1d0;
 }
 
-.ty-bg-primary-light-6 {
+.ty-bg-blue-01-light-6 {
   background-color: #8ab1c4;
 }
 
-.ty-text-primary-light-7 {
+.ty-text-blue-01-light-7 {
   color: #b9d0dc;
 }
 
-.ty-text-hover-primary-light-7:hover {
+.ty-text-hover-blue-01-light-7:hover {
   color: #b9d0dc;
 }
 
-.ty-bg-primary-light-7 {
+.ty-bg-blue-01-light-7 {
   background-color: #8ab1c4;
 }
 
-.ty-text-primary-light-8 {
+.ty-text-blue-01-light-8 {
   color: #d0e0e7;
 }
 
-.ty-text-hover-primary-light-8:hover {
+.ty-text-hover-blue-01-light-8:hover {
   color: #d0e0e7;
 }
 
-.ty-bg-primary-light-8 {
+.ty-bg-blue-01-light-8 {
   background-color: #8ab1c4;
 }
 
-.ty-text-primary-light-9 {
+.ty-text-blue-01-light-9 {
   color: #e8eff3;
 }
 
-.ty-text-hover-primary-light-9:hover {
+.ty-text-hover-blue-01-light-9:hover {
   color: #e8eff3;
 }
 
-.ty-bg-primary-light-9 {
+.ty-bg-blue-01-light-9 {
   background-color: #8ab1c4;
 }
 
-.ty-text-primary-dark-1 {
+.ty-text-blue-01-dark-1 {
   color: #12597b;
 }
 
-.ty-text-hover-primary-light-1:hover {
+.ty-text-hover-blue-01-light-1:hover {
   color: #12597b;
 }
 
-.ty-bg-primary-dark-1 {
+.ty-bg-blue-01-dark-1 {
   background-color: #12597b;
 }
 
-.ty-text-primary-dark-2 {
+.ty-text-blue-01-dark-2 {
   color: #104f6e;
 }
 
-.ty-text-hover-primary-light-2:hover {
+.ty-text-hover-blue-01-light-2:hover {
   color: #104f6e;
 }
 
-.ty-bg-primary-dark-2 {
+.ty-bg-blue-01-dark-2 {
   background-color: #104f6e;
 }
 
-.ty-text-primary-dark-3 {
+.ty-text-blue-01-dark-3 {
   color: #0e4560;
 }
 
-.ty-text-hover-primary-light-3:hover {
+.ty-text-hover-blue-01-light-3:hover {
   color: #0e4560;
 }
 
-.ty-bg-primary-dark-3 {
+.ty-bg-blue-01-dark-3 {
   background-color: #0e4560;
 }
 
-.ty-text-primary-dark-4 {
+.ty-text-blue-01-dark-4 {
   color: #0c3b52;
 }
 
-.ty-text-hover-primary-light-4:hover {
+.ty-text-hover-blue-01-light-4:hover {
   color: #0c3b52;
 }
 
-.ty-bg-primary-dark-4 {
+.ty-bg-blue-01-dark-4 {
   background-color: #0c3b52;
 }
 
-.ty-text-primary-dark-5 {
+.ty-text-blue-01-dark-5 {
   color: #0a3245;
 }
 
-.ty-text-hover-primary-light-5:hover {
+.ty-text-hover-blue-01-light-5:hover {
   color: #0a3245;
 }
 
-.ty-bg-primary-dark-5 {
+.ty-bg-blue-01-dark-5 {
   background-color: #0a3245;
 }
 
-.ty-text-primary-dark-6 {
+.ty-text-blue-01-dark-6 {
   color: #082837;
 }
 
-.ty-text-hover-primary-light-6:hover {
+.ty-text-hover-blue-01-light-6:hover {
   color: #082837;
 }
 
-.ty-bg-primary-dark-6 {
+.ty-bg-blue-01-dark-6 {
   background-color: #082837;
 }
 
-.ty-text-primary-dark-7 {
+.ty-text-blue-01-dark-7 {
   color: #061e29;
 }
 
-.ty-text-hover-primary-light-7:hover {
+.ty-text-hover-blue-01-light-7:hover {
   color: #061e29;
 }
 
-.ty-bg-primary-dark-7 {
+.ty-bg-blue-01-dark-7 {
   background-color: #061e29;
 }
 
-.ty-text-primary-dark-8 {
+.ty-text-blue-01-dark-8 {
   color: #04141b;
 }
 
-.ty-text-hover-primary-light-8:hover {
+.ty-text-hover-blue-01-light-8:hover {
   color: #04141b;
 }
 
-.ty-bg-primary-dark-8 {
+.ty-bg-blue-01-dark-8 {
   background-color: #04141b;
 }
 
-.ty-text-primary-dark-9 {
+.ty-text-blue-01-dark-9 {
   color: #020a0e;
 }
 
-.ty-text-hover-primary-light-9:hover {
+.ty-text-hover-blue-01-light-9:hover {
   color: #020a0e;
 }
 
-.ty-bg-primary-dark-9 {
+.ty-bg-blue-01-dark-9 {
   background-color: #020a0e;
 }
 
-.ty-text-secondaey {
+.ty-text-clr-five {
   color: #ff9800;
 }
 
-.ty-text-hover-secondaey:hover {
+.ty-text-hover-clr-five:hover {
   color: #ff9800;
 }
 
-.ty-bg-secondaey {
+.ty-bg-clr-five {
   background-color: #ff9800;
 }
 
-.ty-text-secondaey-light-1 {
+.ty-text-clr-five-light-1 {
   color: #ffa21a;
 }
 
-.ty-text-hover-secondaey-light-1:hover {
+.ty-text-hover-clr-five-light-1:hover {
   color: #ffa21a;
 }
 
-.ty-bg-secondaey-light-1 {
+.ty-bg-clr-five-light-1 {
   background-color: #ffcc80;
 }
 
-.ty-text-secondaey-light-2 {
+.ty-text-clr-five-light-2 {
   color: #ffad33;
 }
 
-.ty-text-hover-secondaey-light-2:hover {
+.ty-text-hover-clr-five-light-2:hover {
   color: #ffad33;
 }
 
-.ty-bg-secondaey-light-2 {
+.ty-bg-clr-five-light-2 {
   background-color: #ffcc80;
 }
 
-.ty-text-secondaey-light-3 {
+.ty-text-clr-five-light-3 {
   color: #ffb74d;
 }
 
-.ty-text-hover-secondaey-light-3:hover {
+.ty-text-hover-clr-five-light-3:hover {
   color: #ffb74d;
 }
 
-.ty-bg-secondaey-light-3 {
+.ty-bg-clr-five-light-3 {
   background-color: #ffcc80;
 }
 
-.ty-text-secondaey-light-4 {
+.ty-text-clr-five-light-4 {
   color: #ffc166;
 }
 
-.ty-text-hover-secondaey-light-4:hover {
+.ty-text-hover-clr-five-light-4:hover {
   color: #ffc166;
 }
 
-.ty-bg-secondaey-light-4 {
+.ty-bg-clr-five-light-4 {
   background-color: #ffcc80;
 }
 
-.ty-text-secondaey-light-5 {
+.ty-text-clr-five-light-5 {
   color: #ffcc80;
 }
 
-.ty-text-hover-secondaey-light-5:hover {
+.ty-text-hover-clr-five-light-5:hover {
   color: #ffcc80;
 }
 
-.ty-bg-secondaey-light-5 {
+.ty-bg-clr-five-light-5 {
   background-color: #ffcc80;
 }
 
-.ty-text-secondaey-light-6 {
+.ty-text-clr-five-light-6 {
   color: #ffd699;
 }
 
-.ty-text-hover-secondaey-light-6:hover {
+.ty-text-hover-clr-five-light-6:hover {
   color: #ffd699;
 }
 
-.ty-bg-secondaey-light-6 {
+.ty-bg-clr-five-light-6 {
   background-color: #ffcc80;
 }
 
-.ty-text-secondaey-light-7 {
+.ty-text-clr-five-light-7 {
   color: #ffe0b3;
 }
 
-.ty-text-hover-secondaey-light-7:hover {
+.ty-text-hover-clr-five-light-7:hover {
   color: #ffe0b3;
 }
 
-.ty-bg-secondaey-light-7 {
+.ty-bg-clr-five-light-7 {
   background-color: #ffcc80;
 }
 
-.ty-text-secondaey-light-8 {
+.ty-text-clr-five-light-8 {
   color: #ffeacc;
 }
 
-.ty-text-hover-secondaey-light-8:hover {
+.ty-text-hover-clr-five-light-8:hover {
   color: #ffeacc;
 }
 
-.ty-bg-secondaey-light-8 {
+.ty-bg-clr-five-light-8 {
   background-color: #ffcc80;
 }
 
-.ty-text-secondaey-light-9 {
+.ty-text-clr-five-light-9 {
   color: #fff5e6;
 }
 
-.ty-text-hover-secondaey-light-9:hover {
+.ty-text-hover-clr-five-light-9:hover {
   color: #fff5e6;
 }
 
-.ty-bg-secondaey-light-9 {
+.ty-bg-clr-five-light-9 {
   background-color: #ffcc80;
 }
 
-.ty-text-secondaey-dark-1 {
+.ty-text-clr-five-dark-1 {
   color: #e68900;
 }
 
-.ty-text-hover-secondaey-light-1:hover {
+.ty-text-hover-clr-five-light-1:hover {
   color: #e68900;
 }
 
-.ty-bg-secondaey-dark-1 {
+.ty-bg-clr-five-dark-1 {
   background-color: #e68900;
 }
 
-.ty-text-secondaey-dark-2 {
+.ty-text-clr-five-dark-2 {
   color: #cc7a00;
 }
 
-.ty-text-hover-secondaey-light-2:hover {
+.ty-text-hover-clr-five-light-2:hover {
   color: #cc7a00;
 }
 
-.ty-bg-secondaey-dark-2 {
+.ty-bg-clr-five-dark-2 {
   background-color: #cc7a00;
 }
 
-.ty-text-secondaey-dark-3 {
+.ty-text-clr-five-dark-3 {
   color: #b36a00;
 }
 
-.ty-text-hover-secondaey-light-3:hover {
+.ty-text-hover-clr-five-light-3:hover {
   color: #b36a00;
 }
 
-.ty-bg-secondaey-dark-3 {
+.ty-bg-clr-five-dark-3 {
   background-color: #b36a00;
 }
 
-.ty-text-secondaey-dark-4 {
+.ty-text-clr-five-dark-4 {
   color: #995b00;
 }
 
-.ty-text-hover-secondaey-light-4:hover {
+.ty-text-hover-clr-five-light-4:hover {
   color: #995b00;
 }
 
-.ty-bg-secondaey-dark-4 {
+.ty-bg-clr-five-dark-4 {
   background-color: #995b00;
 }
 
-.ty-text-secondaey-dark-5 {
+.ty-text-clr-five-dark-5 {
   color: #804c00;
 }
 
-.ty-text-hover-secondaey-light-5:hover {
+.ty-text-hover-clr-five-light-5:hover {
   color: #804c00;
 }
 
-.ty-bg-secondaey-dark-5 {
+.ty-bg-clr-five-dark-5 {
   background-color: #804c00;
 }
 
-.ty-text-secondaey-dark-6 {
+.ty-text-clr-five-dark-6 {
   color: #663d00;
 }
 
-.ty-text-hover-secondaey-light-6:hover {
+.ty-text-hover-clr-five-light-6:hover {
   color: #663d00;
 }
 
-.ty-bg-secondaey-dark-6 {
+.ty-bg-clr-five-dark-6 {
   background-color: #663d00;
 }
 
-.ty-text-secondaey-dark-7 {
+.ty-text-clr-five-dark-7 {
   color: #4d2e00;
 }
 
-.ty-text-hover-secondaey-light-7:hover {
+.ty-text-hover-clr-five-light-7:hover {
   color: #4d2e00;
 }
 
-.ty-bg-secondaey-dark-7 {
+.ty-bg-clr-five-dark-7 {
   background-color: #4d2e00;
 }
 
-.ty-text-secondaey-dark-8 {
+.ty-text-clr-five-dark-8 {
   color: #331e00;
 }
 
-.ty-text-hover-secondaey-light-8:hover {
+.ty-text-hover-clr-five-light-8:hover {
   color: #331e00;
 }
 
-.ty-bg-secondaey-dark-8 {
+.ty-bg-clr-five-dark-8 {
   background-color: #331e00;
 }
 
-.ty-text-secondaey-dark-9 {
+.ty-text-clr-five-dark-9 {
   color: #1a0f00;
 }
 
-.ty-text-hover-secondaey-light-9:hover {
+.ty-text-hover-clr-five-light-9:hover {
   color: #1a0f00;
 }
 
-.ty-bg-secondaey-dark-9 {
+.ty-bg-clr-five-dark-9 {
   background-color: #1a0f00;
 }
 
@@ -1768,459 +1857,459 @@ a {
   background-color: #180705;
 }
 
-.ty-text-info {
+.ty-text-title-color {
   color: #13357b;
 }
 
-.ty-text-hover-info:hover {
+.ty-text-hover-title-color:hover {
   color: #13357b;
 }
 
-.ty-bg-info {
+.ty-bg-title-color {
   background-color: #13357b;
 }
 
-.ty-text-info-light-1 {
+.ty-text-title-color-light-1 {
   color: #2b4988;
 }
 
-.ty-text-hover-info-light-1:hover {
+.ty-text-hover-title-color-light-1:hover {
   color: #2b4988;
 }
 
-.ty-bg-info-light-1 {
+.ty-bg-title-color-light-1 {
   background-color: #899abd;
 }
 
-.ty-text-info-light-2 {
+.ty-text-title-color-light-2 {
   color: #425d95;
 }
 
-.ty-text-hover-info-light-2:hover {
+.ty-text-hover-title-color-light-2:hover {
   color: #425d95;
 }
 
-.ty-bg-info-light-2 {
+.ty-bg-title-color-light-2 {
   background-color: #899abd;
 }
 
-.ty-text-info-light-3 {
+.ty-text-title-color-light-3 {
   color: #5a72a3;
 }
 
-.ty-text-hover-info-light-3:hover {
+.ty-text-hover-title-color-light-3:hover {
   color: #5a72a3;
 }
 
-.ty-bg-info-light-3 {
+.ty-bg-title-color-light-3 {
   background-color: #899abd;
 }
 
-.ty-text-info-light-4 {
+.ty-text-title-color-light-4 {
   color: #7186b0;
 }
 
-.ty-text-hover-info-light-4:hover {
+.ty-text-hover-title-color-light-4:hover {
   color: #7186b0;
 }
 
-.ty-bg-info-light-4 {
+.ty-bg-title-color-light-4 {
   background-color: #899abd;
 }
 
-.ty-text-info-light-5 {
+.ty-text-title-color-light-5 {
   color: #899abd;
 }
 
-.ty-text-hover-info-light-5:hover {
+.ty-text-hover-title-color-light-5:hover {
   color: #899abd;
 }
 
-.ty-bg-info-light-5 {
+.ty-bg-title-color-light-5 {
   background-color: #899abd;
 }
 
-.ty-text-info-light-6 {
+.ty-text-title-color-light-6 {
   color: #a1aeca;
 }
 
-.ty-text-hover-info-light-6:hover {
+.ty-text-hover-title-color-light-6:hover {
   color: #a1aeca;
 }
 
-.ty-bg-info-light-6 {
+.ty-bg-title-color-light-6 {
   background-color: #899abd;
 }
 
-.ty-text-info-light-7 {
+.ty-text-title-color-light-7 {
   color: #b8c2d7;
 }
 
-.ty-text-hover-info-light-7:hover {
+.ty-text-hover-title-color-light-7:hover {
   color: #b8c2d7;
 }
 
-.ty-bg-info-light-7 {
+.ty-bg-title-color-light-7 {
   background-color: #899abd;
 }
 
-.ty-text-info-light-8 {
+.ty-text-title-color-light-8 {
   color: #d0d7e5;
 }
 
-.ty-text-hover-info-light-8:hover {
+.ty-text-hover-title-color-light-8:hover {
   color: #d0d7e5;
 }
 
-.ty-bg-info-light-8 {
+.ty-bg-title-color-light-8 {
   background-color: #899abd;
 }
 
-.ty-text-info-light-9 {
+.ty-text-title-color-light-9 {
   color: #e7ebf2;
 }
 
-.ty-text-hover-info-light-9:hover {
+.ty-text-hover-title-color-light-9:hover {
   color: #e7ebf2;
 }
 
-.ty-bg-info-light-9 {
+.ty-bg-title-color-light-9 {
   background-color: #899abd;
 }
 
-.ty-text-info-dark-1 {
+.ty-text-title-color-dark-1 {
   color: #11306f;
 }
 
-.ty-text-hover-info-light-1:hover {
+.ty-text-hover-title-color-light-1:hover {
   color: #11306f;
 }
 
-.ty-bg-info-dark-1 {
+.ty-bg-title-color-dark-1 {
   background-color: #11306f;
 }
 
-.ty-text-info-dark-2 {
+.ty-text-title-color-dark-2 {
   color: #0f2a62;
 }
 
-.ty-text-hover-info-light-2:hover {
+.ty-text-hover-title-color-light-2:hover {
   color: #0f2a62;
 }
 
-.ty-bg-info-dark-2 {
+.ty-bg-title-color-dark-2 {
   background-color: #0f2a62;
 }
 
-.ty-text-info-dark-3 {
+.ty-text-title-color-dark-3 {
   color: #0d2556;
 }
 
-.ty-text-hover-info-light-3:hover {
+.ty-text-hover-title-color-light-3:hover {
   color: #0d2556;
 }
 
-.ty-bg-info-dark-3 {
+.ty-bg-title-color-dark-3 {
   background-color: #0d2556;
 }
 
-.ty-text-info-dark-4 {
+.ty-text-title-color-dark-4 {
   color: #0b204a;
 }
 
-.ty-text-hover-info-light-4:hover {
+.ty-text-hover-title-color-light-4:hover {
   color: #0b204a;
 }
 
-.ty-bg-info-dark-4 {
+.ty-bg-title-color-dark-4 {
   background-color: #0b204a;
 }
 
-.ty-text-info-dark-5 {
+.ty-text-title-color-dark-5 {
   color: #0a1b3e;
 }
 
-.ty-text-hover-info-light-5:hover {
+.ty-text-hover-title-color-light-5:hover {
   color: #0a1b3e;
 }
 
-.ty-bg-info-dark-5 {
+.ty-bg-title-color-dark-5 {
   background-color: #0a1b3e;
 }
 
-.ty-text-info-dark-6 {
+.ty-text-title-color-dark-6 {
   color: #081531;
 }
 
-.ty-text-hover-info-light-6:hover {
+.ty-text-hover-title-color-light-6:hover {
   color: #081531;
 }
 
-.ty-bg-info-dark-6 {
+.ty-bg-title-color-dark-6 {
   background-color: #081531;
 }
 
-.ty-text-info-dark-7 {
+.ty-text-title-color-dark-7 {
   color: #061025;
 }
 
-.ty-text-hover-info-light-7:hover {
+.ty-text-hover-title-color-light-7:hover {
   color: #061025;
 }
 
-.ty-bg-info-dark-7 {
+.ty-bg-title-color-dark-7 {
   background-color: #061025;
 }
 
-.ty-text-info-dark-8 {
+.ty-text-title-color-dark-8 {
   color: #040b19;
 }
 
-.ty-text-hover-info-light-8:hover {
+.ty-text-hover-title-color-light-8:hover {
   color: #040b19;
 }
 
-.ty-bg-info-dark-8 {
+.ty-bg-title-color-dark-8 {
   background-color: #040b19;
 }
 
-.ty-text-info-dark-9 {
+.ty-text-title-color-dark-9 {
   color: #02050c;
 }
 
-.ty-text-hover-info-light-9:hover {
+.ty-text-hover-title-color-light-9:hover {
   color: #02050c;
 }
 
-.ty-bg-info-dark-9 {
+.ty-bg-title-color-dark-9 {
   background-color: #02050c;
 }
 
-.ty-text-blue {
+.ty-text-blue-02 {
   color: #14145E;
 }
 
-.ty-text-hover-blue:hover {
+.ty-text-hover-blue-02:hover {
   color: #14145E;
 }
 
-.ty-bg-blue {
+.ty-bg-blue-02 {
   background-color: #14145E;
 }
 
-.ty-text-blue-light-1 {
+.ty-text-blue-02-light-1 {
   color: #2c2c6e;
 }
 
-.ty-text-hover-blue-light-1:hover {
+.ty-text-hover-blue-02-light-1:hover {
   color: #2c2c6e;
 }
 
-.ty-bg-blue-light-1 {
+.ty-bg-blue-02-light-1 {
   background-color: #8a8aaf;
 }
 
-.ty-text-blue-light-2 {
+.ty-text-blue-02-light-2 {
   color: #43437e;
 }
 
-.ty-text-hover-blue-light-2:hover {
+.ty-text-hover-blue-02-light-2:hover {
   color: #43437e;
 }
 
-.ty-bg-blue-light-2 {
+.ty-bg-blue-02-light-2 {
   background-color: #8a8aaf;
 }
 
-.ty-text-blue-light-3 {
+.ty-text-blue-02-light-3 {
   color: #5b5b8e;
 }
 
-.ty-text-hover-blue-light-3:hover {
+.ty-text-hover-blue-02-light-3:hover {
   color: #5b5b8e;
 }
 
-.ty-bg-blue-light-3 {
+.ty-bg-blue-02-light-3 {
   background-color: #8a8aaf;
 }
 
-.ty-text-blue-light-4 {
+.ty-text-blue-02-light-4 {
   color: #72729e;
 }
 
-.ty-text-hover-blue-light-4:hover {
+.ty-text-hover-blue-02-light-4:hover {
   color: #72729e;
 }
 
-.ty-bg-blue-light-4 {
+.ty-bg-blue-02-light-4 {
   background-color: #8a8aaf;
 }
 
-.ty-text-blue-light-5 {
+.ty-text-blue-02-light-5 {
   color: #8a8aaf;
 }
 
-.ty-text-hover-blue-light-5:hover {
+.ty-text-hover-blue-02-light-5:hover {
   color: #8a8aaf;
 }
 
-.ty-bg-blue-light-5 {
+.ty-bg-blue-02-light-5 {
   background-color: #8a8aaf;
 }
 
-.ty-text-blue-light-6 {
+.ty-text-blue-02-light-6 {
   color: #a1a1bf;
 }
 
-.ty-text-hover-blue-light-6:hover {
+.ty-text-hover-blue-02-light-6:hover {
   color: #a1a1bf;
 }
 
-.ty-bg-blue-light-6 {
+.ty-bg-blue-02-light-6 {
   background-color: #8a8aaf;
 }
 
-.ty-text-blue-light-7 {
+.ty-text-blue-02-light-7 {
   color: #b9b9cf;
 }
 
-.ty-text-hover-blue-light-7:hover {
+.ty-text-hover-blue-02-light-7:hover {
   color: #b9b9cf;
 }
 
-.ty-bg-blue-light-7 {
+.ty-bg-blue-02-light-7 {
   background-color: #8a8aaf;
 }
 
-.ty-text-blue-light-8 {
+.ty-text-blue-02-light-8 {
   color: #d0d0df;
 }
 
-.ty-text-hover-blue-light-8:hover {
+.ty-text-hover-blue-02-light-8:hover {
   color: #d0d0df;
 }
 
-.ty-bg-blue-light-8 {
+.ty-bg-blue-02-light-8 {
   background-color: #8a8aaf;
 }
 
-.ty-text-blue-light-9 {
+.ty-text-blue-02-light-9 {
   color: #e8e8ef;
 }
 
-.ty-text-hover-blue-light-9:hover {
+.ty-text-hover-blue-02-light-9:hover {
   color: #e8e8ef;
 }
 
-.ty-bg-blue-light-9 {
+.ty-bg-blue-02-light-9 {
   background-color: #8a8aaf;
 }
 
-.ty-text-blue-dark-1 {
+.ty-text-blue-02-dark-1 {
   color: #121255;
 }
 
-.ty-text-hover-blue-light-1:hover {
+.ty-text-hover-blue-02-light-1:hover {
   color: #121255;
 }
 
-.ty-bg-blue-dark-1 {
+.ty-bg-blue-02-dark-1 {
   background-color: #121255;
 }
 
-.ty-text-blue-dark-2 {
+.ty-text-blue-02-dark-2 {
   color: #10104b;
 }
 
-.ty-text-hover-blue-light-2:hover {
+.ty-text-hover-blue-02-light-2:hover {
   color: #10104b;
 }
 
-.ty-bg-blue-dark-2 {
+.ty-bg-blue-02-dark-2 {
   background-color: #10104b;
 }
 
-.ty-text-blue-dark-3 {
+.ty-text-blue-02-dark-3 {
   color: #0e0e42;
 }
 
-.ty-text-hover-blue-light-3:hover {
+.ty-text-hover-blue-02-light-3:hover {
   color: #0e0e42;
 }
 
-.ty-bg-blue-dark-3 {
+.ty-bg-blue-02-dark-3 {
   background-color: #0e0e42;
 }
 
-.ty-text-blue-dark-4 {
+.ty-text-blue-02-dark-4 {
   color: #0c0c38;
 }
 
-.ty-text-hover-blue-light-4:hover {
+.ty-text-hover-blue-02-light-4:hover {
   color: #0c0c38;
 }
 
-.ty-bg-blue-dark-4 {
+.ty-bg-blue-02-dark-4 {
   background-color: #0c0c38;
 }
 
-.ty-text-blue-dark-5 {
+.ty-text-blue-02-dark-5 {
   color: #0a0a2f;
 }
 
-.ty-text-hover-blue-light-5:hover {
+.ty-text-hover-blue-02-light-5:hover {
   color: #0a0a2f;
 }
 
-.ty-bg-blue-dark-5 {
+.ty-bg-blue-02-dark-5 {
   background-color: #0a0a2f;
 }
 
-.ty-text-blue-dark-6 {
+.ty-text-blue-02-dark-6 {
   color: #080826;
 }
 
-.ty-text-hover-blue-light-6:hover {
+.ty-text-hover-blue-02-light-6:hover {
   color: #080826;
 }
 
-.ty-bg-blue-dark-6 {
+.ty-bg-blue-02-dark-6 {
   background-color: #080826;
 }
 
-.ty-text-blue-dark-7 {
+.ty-text-blue-02-dark-7 {
   color: #06061c;
 }
 
-.ty-text-hover-blue-light-7:hover {
+.ty-text-hover-blue-02-light-7:hover {
   color: #06061c;
 }
 
-.ty-bg-blue-dark-7 {
+.ty-bg-blue-02-dark-7 {
   background-color: #06061c;
 }
 
-.ty-text-blue-dark-8 {
+.ty-text-blue-02-dark-8 {
   color: #040413;
 }
 
-.ty-text-hover-blue-light-8:hover {
+.ty-text-hover-blue-02-light-8:hover {
   color: #040413;
 }
 
-.ty-bg-blue-dark-8 {
+.ty-bg-blue-02-dark-8 {
   background-color: #040413;
 }
 
-.ty-text-blue-dark-9 {
+.ty-text-blue-02-dark-9 {
   color: #020209;
 }
 
-.ty-text-hover-blue-light-9:hover {
+.ty-text-hover-blue-02-light-9:hover {
   color: #020209;
 }
 
-.ty-bg-blue-dark-9 {
+.ty-bg-blue-02-dark-9 {
   background-color: #020209;
 }
 
@@ -3844,463 +3933,1147 @@ a {
   background-color: #15050d;
 }
 
-.ty-text-indigo {
+.ty-text-indigo-01 {
   color: #6610f2;
 }
 
-.ty-text-hover-indigo:hover {
+.ty-text-hover-indigo-01:hover {
   color: #6610f2;
 }
 
-.ty-bg-indigo {
+.ty-bg-indigo-01 {
   background-color: #6610f2;
 }
 
-.ty-text-indigo-light-1 {
+.ty-text-indigo-01-light-1 {
   color: #7528f3;
 }
 
-.ty-text-hover-indigo-light-1:hover {
+.ty-text-hover-indigo-01-light-1:hover {
   color: #7528f3;
 }
 
-.ty-bg-indigo-light-1 {
+.ty-bg-indigo-01-light-1 {
   background-color: #b388f9;
 }
 
-.ty-text-indigo-light-2 {
+.ty-text-indigo-01-light-2 {
   color: #8540f5;
 }
 
-.ty-text-hover-indigo-light-2:hover {
+.ty-text-hover-indigo-01-light-2:hover {
   color: #8540f5;
 }
 
-.ty-bg-indigo-light-2 {
+.ty-bg-indigo-01-light-2 {
   background-color: #b388f9;
 }
 
-.ty-text-indigo-light-3 {
+.ty-text-indigo-01-light-3 {
   color: #9458f6;
 }
 
-.ty-text-hover-indigo-light-3:hover {
+.ty-text-hover-indigo-01-light-3:hover {
   color: #9458f6;
 }
 
-.ty-bg-indigo-light-3 {
+.ty-bg-indigo-01-light-3 {
   background-color: #b388f9;
 }
 
-.ty-text-indigo-light-4 {
+.ty-text-indigo-01-light-4 {
   color: #a370f7;
 }
 
-.ty-text-hover-indigo-light-4:hover {
+.ty-text-hover-indigo-01-light-4:hover {
   color: #a370f7;
 }
 
-.ty-bg-indigo-light-4 {
+.ty-bg-indigo-01-light-4 {
   background-color: #b388f9;
 }
 
-.ty-text-indigo-light-5 {
+.ty-text-indigo-01-light-5 {
   color: #b388f9;
 }
 
-.ty-text-hover-indigo-light-5:hover {
+.ty-text-hover-indigo-01-light-5:hover {
   color: #b388f9;
 }
 
-.ty-bg-indigo-light-5 {
+.ty-bg-indigo-01-light-5 {
   background-color: #b388f9;
 }
 
-.ty-text-indigo-light-6 {
+.ty-text-indigo-01-light-6 {
   color: #c29ffa;
 }
 
-.ty-text-hover-indigo-light-6:hover {
+.ty-text-hover-indigo-01-light-6:hover {
   color: #c29ffa;
 }
 
-.ty-bg-indigo-light-6 {
+.ty-bg-indigo-01-light-6 {
   background-color: #b388f9;
 }
 
-.ty-text-indigo-light-7 {
+.ty-text-indigo-01-light-7 {
   color: #d1b7fb;
 }
 
-.ty-text-hover-indigo-light-7:hover {
+.ty-text-hover-indigo-01-light-7:hover {
   color: #d1b7fb;
 }
 
-.ty-bg-indigo-light-7 {
+.ty-bg-indigo-01-light-7 {
   background-color: #b388f9;
 }
 
-.ty-text-indigo-light-8 {
+.ty-text-indigo-01-light-8 {
   color: #e0cffc;
 }
 
-.ty-text-hover-indigo-light-8:hover {
+.ty-text-hover-indigo-01-light-8:hover {
   color: #e0cffc;
 }
 
-.ty-bg-indigo-light-8 {
+.ty-bg-indigo-01-light-8 {
   background-color: #b388f9;
 }
 
-.ty-text-indigo-light-9 {
+.ty-text-indigo-01-light-9 {
   color: #f0e7fe;
 }
 
-.ty-text-hover-indigo-light-9:hover {
+.ty-text-hover-indigo-01-light-9:hover {
   color: #f0e7fe;
 }
 
-.ty-bg-indigo-light-9 {
+.ty-bg-indigo-01-light-9 {
   background-color: #b388f9;
 }
 
-.ty-text-indigo-dark-1 {
+.ty-text-indigo-01-dark-1 {
   color: #5c0eda;
 }
 
-.ty-text-hover-indigo-light-1:hover {
+.ty-text-hover-indigo-01-light-1:hover {
   color: #5c0eda;
 }
 
-.ty-bg-indigo-dark-1 {
+.ty-bg-indigo-01-dark-1 {
   background-color: #5c0eda;
 }
 
-.ty-text-indigo-dark-2 {
+.ty-text-indigo-01-dark-2 {
   color: #520dc2;
 }
 
-.ty-text-hover-indigo-light-2:hover {
+.ty-text-hover-indigo-01-light-2:hover {
   color: #520dc2;
 }
 
-.ty-bg-indigo-dark-2 {
+.ty-bg-indigo-01-dark-2 {
   background-color: #520dc2;
 }
 
-.ty-text-indigo-dark-3 {
+.ty-text-indigo-01-dark-3 {
   color: #470ba9;
 }
 
-.ty-text-hover-indigo-light-3:hover {
+.ty-text-hover-indigo-01-light-3:hover {
   color: #470ba9;
 }
 
-.ty-bg-indigo-dark-3 {
+.ty-bg-indigo-01-dark-3 {
   background-color: #470ba9;
 }
 
-.ty-text-indigo-dark-4 {
+.ty-text-indigo-01-dark-4 {
   color: #3d0a91;
 }
 
-.ty-text-hover-indigo-light-4:hover {
+.ty-text-hover-indigo-01-light-4:hover {
   color: #3d0a91;
 }
 
-.ty-bg-indigo-dark-4 {
+.ty-bg-indigo-01-dark-4 {
   background-color: #3d0a91;
 }
 
-.ty-text-indigo-dark-5 {
+.ty-text-indigo-01-dark-5 {
   color: #330879;
 }
 
-.ty-text-hover-indigo-light-5:hover {
+.ty-text-hover-indigo-01-light-5:hover {
   color: #330879;
 }
 
-.ty-bg-indigo-dark-5 {
+.ty-bg-indigo-01-dark-5 {
   background-color: #330879;
 }
 
-.ty-text-indigo-dark-6 {
+.ty-text-indigo-01-dark-6 {
   color: #290661;
 }
 
-.ty-text-hover-indigo-light-6:hover {
+.ty-text-hover-indigo-01-light-6:hover {
   color: #290661;
 }
 
-.ty-bg-indigo-dark-6 {
+.ty-bg-indigo-01-dark-6 {
   background-color: #290661;
 }
 
-.ty-text-indigo-dark-7 {
+.ty-text-indigo-01-dark-7 {
   color: #1f0549;
 }
 
-.ty-text-hover-indigo-light-7:hover {
+.ty-text-hover-indigo-01-light-7:hover {
   color: #1f0549;
 }
 
-.ty-bg-indigo-dark-7 {
+.ty-bg-indigo-01-dark-7 {
   background-color: #1f0549;
 }
 
-.ty-text-indigo-dark-8 {
+.ty-text-indigo-01-dark-8 {
   color: #140330;
 }
 
-.ty-text-hover-indigo-light-8:hover {
+.ty-text-hover-indigo-01-light-8:hover {
   color: #140330;
 }
 
-.ty-bg-indigo-dark-8 {
+.ty-bg-indigo-01-dark-8 {
   background-color: #140330;
 }
 
-.ty-text-indigo-dark-9 {
+.ty-text-indigo-01-dark-9 {
   color: #0a0218;
 }
 
-.ty-text-hover-indigo-light-9:hover {
+.ty-text-hover-indigo-01-light-9:hover {
   color: #0a0218;
 }
 
-.ty-bg-indigo-dark-9 {
+.ty-bg-indigo-01-dark-9 {
   background-color: #0a0218;
 }
 
-.ty-text-cyan {
+.ty-text-cyan-01 {
   color: #0dcaf0;
 }
 
-.ty-text-hover-cyan:hover {
+.ty-text-hover-cyan-01:hover {
   color: #0dcaf0;
 }
 
-.ty-bg-cyan {
+.ty-bg-cyan-01 {
   background-color: #0dcaf0;
 }
 
-.ty-text-cyan-light-1 {
+.ty-text-cyan-01-light-1 {
   color: #25cff2;
 }
 
-.ty-text-hover-cyan-light-1:hover {
+.ty-text-hover-cyan-01-light-1:hover {
   color: #25cff2;
 }
 
-.ty-bg-cyan-light-1 {
+.ty-bg-cyan-01-light-1 {
   background-color: #86e5f8;
 }
 
-.ty-text-cyan-light-2 {
+.ty-text-cyan-01-light-2 {
   color: #3dd5f3;
 }
 
-.ty-text-hover-cyan-light-2:hover {
+.ty-text-hover-cyan-01-light-2:hover {
   color: #3dd5f3;
 }
 
-.ty-bg-cyan-light-2 {
+.ty-bg-cyan-01-light-2 {
   background-color: #86e5f8;
 }
 
-.ty-text-cyan-light-3 {
+.ty-text-cyan-01-light-3 {
   color: #56daf5;
 }
 
-.ty-text-hover-cyan-light-3:hover {
+.ty-text-hover-cyan-01-light-3:hover {
   color: #56daf5;
 }
 
-.ty-bg-cyan-light-3 {
+.ty-bg-cyan-01-light-3 {
   background-color: #86e5f8;
 }
 
-.ty-text-cyan-light-4 {
+.ty-text-cyan-01-light-4 {
   color: #6edff6;
 }
 
-.ty-text-hover-cyan-light-4:hover {
+.ty-text-hover-cyan-01-light-4:hover {
   color: #6edff6;
 }
 
-.ty-bg-cyan-light-4 {
+.ty-bg-cyan-01-light-4 {
   background-color: #86e5f8;
 }
 
-.ty-text-cyan-light-5 {
+.ty-text-cyan-01-light-5 {
   color: #86e5f8;
 }
 
-.ty-text-hover-cyan-light-5:hover {
+.ty-text-hover-cyan-01-light-5:hover {
   color: #86e5f8;
 }
 
-.ty-bg-cyan-light-5 {
+.ty-bg-cyan-01-light-5 {
   background-color: #86e5f8;
 }
 
-.ty-text-cyan-light-6 {
+.ty-text-cyan-01-light-6 {
   color: #9eeaf9;
 }
 
-.ty-text-hover-cyan-light-6:hover {
+.ty-text-hover-cyan-01-light-6:hover {
   color: #9eeaf9;
 }
 
-.ty-bg-cyan-light-6 {
+.ty-bg-cyan-01-light-6 {
   background-color: #86e5f8;
 }
 
-.ty-text-cyan-light-7 {
+.ty-text-cyan-01-light-7 {
   color: #b6effb;
 }
 
-.ty-text-hover-cyan-light-7:hover {
+.ty-text-hover-cyan-01-light-7:hover {
   color: #b6effb;
 }
 
-.ty-bg-cyan-light-7 {
+.ty-bg-cyan-01-light-7 {
   background-color: #86e5f8;
 }
 
-.ty-text-cyan-light-8 {
+.ty-text-cyan-01-light-8 {
   color: #cff4fc;
 }
 
-.ty-text-hover-cyan-light-8:hover {
+.ty-text-hover-cyan-01-light-8:hover {
   color: #cff4fc;
 }
 
-.ty-bg-cyan-light-8 {
+.ty-bg-cyan-01-light-8 {
   background-color: #86e5f8;
 }
 
-.ty-text-cyan-light-9 {
+.ty-text-cyan-01-light-9 {
   color: #e7fafe;
 }
 
-.ty-text-hover-cyan-light-9:hover {
+.ty-text-hover-cyan-01-light-9:hover {
   color: #e7fafe;
 }
 
-.ty-bg-cyan-light-9 {
+.ty-bg-cyan-01-light-9 {
   background-color: #86e5f8;
 }
 
-.ty-text-cyan-dark-1 {
+.ty-text-cyan-01-dark-1 {
   color: #0cb6d8;
 }
 
-.ty-text-hover-cyan-light-1:hover {
+.ty-text-hover-cyan-01-light-1:hover {
   color: #0cb6d8;
 }
 
-.ty-bg-cyan-dark-1 {
+.ty-bg-cyan-01-dark-1 {
   background-color: #0cb6d8;
 }
 
-.ty-text-cyan-dark-2 {
+.ty-text-cyan-01-dark-2 {
   color: #0aa2c0;
 }
 
-.ty-text-hover-cyan-light-2:hover {
+.ty-text-hover-cyan-01-light-2:hover {
   color: #0aa2c0;
 }
 
-.ty-bg-cyan-dark-2 {
+.ty-bg-cyan-01-dark-2 {
   background-color: #0aa2c0;
 }
 
-.ty-text-cyan-dark-3 {
+.ty-text-cyan-01-dark-3 {
   color: #098da8;
 }
 
-.ty-text-hover-cyan-light-3:hover {
+.ty-text-hover-cyan-01-light-3:hover {
   color: #098da8;
 }
 
-.ty-bg-cyan-dark-3 {
+.ty-bg-cyan-01-dark-3 {
   background-color: #098da8;
 }
 
-.ty-text-cyan-dark-4 {
+.ty-text-cyan-01-dark-4 {
   color: #087990;
 }
 
-.ty-text-hover-cyan-light-4:hover {
+.ty-text-hover-cyan-01-light-4:hover {
   color: #087990;
 }
 
-.ty-bg-cyan-dark-4 {
+.ty-bg-cyan-01-dark-4 {
   background-color: #087990;
 }
 
-.ty-text-cyan-dark-5 {
+.ty-text-cyan-01-dark-5 {
   color: #076578;
 }
 
-.ty-text-hover-cyan-light-5:hover {
+.ty-text-hover-cyan-01-light-5:hover {
   color: #076578;
 }
 
-.ty-bg-cyan-dark-5 {
+.ty-bg-cyan-01-dark-5 {
   background-color: #076578;
 }
 
-.ty-text-cyan-dark-6 {
+.ty-text-cyan-01-dark-6 {
   color: #055160;
 }
 
-.ty-text-hover-cyan-light-6:hover {
+.ty-text-hover-cyan-01-light-6:hover {
   color: #055160;
 }
 
-.ty-bg-cyan-dark-6 {
+.ty-bg-cyan-01-dark-6 {
   background-color: #055160;
 }
 
-.ty-text-cyan-dark-7 {
+.ty-text-cyan-01-dark-7 {
   color: #043d48;
 }
 
-.ty-text-hover-cyan-light-7:hover {
+.ty-text-hover-cyan-01-light-7:hover {
   color: #043d48;
 }
 
-.ty-bg-cyan-dark-7 {
+.ty-bg-cyan-01-dark-7 {
   background-color: #043d48;
 }
 
-.ty-text-cyan-dark-8 {
+.ty-text-cyan-01-dark-8 {
   color: #032830;
 }
 
-.ty-text-hover-cyan-light-8:hover {
+.ty-text-hover-cyan-01-light-8:hover {
   color: #032830;
 }
 
-.ty-bg-cyan-dark-8 {
+.ty-bg-cyan-01-dark-8 {
   background-color: #032830;
 }
 
-.ty-text-cyan-dark-9 {
+.ty-text-cyan-01-dark-9 {
   color: #011418;
 }
 
-.ty-text-hover-cyan-light-9:hover {
+.ty-text-hover-cyan-01-light-9:hover {
   color: #011418;
 }
 
-.ty-bg-cyan-dark-9 {
+.ty-bg-cyan-01-dark-9 {
   background-color: #011418;
 }
 
-.ty-navbar .ty-container, .navbar-cyan .ty-container, .navbar-indigo .ty-container, .navbar-pink .ty-container, .navbar-white .ty-container, .navbar-black .ty-container, .navbar-gray .ty-container, .navbar-purple .ty-container, .navbar-orange .ty-container, .navbar-green .ty-container, .navbar-yellow .ty-container, .navbar-red .ty-container, .navbar-blue .ty-container, .navbar-info .ty-container, .navbar-error .ty-container, .navbar-secondaey .ty-container, .navbar-primary .ty-container, .ty-navbar, .navbar-cyan, .navbar-indigo, .navbar-pink, .navbar-white, .navbar-black, .navbar-gray, .navbar-purple, .navbar-orange, .navbar-green, .navbar-yellow, .navbar-red, .navbar-blue, .navbar-info, .navbar-error, .navbar-secondaey, .navbar-primary {
+.ty-text-clr-six {
+  color: #629462;
+}
+
+.ty-text-hover-clr-six:hover {
+  color: #629462;
+}
+
+.ty-bg-clr-six {
+  background-color: #629462;
+}
+
+.ty-text-clr-six-light-1 {
+  color: #729f72;
+}
+
+.ty-text-hover-clr-six-light-1:hover {
+  color: #729f72;
+}
+
+.ty-bg-clr-six-light-1 {
+  background-color: #b1cab1;
+}
+
+.ty-text-clr-six-light-2 {
+  color: #81a981;
+}
+
+.ty-text-hover-clr-six-light-2:hover {
+  color: #81a981;
+}
+
+.ty-bg-clr-six-light-2 {
+  background-color: #b1cab1;
+}
+
+.ty-text-clr-six-light-3 {
+  color: #91b491;
+}
+
+.ty-text-hover-clr-six-light-3:hover {
+  color: #91b491;
+}
+
+.ty-bg-clr-six-light-3 {
+  background-color: #b1cab1;
+}
+
+.ty-text-clr-six-light-4 {
+  color: #a1bfa1;
+}
+
+.ty-text-hover-clr-six-light-4:hover {
+  color: #a1bfa1;
+}
+
+.ty-bg-clr-six-light-4 {
+  background-color: #b1cab1;
+}
+
+.ty-text-clr-six-light-5 {
+  color: #b1cab1;
+}
+
+.ty-text-hover-clr-six-light-5:hover {
+  color: #b1cab1;
+}
+
+.ty-bg-clr-six-light-5 {
+  background-color: #b1cab1;
+}
+
+.ty-text-clr-six-light-6 {
+  color: #c0d4c0;
+}
+
+.ty-text-hover-clr-six-light-6:hover {
+  color: #c0d4c0;
+}
+
+.ty-bg-clr-six-light-6 {
+  background-color: #b1cab1;
+}
+
+.ty-text-clr-six-light-7 {
+  color: #d0dfd0;
+}
+
+.ty-text-hover-clr-six-light-7:hover {
+  color: #d0dfd0;
+}
+
+.ty-bg-clr-six-light-7 {
+  background-color: #b1cab1;
+}
+
+.ty-text-clr-six-light-8 {
+  color: #e0eae0;
+}
+
+.ty-text-hover-clr-six-light-8:hover {
+  color: #e0eae0;
+}
+
+.ty-bg-clr-six-light-8 {
+  background-color: #b1cab1;
+}
+
+.ty-text-clr-six-light-9 {
+  color: #eff4ef;
+}
+
+.ty-text-hover-clr-six-light-9:hover {
+  color: #eff4ef;
+}
+
+.ty-bg-clr-six-light-9 {
+  background-color: #b1cab1;
+}
+
+.ty-text-clr-six-dark-1 {
+  color: #588558;
+}
+
+.ty-text-hover-clr-six-light-1:hover {
+  color: #588558;
+}
+
+.ty-bg-clr-six-dark-1 {
+  background-color: #588558;
+}
+
+.ty-text-clr-six-dark-2 {
+  color: #4e764e;
+}
+
+.ty-text-hover-clr-six-light-2:hover {
+  color: #4e764e;
+}
+
+.ty-bg-clr-six-dark-2 {
+  background-color: #4e764e;
+}
+
+.ty-text-clr-six-dark-3 {
+  color: #456845;
+}
+
+.ty-text-hover-clr-six-light-3:hover {
+  color: #456845;
+}
+
+.ty-bg-clr-six-dark-3 {
+  background-color: #456845;
+}
+
+.ty-text-clr-six-dark-4 {
+  color: #3b593b;
+}
+
+.ty-text-hover-clr-six-light-4:hover {
+  color: #3b593b;
+}
+
+.ty-bg-clr-six-dark-4 {
+  background-color: #3b593b;
+}
+
+.ty-text-clr-six-dark-5 {
+  color: #314a31;
+}
+
+.ty-text-hover-clr-six-light-5:hover {
+  color: #314a31;
+}
+
+.ty-bg-clr-six-dark-5 {
+  background-color: #314a31;
+}
+
+.ty-text-clr-six-dark-6 {
+  color: #273b27;
+}
+
+.ty-text-hover-clr-six-light-6:hover {
+  color: #273b27;
+}
+
+.ty-bg-clr-six-dark-6 {
+  background-color: #273b27;
+}
+
+.ty-text-clr-six-dark-7 {
+  color: #1d2c1d;
+}
+
+.ty-text-hover-clr-six-light-7:hover {
+  color: #1d2c1d;
+}
+
+.ty-bg-clr-six-dark-7 {
+  background-color: #1d2c1d;
+}
+
+.ty-text-clr-six-dark-8 {
+  color: #141e14;
+}
+
+.ty-text-hover-clr-six-light-8:hover {
+  color: #141e14;
+}
+
+.ty-bg-clr-six-dark-8 {
+  background-color: #141e14;
+}
+
+.ty-text-clr-six-dark-9 {
+  color: #0a0f0a;
+}
+
+.ty-text-hover-clr-six-light-9:hover {
+  color: #0a0f0a;
+}
+
+.ty-bg-clr-six-dark-9 {
+  background-color: #0a0f0a;
+}
+
+.ty-text-clr-seven {
+  color: #dba94f;
+}
+
+.ty-text-hover-clr-seven:hover {
+  color: #dba94f;
+}
+
+.ty-bg-clr-seven {
+  background-color: #dba94f;
+}
+
+.ty-text-clr-seven-light-1 {
+  color: #dfb261;
+}
+
+.ty-text-hover-clr-seven-light-1:hover {
+  color: #dfb261;
+}
+
+.ty-bg-clr-seven-light-1 {
+  background-color: #edd4a7;
+}
+
+.ty-text-clr-seven-light-2 {
+  color: #e2ba72;
+}
+
+.ty-text-hover-clr-seven-light-2:hover {
+  color: #e2ba72;
+}
+
+.ty-bg-clr-seven-light-2 {
+  background-color: #edd4a7;
+}
+
+.ty-text-clr-seven-light-3 {
+  color: #e6c384;
+}
+
+.ty-text-hover-clr-seven-light-3:hover {
+  color: #e6c384;
+}
+
+.ty-bg-clr-seven-light-3 {
+  background-color: #edd4a7;
+}
+
+.ty-text-clr-seven-light-4 {
+  color: #e9cb95;
+}
+
+.ty-text-hover-clr-seven-light-4:hover {
+  color: #e9cb95;
+}
+
+.ty-bg-clr-seven-light-4 {
+  background-color: #edd4a7;
+}
+
+.ty-text-clr-seven-light-5 {
+  color: #edd4a7;
+}
+
+.ty-text-hover-clr-seven-light-5:hover {
+  color: #edd4a7;
+}
+
+.ty-bg-clr-seven-light-5 {
+  background-color: #edd4a7;
+}
+
+.ty-text-clr-seven-light-6 {
+  color: #f1ddb9;
+}
+
+.ty-text-hover-clr-seven-light-6:hover {
+  color: #f1ddb9;
+}
+
+.ty-bg-clr-seven-light-6 {
+  background-color: #edd4a7;
+}
+
+.ty-text-clr-seven-light-7 {
+  color: #f4e5ca;
+}
+
+.ty-text-hover-clr-seven-light-7:hover {
+  color: #f4e5ca;
+}
+
+.ty-bg-clr-seven-light-7 {
+  background-color: #edd4a7;
+}
+
+.ty-text-clr-seven-light-8 {
+  color: #f8eedc;
+}
+
+.ty-text-hover-clr-seven-light-8:hover {
+  color: #f8eedc;
+}
+
+.ty-bg-clr-seven-light-8 {
+  background-color: #edd4a7;
+}
+
+.ty-text-clr-seven-light-9 {
+  color: #fbf6ed;
+}
+
+.ty-text-hover-clr-seven-light-9:hover {
+  color: #fbf6ed;
+}
+
+.ty-bg-clr-seven-light-9 {
+  background-color: #edd4a7;
+}
+
+.ty-text-clr-seven-dark-1 {
+  color: #c59847;
+}
+
+.ty-text-hover-clr-seven-light-1:hover {
+  color: #c59847;
+}
+
+.ty-bg-clr-seven-dark-1 {
+  background-color: #c59847;
+}
+
+.ty-text-clr-seven-dark-2 {
+  color: #af873f;
+}
+
+.ty-text-hover-clr-seven-light-2:hover {
+  color: #af873f;
+}
+
+.ty-bg-clr-seven-dark-2 {
+  background-color: #af873f;
+}
+
+.ty-text-clr-seven-dark-3 {
+  color: #997637;
+}
+
+.ty-text-hover-clr-seven-light-3:hover {
+  color: #997637;
+}
+
+.ty-bg-clr-seven-dark-3 {
+  background-color: #997637;
+}
+
+.ty-text-clr-seven-dark-4 {
+  color: #83652f;
+}
+
+.ty-text-hover-clr-seven-light-4:hover {
+  color: #83652f;
+}
+
+.ty-bg-clr-seven-dark-4 {
+  background-color: #83652f;
+}
+
+.ty-text-clr-seven-dark-5 {
+  color: #6e5528;
+}
+
+.ty-text-hover-clr-seven-light-5:hover {
+  color: #6e5528;
+}
+
+.ty-bg-clr-seven-dark-5 {
+  background-color: #6e5528;
+}
+
+.ty-text-clr-seven-dark-6 {
+  color: #584420;
+}
+
+.ty-text-hover-clr-seven-light-6:hover {
+  color: #584420;
+}
+
+.ty-bg-clr-seven-dark-6 {
+  background-color: #584420;
+}
+
+.ty-text-clr-seven-dark-7 {
+  color: #423318;
+}
+
+.ty-text-hover-clr-seven-light-7:hover {
+  color: #423318;
+}
+
+.ty-bg-clr-seven-dark-7 {
+  background-color: #423318;
+}
+
+.ty-text-clr-seven-dark-8 {
+  color: #2c2210;
+}
+
+.ty-text-hover-clr-seven-light-8:hover {
+  color: #2c2210;
+}
+
+.ty-bg-clr-seven-dark-8 {
+  background-color: #2c2210;
+}
+
+.ty-text-clr-seven-dark-9 {
+  color: #161108;
+}
+
+.ty-text-hover-clr-seven-light-9:hover {
+  color: #161108;
+}
+
+.ty-bg-clr-seven-dark-9 {
+  background-color: #161108;
+}
+
+.ty-text-clr-eight {
+  color: #eb6e6e;
+}
+
+.ty-text-hover-clr-eight:hover {
+  color: #eb6e6e;
+}
+
+.ty-bg-clr-eight {
+  background-color: #eb6e6e;
+}
+
+.ty-text-clr-eight-light-1 {
+  color: #ed7d7d;
+}
+
+.ty-text-hover-clr-eight-light-1:hover {
+  color: #ed7d7d;
+}
+
+.ty-bg-clr-eight-light-1 {
+  background-color: #f5b7b7;
+}
+
+.ty-text-clr-eight-light-2 {
+  color: #ef8b8b;
+}
+
+.ty-text-hover-clr-eight-light-2:hover {
+  color: #ef8b8b;
+}
+
+.ty-bg-clr-eight-light-2 {
+  background-color: #f5b7b7;
+}
+
+.ty-text-clr-eight-light-3 {
+  color: #f19a9a;
+}
+
+.ty-text-hover-clr-eight-light-3:hover {
+  color: #f19a9a;
+}
+
+.ty-bg-clr-eight-light-3 {
+  background-color: #f5b7b7;
+}
+
+.ty-text-clr-eight-light-4 {
+  color: #f3a8a8;
+}
+
+.ty-text-hover-clr-eight-light-4:hover {
+  color: #f3a8a8;
+}
+
+.ty-bg-clr-eight-light-4 {
+  background-color: #f5b7b7;
+}
+
+.ty-text-clr-eight-light-5 {
+  color: #f5b7b7;
+}
+
+.ty-text-hover-clr-eight-light-5:hover {
+  color: #f5b7b7;
+}
+
+.ty-bg-clr-eight-light-5 {
+  background-color: #f5b7b7;
+}
+
+.ty-text-clr-eight-light-6 {
+  color: #f7c5c5;
+}
+
+.ty-text-hover-clr-eight-light-6:hover {
+  color: #f7c5c5;
+}
+
+.ty-bg-clr-eight-light-6 {
+  background-color: #f5b7b7;
+}
+
+.ty-text-clr-eight-light-7 {
+  color: #f9d4d4;
+}
+
+.ty-text-hover-clr-eight-light-7:hover {
+  color: #f9d4d4;
+}
+
+.ty-bg-clr-eight-light-7 {
+  background-color: #f5b7b7;
+}
+
+.ty-text-clr-eight-light-8 {
+  color: #fbe2e2;
+}
+
+.ty-text-hover-clr-eight-light-8:hover {
+  color: #fbe2e2;
+}
+
+.ty-bg-clr-eight-light-8 {
+  background-color: #f5b7b7;
+}
+
+.ty-text-clr-eight-light-9 {
+  color: #fdf1f1;
+}
+
+.ty-text-hover-clr-eight-light-9:hover {
+  color: #fdf1f1;
+}
+
+.ty-bg-clr-eight-light-9 {
+  background-color: #f5b7b7;
+}
+
+.ty-text-clr-eight-dark-1 {
+  color: #d46363;
+}
+
+.ty-text-hover-clr-eight-light-1:hover {
+  color: #d46363;
+}
+
+.ty-bg-clr-eight-dark-1 {
+  background-color: #d46363;
+}
+
+.ty-text-clr-eight-dark-2 {
+  color: #bc5858;
+}
+
+.ty-text-hover-clr-eight-light-2:hover {
+  color: #bc5858;
+}
+
+.ty-bg-clr-eight-dark-2 {
+  background-color: #bc5858;
+}
+
+.ty-text-clr-eight-dark-3 {
+  color: #a54d4d;
+}
+
+.ty-text-hover-clr-eight-light-3:hover {
+  color: #a54d4d;
+}
+
+.ty-bg-clr-eight-dark-3 {
+  background-color: #a54d4d;
+}
+
+.ty-text-clr-eight-dark-4 {
+  color: #8d4242;
+}
+
+.ty-text-hover-clr-eight-light-4:hover {
+  color: #8d4242;
+}
+
+.ty-bg-clr-eight-dark-4 {
+  background-color: #8d4242;
+}
+
+.ty-text-clr-eight-dark-5 {
+  color: #763737;
+}
+
+.ty-text-hover-clr-eight-light-5:hover {
+  color: #763737;
+}
+
+.ty-bg-clr-eight-dark-5 {
+  background-color: #763737;
+}
+
+.ty-text-clr-eight-dark-6 {
+  color: #5e2c2c;
+}
+
+.ty-text-hover-clr-eight-light-6:hover {
+  color: #5e2c2c;
+}
+
+.ty-bg-clr-eight-dark-6 {
+  background-color: #5e2c2c;
+}
+
+.ty-text-clr-eight-dark-7 {
+  color: #472121;
+}
+
+.ty-text-hover-clr-eight-light-7:hover {
+  color: #472121;
+}
+
+.ty-bg-clr-eight-dark-7 {
+  background-color: #472121;
+}
+
+.ty-text-clr-eight-dark-8 {
+  color: #2f1616;
+}
+
+.ty-text-hover-clr-eight-light-8:hover {
+  color: #2f1616;
+}
+
+.ty-bg-clr-eight-dark-8 {
+  background-color: #2f1616;
+}
+
+.ty-text-clr-eight-dark-9 {
+  color: #180b0b;
+}
+
+.ty-text-hover-clr-eight-light-9:hover {
+  color: #180b0b;
+}
+
+.ty-bg-clr-eight-dark-9 {
+  background-color: #180b0b;
+}
+
+.ty-navbar .ty-container, .navbar-clr-eight .ty-container, .navbar-clr-seven .ty-container, .navbar-clr-six .ty-container, .navbar-cyan-01 .ty-container, .navbar-indigo-01 .ty-container, .navbar-pink .ty-container, .navbar-white .ty-container, .navbar-black .ty-container, .navbar-gray .ty-container, .navbar-purple .ty-container, .navbar-orange .ty-container, .navbar-green .ty-container, .navbar-yellow .ty-container, .navbar-red .ty-container, .navbar-blue-02 .ty-container, .navbar-title-color .ty-container, .navbar-error .ty-container, .navbar-clr-five .ty-container, .navbar-blue-01 .ty-container, .ty-navbar, .navbar-clr-eight, .navbar-clr-seven, .navbar-clr-six, .navbar-cyan-01, .navbar-indigo-01, .navbar-pink, .navbar-white, .navbar-black, .navbar-gray, .navbar-purple, .navbar-orange, .navbar-green, .navbar-yellow, .navbar-red, .navbar-blue-02, .navbar-title-color, .navbar-error, .navbar-clr-five, .navbar-blue-01 {
   width: 100%;
   display: flex;
   align-items: center;
@@ -4308,18 +5081,18 @@ a {
   box-sizing: border-box;
 }
 
-.ty-navbar, .navbar-cyan, .navbar-indigo, .navbar-pink, .navbar-white, .navbar-black, .navbar-gray, .navbar-purple, .navbar-orange, .navbar-green, .navbar-yellow, .navbar-red, .navbar-blue, .navbar-info, .navbar-error, .navbar-secondaey, .navbar-primary {
+.ty-navbar, .navbar-clr-eight, .navbar-clr-seven, .navbar-clr-six, .navbar-cyan-01, .navbar-indigo-01, .navbar-pink, .navbar-white, .navbar-black, .navbar-gray, .navbar-purple, .navbar-orange, .navbar-green, .navbar-yellow, .navbar-red, .navbar-blue-02, .navbar-title-color, .navbar-error, .navbar-clr-five, .navbar-blue-01 {
   padding: 0.75rem 2.25rem;
   box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.4);
 }
-.ty-navbar .site-title, .navbar-cyan .site-title, .navbar-indigo .site-title, .navbar-pink .site-title, .navbar-white .site-title, .navbar-black .site-title, .navbar-gray .site-title, .navbar-purple .site-title, .navbar-orange .site-title, .navbar-green .site-title, .navbar-yellow .site-title, .navbar-red .site-title, .navbar-blue .site-title, .navbar-info .site-title, .navbar-error .site-title, .navbar-secondaey .site-title, .navbar-primary .site-title {
+.ty-navbar .site-title, .navbar-clr-eight .site-title, .navbar-clr-seven .site-title, .navbar-clr-six .site-title, .navbar-cyan-01 .site-title, .navbar-indigo-01 .site-title, .navbar-pink .site-title, .navbar-white .site-title, .navbar-black .site-title, .navbar-gray .site-title, .navbar-purple .site-title, .navbar-orange .site-title, .navbar-green .site-title, .navbar-yellow .site-title, .navbar-red .site-title, .navbar-blue-02 .site-title, .navbar-title-color .site-title, .navbar-error .site-title, .navbar-clr-five .site-title, .navbar-blue-01 .site-title {
   font-size: 1.5rem;
 }
-.navbar-primary {
+.navbar-blue-01 {
   background-color: #146389;
 }
 
-.navbar-secondaey {
+.navbar-clr-five {
   background-color: #ff9800;
 }
 
@@ -4327,11 +5100,11 @@ a {
   background-color: #f44336;
 }
 
-.navbar-info {
+.navbar-title-color {
   background-color: #13357b;
 }
 
-.navbar-blue {
+.navbar-blue-02 {
   background-color: #14145E;
 }
 
@@ -4371,12 +5144,24 @@ a {
   background-color: #d63384;
 }
 
-.navbar-indigo {
+.navbar-indigo-01 {
   background-color: #6610f2;
 }
 
-.navbar-cyan {
+.navbar-cyan-01 {
   background-color: #0dcaf0;
+}
+
+.navbar-clr-six {
+  background-color: #629462;
+}
+
+.navbar-clr-seven {
+  background-color: #dba94f;
+}
+
+.navbar-clr-eight {
+  background-color: #eb6e6e;
 }
 
 .ty-btn {
@@ -4389,7 +5174,7 @@ a {
   background-color: #e2e2e2;
 }
 
-.ty-btn-primary {
+.ty-btn-blue-01 {
   text-decoration: none;
   cursor: pointer;
   display: inline-block;
@@ -4398,11 +5183,11 @@ a {
   border-radius: 50px;
   background-color: #146389;
 }
-.ty-btn-primary:hover {
+.ty-btn-blue-01:hover {
   background-color: #17739f;
 }
 
-.ty-btn-outlined-primary {
+.ty-btn-outlined-blue-01 {
   text-decoration: none;
   cursor: pointer;
   display: inline-block;
@@ -4412,11 +5197,11 @@ a {
   background-color: #fff;
   border: 1px solid #146389;
 }
-.ty-btn-outlined-primary:hover {
+.ty-btn-outlined-blue-01:hover {
   background-color: #146389;
 }
 
-.ty-btn-complement-primary {
+.ty-btn-complement-blue-01 {
   text-decoration: none;
   cursor: pointer;
   display: inline-block;
@@ -4426,11 +5211,11 @@ a {
   background-color: #146389;
   color: light-comp();
 }
-.ty-btn-complement-primary:hover {
+.ty-btn-complement-blue-01:hover {
   color: #146389;
 }
 
-.ty-btn-secondaey {
+.ty-btn-clr-five {
   text-decoration: none;
   cursor: pointer;
   display: inline-block;
@@ -4439,11 +5224,11 @@ a {
   border-radius: 50px;
   background-color: #ff9800;
 }
-.ty-btn-secondaey:hover {
+.ty-btn-clr-five:hover {
   background-color: #ffa21a;
 }
 
-.ty-btn-outlined-secondaey {
+.ty-btn-outlined-clr-five {
   text-decoration: none;
   cursor: pointer;
   display: inline-block;
@@ -4453,11 +5238,11 @@ a {
   background-color: #fff;
   border: 1px solid #ff9800;
 }
-.ty-btn-outlined-secondaey:hover {
+.ty-btn-outlined-clr-five:hover {
   background-color: #ff9800;
 }
 
-.ty-btn-complement-secondaey {
+.ty-btn-complement-clr-five {
   text-decoration: none;
   cursor: pointer;
   display: inline-block;
@@ -4467,7 +5252,7 @@ a {
   background-color: #ff9800;
   color: light-comp();
 }
-.ty-btn-complement-secondaey:hover {
+.ty-btn-complement-clr-five:hover {
   color: #ff9800;
 }
 
@@ -4512,7 +5297,7 @@ a {
   color: #f44336;
 }
 
-.ty-btn-info {
+.ty-btn-title-color {
   text-decoration: none;
   cursor: pointer;
   display: inline-block;
@@ -4521,11 +5306,11 @@ a {
   border-radius: 50px;
   background-color: #13357b;
 }
-.ty-btn-info:hover {
+.ty-btn-title-color:hover {
   background-color: #163f91;
 }
 
-.ty-btn-outlined-info {
+.ty-btn-outlined-title-color {
   text-decoration: none;
   cursor: pointer;
   display: inline-block;
@@ -4535,11 +5320,11 @@ a {
   background-color: #fff;
   border: 1px solid #13357b;
 }
-.ty-btn-outlined-info:hover {
+.ty-btn-outlined-title-color:hover {
   background-color: #13357b;
 }
 
-.ty-btn-complement-info {
+.ty-btn-complement-title-color {
   text-decoration: none;
   cursor: pointer;
   display: inline-block;
@@ -4549,11 +5334,11 @@ a {
   background-color: #13357b;
   color: light-comp();
 }
-.ty-btn-complement-info:hover {
+.ty-btn-complement-title-color:hover {
   color: #13357b;
 }
 
-.ty-btn-blue {
+.ty-btn-blue-02 {
   text-decoration: none;
   cursor: pointer;
   display: inline-block;
@@ -4562,11 +5347,11 @@ a {
   border-radius: 50px;
   background-color: #14145E;
 }
-.ty-btn-blue:hover {
+.ty-btn-blue-02:hover {
   background-color: #181873;
 }
 
-.ty-btn-outlined-blue {
+.ty-btn-outlined-blue-02 {
   text-decoration: none;
   cursor: pointer;
   display: inline-block;
@@ -4576,11 +5361,11 @@ a {
   background-color: #fff;
   border: 1px solid #14145E;
 }
-.ty-btn-outlined-blue:hover {
+.ty-btn-outlined-blue-02:hover {
   background-color: #14145E;
 }
 
-.ty-btn-complement-blue {
+.ty-btn-complement-blue-02 {
   text-decoration: none;
   cursor: pointer;
   display: inline-block;
@@ -4590,7 +5375,7 @@ a {
   background-color: #14145E;
   color: light-comp();
 }
-.ty-btn-complement-blue:hover {
+.ty-btn-complement-blue-02:hover {
   color: #14145E;
 }
 
@@ -4963,7 +5748,7 @@ a {
   color: #d63384;
 }
 
-.ty-btn-indigo {
+.ty-btn-indigo-01 {
   text-decoration: none;
   cursor: pointer;
   display: inline-block;
@@ -4972,11 +5757,11 @@ a {
   border-radius: 50px;
   background-color: #6610f2;
 }
-.ty-btn-indigo:hover {
+.ty-btn-indigo-01:hover {
   background-color: #7528f3;
 }
 
-.ty-btn-outlined-indigo {
+.ty-btn-outlined-indigo-01 {
   text-decoration: none;
   cursor: pointer;
   display: inline-block;
@@ -4986,11 +5771,11 @@ a {
   background-color: #fff;
   border: 1px solid #6610f2;
 }
-.ty-btn-outlined-indigo:hover {
+.ty-btn-outlined-indigo-01:hover {
   background-color: #6610f2;
 }
 
-.ty-btn-complement-indigo {
+.ty-btn-complement-indigo-01 {
   text-decoration: none;
   cursor: pointer;
   display: inline-block;
@@ -5000,11 +5785,11 @@ a {
   background-color: #6610f2;
   color: light-comp();
 }
-.ty-btn-complement-indigo:hover {
+.ty-btn-complement-indigo-01:hover {
   color: #6610f2;
 }
 
-.ty-btn-cyan {
+.ty-btn-cyan-01 {
   text-decoration: none;
   cursor: pointer;
   display: inline-block;
@@ -5013,11 +5798,11 @@ a {
   border-radius: 50px;
   background-color: #0dcaf0;
 }
-.ty-btn-cyan:hover {
+.ty-btn-cyan-01:hover {
   background-color: #23d0f3;
 }
 
-.ty-btn-outlined-cyan {
+.ty-btn-outlined-cyan-01 {
   text-decoration: none;
   cursor: pointer;
   display: inline-block;
@@ -5027,11 +5812,11 @@ a {
   background-color: #fff;
   border: 1px solid #0dcaf0;
 }
-.ty-btn-outlined-cyan:hover {
+.ty-btn-outlined-cyan-01:hover {
   background-color: #0dcaf0;
 }
 
-.ty-btn-complement-cyan {
+.ty-btn-complement-cyan-01 {
   text-decoration: none;
   cursor: pointer;
   display: inline-block;
@@ -5041,6 +5826,129 @@ a {
   background-color: #0dcaf0;
   color: light-comp();
 }
-.ty-btn-complement-cyan:hover {
+.ty-btn-complement-cyan-01:hover {
   color: #0dcaf0;
+}
+
+.ty-btn-clr-six {
+  text-decoration: none;
+  cursor: pointer;
+  display: inline-block;
+  border: 0;
+  padding: 0.75rem 0.75rem 1.5rem;
+  border-radius: 50px;
+  background-color: #629462;
+}
+.ty-btn-clr-six:hover {
+  background-color: #70a070;
+}
+
+.ty-btn-outlined-clr-six {
+  text-decoration: none;
+  cursor: pointer;
+  display: inline-block;
+  border: 0;
+  padding: 0.75rem 0.75rem 1.5rem;
+  border-radius: 50px;
+  background-color: #fff;
+  border: 1px solid #629462;
+}
+.ty-btn-outlined-clr-six:hover {
+  background-color: #629462;
+}
+
+.ty-btn-complement-clr-six {
+  text-decoration: none;
+  cursor: pointer;
+  display: inline-block;
+  border: 0;
+  padding: 0.75rem 0.75rem 1.5rem;
+  border-radius: 50px;
+  background-color: #629462;
+  color: light-comp();
+}
+.ty-btn-complement-clr-six:hover {
+  color: #629462;
+}
+
+.ty-btn-clr-seven {
+  text-decoration: none;
+  cursor: pointer;
+  display: inline-block;
+  border: 0;
+  padding: 0.75rem 0.75rem 1.5rem;
+  border-radius: 50px;
+  background-color: #dba94f;
+}
+.ty-btn-clr-seven:hover {
+  background-color: #dfb364;
+}
+
+.ty-btn-outlined-clr-seven {
+  text-decoration: none;
+  cursor: pointer;
+  display: inline-block;
+  border: 0;
+  padding: 0.75rem 0.75rem 1.5rem;
+  border-radius: 50px;
+  background-color: #fff;
+  border: 1px solid #dba94f;
+}
+.ty-btn-outlined-clr-seven:hover {
+  background-color: #dba94f;
+}
+
+.ty-btn-complement-clr-seven {
+  text-decoration: none;
+  cursor: pointer;
+  display: inline-block;
+  border: 0;
+  padding: 0.75rem 0.75rem 1.5rem;
+  border-radius: 50px;
+  background-color: #dba94f;
+  color: light-comp();
+}
+.ty-btn-complement-clr-seven:hover {
+  color: #dba94f;
+}
+
+.ty-btn-clr-eight {
+  text-decoration: none;
+  cursor: pointer;
+  display: inline-block;
+  border: 0;
+  padding: 0.75rem 0.75rem 1.5rem;
+  border-radius: 50px;
+  background-color: #eb6e6e;
+}
+.ty-btn-clr-eight:hover {
+  background-color: #ee8484;
+}
+
+.ty-btn-outlined-clr-eight {
+  text-decoration: none;
+  cursor: pointer;
+  display: inline-block;
+  border: 0;
+  padding: 0.75rem 0.75rem 1.5rem;
+  border-radius: 50px;
+  background-color: #fff;
+  border: 1px solid #eb6e6e;
+}
+.ty-btn-outlined-clr-eight:hover {
+  background-color: #eb6e6e;
+}
+
+.ty-btn-complement-clr-eight {
+  text-decoration: none;
+  cursor: pointer;
+  display: inline-block;
+  border: 0;
+  padding: 0.75rem 0.75rem 1.5rem;
+  border-radius: 50px;
+  background-color: #eb6e6e;
+  color: light-comp();
+}
+.ty-btn-complement-clr-eight:hover {
+  color: #eb6e6e;
 }
