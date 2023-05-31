@@ -34,15 +34,15 @@
   --header-background-rgb:225, 234, 239;
   --sidenav-background-rgba:20, 99, 136, 0.1;
   --error: #f44336;
-  --secondary: #ff9800;
+  --clr-five: #ff9800;
   --table-header-background: 20, 99, 136, 0.1;
   --title-color: #13357b;
   --input-border-color-rgba:0, 0, 0, .12;
-  --primary: #146389;
+  --blue-01: #146389;
   --danger: #b11a1a;
   --card-primary: #EAE7FA;
   --card-secondary: #D8E1E7;
-  --blue: #14145E;
+  --blue-02: #14145E;
   --clr-one: #DFF6F1;
   --clr-two: #EFEBE0;
   --clr-three: #F7D6D0;
@@ -79,7 +79,7 @@ a {
   border-radius: 35px;
   width: 20%;
 }
-.search-input .form-control {
+.search-input .ty-form-control {
   display: block;
   width: 100%;
   padding: 0.375rem 0.75rem;
@@ -240,7 +240,7 @@ a {
   background: #ff9800;
 }
 
-.navbar {
+.ty_navbar {
   background-color: rgb(225, 234, 239);
   height: 70px;
   padding: 0px 10px !important;
@@ -251,11 +251,11 @@ a {
   justify-content: space-between;
   border-bottom: 1px solid lightgray;
 }
-.navbar .container-fluid {
+.ty_navbar .ty-container-fluid {
   padding: 0px 30px;
 }
 
-.sidebar {
+.ty_sidebar {
   width: 80px !important;
   visibility: visible !important;
   z-index: 1 !important;
@@ -264,28 +264,28 @@ a {
   margin-top: 10px;
   background-color: rgba(20, 99, 136, 0.1);
 }
-.sidebar .sidebar-inner-container {
+.ty_sidebar .ty-sidebar-inner-container {
   overflow: hidden;
   width: 100%;
   height: 100%;
 }
-.sidebar .side-nav-content {
+.ty_sidebar .ty-side-nav-content {
   width: 100%;
   padding: 10px;
 }
-.sidebar .list-base {
+.ty_sidebar .list-base {
   padding-top: 0px !important;
   overflow: hidden;
   height: 100vh;
   overflow-y: scroll;
 }
-.sidebar .nav-list-text {
+.ty_sidebar .ty-nav-list-text {
   color: #146389;
   font-size: 11px;
   margin-bottom: 20px;
   text-align: center;
 }
-.sidebar .list-base.active {
+.ty_sidebar .list-base.active {
   background: #146389;
   width: 100%;
   font-weight: 500;
@@ -294,11 +294,11 @@ a {
   text-align: center;
   height: 60px;
 }
-.sidebar .list-base.active img {
+.ty_sidebar .list-base.active img {
   width: 30px !important;
   height: 30px;
 }
-.sidebar .icon {
+.ty_sidebar .icon {
   width: 25px;
   font-size: 25px;
   margin: 0px 10px 0px 8px;
