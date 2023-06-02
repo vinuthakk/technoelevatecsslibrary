@@ -5952,3 +5952,420 @@ a {
 .ty-btn-complement-clr-eight:hover {
   color: #eb6e6e;
 }
+
+/*card1*/
+.card-1 {
+  --d: 6px; /* folded part */
+  --c: blue; /* color */
+  --f: 16px; /* ribbon font-size */
+  width: 100%;
+  height: 180px;
+  position: relative;
+  display: inline-block;
+  margin: 20px 0px;
+  background: #13357b;
+}
+
+.card-1::before {
+  content: attr(data-ribbon);
+  position: absolute;
+  font-size: var(--f);
+  top: 0;
+  right: 0;
+  transform: translate(29.29%, -100%) rotate(45deg);
+  color: #fff;
+  text-align: center;
+  border: 1px solid transparent;
+  border-bottom: 0;
+  transform-origin: bottom left;
+  padding: 5px 35px calc(var(--d) + 5px);
+  background: linear-gradient(rgba(0, 0, 0, 0.5) 0 0) bottom/100% var(--d) no-repeat var(--c);
+  background-clip: padding-box;
+  clip-path: polygon(0 0, 100% 0, 100% 100%, calc(100% - var(--d)) calc(100% - var(--d)), var(--d) calc(100% - var(--d)), 0 100%);
+  -webkit-mask: linear-gradient(135deg, transparent calc(50% - var(--d) * 0.707), #fff 0) bottom left, linear-gradient(-135deg, transparent calc(50% - var(--d) * 0.707), #fff 0) bottom right;
+  -webkit-mask-size: 300vmax 300vmax;
+  -webkit-mask-composite: destination-in;
+  mask-composite: intersect;
+}
+
+.left::before {
+  left: 0;
+  right: auto;
+  transform: translate(-29.29%, -100%) rotate(-45deg);
+  transform-origin: bottom right;
+}
+
+.card-1 h1 {
+  transform: translate(0px, 10px) rotate(-45deg);
+  position: absolute;
+  font-size: 36px;
+  font-weight: 900;
+  color: #ff9800;
+}
+
+.card-1 .part {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+}
+
+.card-1 .part div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  flex-direction: column;
+  margin: 0px 20px;
+}
+
+.card-1 .part h2 {
+  font-weight: 500;
+  font-size: 40px;
+  color: #ff9800;
+}
+
+.card-1 label {
+  font-size: 18px;
+  font-weight: 400;
+  color: white;
+}
+
+/*card1 end*/
+/*card2*/
+.card-2 .box {
+  padding: 1em 0;
+  position: relative;
+}
+
+.card-2 .ribbon-wrap {
+  position: relative;
+  width: 70%;
+  margin-bottom: 20px;
+  margin-left: -15px;
+  font-size: 18px;
+  line-height: 18px;
+  transition: width 500ms cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+.card-2 .ribbon-wrap .ribbon {
+  position: relative;
+}
+.card-2 .ribbon-wrap .ribbon:before {
+  content: "";
+  height: 0;
+  width: 0;
+  display: block;
+  position: absolute;
+  top: 3px;
+  right: 0;
+  border-top: 29px solid rgba(0, 0, 0, 0.3);
+  border-bottom: 29px solid rgba(0, 0, 0, 0.3);
+  border-left: 29px solid rgba(0, 0, 0, 0.3);
+  border-right: 29px solid transparent;
+}
+.card-2 .ribbon-wrap .ribbon:after {
+  content: "";
+  height: 3px;
+  background: rgba(0, 0, 0, 0.3);
+  display: block;
+  position: absolute;
+  bottom: -3px;
+  left: 15px;
+  right: 58px;
+}
+
+.card-2 .ribbon a {
+  display: block;
+  padding: 20px;
+  position: relative;
+  background: orange;
+  height: 58px;
+  margin-right: 29px;
+  color: #fff;
+  text-decoration: none;
+}
+.card-2 .ribbon a:after {
+  content: "";
+  height: 0;
+  width: 0;
+  display: block;
+  position: absolute;
+  bottom: -15px;
+  left: 0;
+  border-top: 15px solid #004a70;
+  border-left: 15px solid transparent;
+}
+.card-2 .ribbon a:before {
+  content: "";
+  height: 0;
+  width: 0;
+  display: block;
+  position: absolute;
+  top: 0;
+  right: -29px;
+  border-top: 29px solid ORANGE;
+  border-bottom: 29px solid orange;
+  border-right: 29px solid transparent;
+  border-left: 29px solid transparent;
+}
+
+.card-2 .ribbon-content {
+  margin-top: 3px;
+  margin-right: 10px;
+  margin-left: 10px;
+  padding-right: 20px;
+  padding-bottom: 20px;
+  padding-left: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.card-2 .box {
+  width: 100%;
+  height: auto;
+  background: #13357b;
+  margin: 20px 0px;
+  border-radius: 4px;
+}
+
+.card-2 .box-shadow {
+  position: relative;
+}
+.card-2 .box-shadow:before, .card-2 .box-shadow:after {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  top: 0;
+  bottom: 0;
+  left: 10px;
+  right: 10px;
+  border-radius: 100px/10px;
+}
+.card-2 .box-shadow:after {
+  right: 10px;
+  left: auto;
+  transform: skew(8deg) rotate(3deg);
+}
+
+.card-2 .final h1 {
+  font-size: 40px;
+  font-weight: 900;
+  color: #ff9800;
+}
+
+.box .part {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  height: 100%;
+}
+
+.box .part div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  flex-direction: column;
+  margin: 0px 20px;
+}
+
+.card-2 .part h2 {
+  font-weight: 500;
+  font-size: 40px;
+  color: #ff9800;
+}
+
+.card-2 label {
+  font-size: 18px;
+  font-weight: 400;
+  color: white;
+}
+
+/*card-2 end*/
+/*card-3*/
+.card-3 .finalselected h1 {
+  font-weight: 900;
+  font-size: 40px;
+  color: #ff9800;
+}
+
+.card-3 label {
+  font-size: 18px;
+  font-weight: 400;
+  color: white;
+}
+
+.card-3 .part h2 {
+  font-weight: 500;
+  font-size: 40px;
+  text-align: center;
+  color: #ff9800;
+}
+
+.card-3 .finalselected::after {
+  content: "";
+  background-color: white;
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  margin-top: 108px;
+}
+
+/*card-3 end*/
+/*card-4*/
+.card-4 .finalselected h1 {
+  font-weight: 900;
+  font-size: 40px;
+  color: #ff9800;
+}
+
+.card-4 label {
+  font-size: 18px;
+  font-weight: 400;
+  color: white;
+}
+
+.card-4 .part h2 {
+  font-weight: 500;
+  font-size: 40px;
+  text-align: center;
+  color: #ff9800;
+}
+
+.card-4 .line::after {
+  content: "";
+  background-color: white;
+  width: 2px;
+  height: 100%;
+  position: absolute;
+  top: 0px;
+  margin-left: 0px;
+}
+
+.card-4 .onboard {
+  position: relative;
+  width: 100%;
+}
+
+.card-4 .hrline {
+  width: 100%;
+  height: 3px;
+  background: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  position: absolute;
+  top: 48%;
+  margin-left: 0px;
+  transform: translate(0%, -50%);
+}
+
+/*card-4 end*/
+/*card-5*/
+.card-5 .finalselected h1 {
+  font-weight: 900;
+  font-size: 40px;
+  color: #ff9800;
+}
+
+.card-5 label {
+  font-size: 18px;
+  font-weight: 400;
+  color: white;
+}
+
+.card-5 .part h2 {
+  font-weight: 500;
+  font-size: 40px;
+  text-align: center;
+  color: #ff9800;
+  margin-bottom: 0px;
+}
+
+.card-5 .number {
+  background: white;
+  border: 2px solid #146389;
+  width: 100px;
+  height: 100px;
+  position: absolute;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 900;
+  position: absolute;
+  top: 5%;
+  left: 50%;
+  transform: translate(-50%, -56%);
+  box-shadow: 0px 0px 9px #146389;
+}
+
+/*card-5 end*/
+/*card-6*/
+.card-6 .finalselected h1 {
+  font-weight: 900;
+  font-size: 40px;
+  color: #ff9800;
+}
+
+.card-6 label {
+  font-size: 18px;
+  font-weight: 400;
+  color: white;
+}
+
+.card-6 .part h2 {
+  font-weight: 500;
+  font-size: 40px;
+  text-align: center;
+  color: #ff9800;
+  margin-bottom: 0px;
+}
+
+.card-6 .numbers {
+  background: white;
+  border-radius: 50%;
+  width: 80px;
+  height: 80px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.card-6 .onboard {
+  position: relative;
+  width: 100%;
+}
+
+.card-6 .hrline {
+  width: 100%;
+  height: 3px;
+  background: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  position: absolute;
+  top: 48%;
+  margin-left: 0px;
+  transform: translate(0%, -50%);
+}
+
+.card-6 .line::after {
+  content: "";
+  background-color: white;
+  width: 2px;
+  height: 100%;
+  position: absolute;
+  top: 0px;
+  margin-left: 0px;
+}
+
+/*card-6 end*/
+.card-design {
+  background: #146389;
+  border: 1px solid;
+  padding: 1rem;
+}
