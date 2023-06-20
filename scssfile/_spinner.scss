@@ -1,5 +1,5 @@
 
-.spinner1{
+.spinner{
     position: fixed;
     top: 0%;
     background: rgba(0, 0, 0, 0.8);
@@ -86,45 +86,7 @@
     border-radius: 50%;
     box-shadow: inset 4px 0 0 4px white;
   }
-//   .spinner2{
-//     display: inline-block;
-//     width: 91px;
-//     height: 107px;
-//     border-radius: 50%;
-//     box-shadow: inset -15px 3px 0px 14px #ff9800;
-//     position: absolute;
-//     top: 36%;
-//     left: 44%;
-//   }
-//   .spinner2{
-//     display: inline-block;
-//     width: 100px;
-//     height: 107px;
-//     border-radius: 50%;
-//     box-shadow: inset 0px 11px 0px 2px #ff9800;
-//     position: absolute;
-//     top: 36%;
-//     left: 43.3%;
-//   }
-//   .spinner2{
-//     display: inline-block;
-//     width: 100px;
-//     height: 107px;
-//     border-radius: 50%;
-//     box-shadow: inset -12px 12px 0px -6px #ff9800;
-//     position: absolute;
-//     top: 36%;
-//     left: 43.3%;
-//   }
 
-//  .spinner4{
-//     position: absolute;
-//     top: 50%;
-//     left: 50%;
-//     display:inline-block; width: 50px; height: 50px;
-//     border-radius: 50%;
-//     box-shadow: inset -2px 0 0 2px #0bf;
-//  }
 
 .spinner4{
     position: absolute;
@@ -141,9 +103,9 @@
 .blink {
     position: absolute;
     top: 49.5%;
-    left: 47.2%;
+    left: 47.1%;
     transform: translate(-50%, -50%);
-    width: 6%;
+    width: 6.4%;
     animation: blink 2s infinite linear backwards;
   }
   

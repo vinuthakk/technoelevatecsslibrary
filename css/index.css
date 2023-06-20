@@ -6399,7 +6399,7 @@ a {
   padding: 1rem;
 }
 
-.spinner1 {
+.spinner {
   position: fixed;
   top: 0%;
   background: rgba(0, 0, 0, 0.8);
@@ -6506,9 +6506,9 @@ a {
 .blink {
   position: absolute;
   top: 49.5%;
-  left: 47.2%;
+  left: 47.1%;
   transform: translate(-50%, -50%);
-  width: 6%;
+  width: 6.4%;
   animation: blink 2s infinite linear backwards;
 }
 
