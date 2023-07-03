@@ -1,0 +1,88 @@
+.ty-sidenav{
+    width: 80px !important;
+    visibility: visible !important;
+    z-index: 1 !important;
+    transform: none;
+    transition: right 250ms ease-in, width 250ms ease-in;
+    box-shadow: 1px -1px 0px lightgrey !important;
+    border-top-right-radius: 15px;
+    margin-top: 10px;
+    background-color: rgba(20, 99, 136, 0.1);
+    color: white;
+    z-index: 1 !important;
+    position: absolute;
+    height: calc(100% - 10px);
+    overflow: hidden;
+}
+.ty-sidenav a{
+    cursor: pointer;
+}
+  :host::ng-deep.mat-list-base {
+    padding-top: 0px !important;
+    overflow: hidden;
+    height: 100vh;
+    overflow-y: scroll;
+  }
+  .ty-sidenav .mat-nav-list{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .ty-sidenav .ty-side-nav-content{
+  color: white;
+  width:80px;
+  padding: 10px 5px;
+  
+  }
+ .ty-sidenav .mat-list-item{
+    display: flex;
+    height: 50px !important;
+    align-items: center;
+    justify-content: center;
+}
+
+.ty-sidenav  .mat-list-item .listName{
+  font-weight: 500;
+  font-size: 14px;
+  color: white;
+  width: 170px;
+  text-transform: capitalize;
+  font-family: Bahnschrift SemiCondensed;
+  }
+
+  
+  .ty-sidenav .list{
+    margin-left: 40px !important;
+    color:#6B6B6B;
+  }
+  .ty-sidenav .icon{
+    line-height: 25px;
+  
+  }
+  .ty-sidenav .mat-list-item.active img{
+    width: 30px !important;
+    height: 30px;
+  }
+
+  .ty-sidenav .listname{
+  color:#146389;font-size:11px;margin-bottom: 20px;
+  text-align: center;
+  font-family: Bahnschrift SemiCondensed;
+  }
+
+  .ty-sidenav .mat-list-item.active{
+    background: #ff9800;
+    width: 70%;
+    font-weight: 500;
+    border-radius: 10px;
+    height: 50px !important;
+    text-align: center;
+  }
+
+  ::-webkit-scrollbar {
+    width: 0px;
+  }
+  
+
+  

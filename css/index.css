@@ -257,10 +257,10 @@ a {
 
 .logo h1 .pro {
   background: #146389;
-  padding: 10px 3px 10px 15px;
   border: 5px solid white;
   border-right: 0px;
-  font-size: 40px;
+  padding: 7px 3px 7px 15px;
+  font-size: 28px;
   color: white;
   letter-spacing: 4px;
   font-family: Bahnschrift SemiCondensed;
@@ -268,18 +268,18 @@ a {
 
 .logo h1 .serv {
   background: red;
-  padding: 10px 15px 10px 5px;
   border: 5px solid white;
   border-left: 0px;
-  font-size: 40px;
+  padding: 7px 15px 7px 5px !important;
+  font-size: 28px;
   color: white;
   letter-spacing: 3px;
   font-family: Bahnschrift SemiCondensed;
 }
 
 .logo sup {
-  top: -1.2em;
-  font-size: 20px;
+  top: -0.7em !important;
+  font-size: 12px;
   letter-spacing: 0px;
   font-family: Bahnschrift SemiCondensed;
 }
@@ -5102,95 +5102,180 @@ a {
   background-color: #180b0b;
 }
 
-.ty-navbar .ty-container, .navbar-clr-eight .ty-container, .navbar-clr-seven .ty-container, .navbar-clr-six .ty-container, .navbar-cyan-01 .ty-container, .navbar-indigo-01 .ty-container, .navbar-pink .ty-container, .navbar-white .ty-container, .navbar-black .ty-container, .navbar-gray .ty-container, .navbar-purple .ty-container, .navbar-orange .ty-container, .navbar-green .ty-container, .navbar-yellow .ty-container, .navbar-red .ty-container, .navbar-blue-02 .ty-container, .navbar-title-color .ty-container, .navbar-error .ty-container, .navbar-clr-five .ty-container, .navbar-blue-01 .ty-container, .ty-navbar, .navbar-clr-eight, .navbar-clr-seven, .navbar-clr-six, .navbar-cyan-01, .navbar-indigo-01, .navbar-pink, .navbar-white, .navbar-black, .navbar-gray, .navbar-purple, .navbar-orange, .navbar-green, .navbar-yellow, .navbar-red, .navbar-blue-02, .navbar-title-color, .navbar-error, .navbar-clr-five, .navbar-blue-01 {
+.ty-navbar .fas, .ty-navbar .far, .ty-navbar .fa {
+  font-size: 1.2rem;
+}
+
+.ty-navbar ul li {
+  margin-left: 20px;
+}
+
+.ty-navbar li i:hover {
+  color: #1561CF;
+}
+
+.ty-navbar h1 {
+  line-height: 0px;
+}
+
+.ty-navbar a {
+  text-decoration: none;
+}
+
+.ty-navbar .navbar {
+  position: relative;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -ms-flex-align: center;
+  align-items: center;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  padding: 1.1rem 1rem !important;
+  background-color: #F8F8F8;
+  border-bottom: 1px solid lightgray;
+}
+
+.ty-navbar .image {
+  width: 35px;
+}
+
+.ty-navbar.mobile {
+  display: none;
+}
+
+.ty-navbar .logout {
+  /* border: 2px solid #ff9800; */
+  /* border-radius: 10px; */
+  /* padding: 8px 8px; */
+  font-weight: bold;
+  height: 33px;
+  color: white !important;
+}
+
+.ty-navbar .dropbtn {
+  background-color: transparent;
+  color: white;
+  padding: 0px 16px;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+}
+
+.ty-navbar .dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.ty-navbar .dropdown-content {
+  /* display: none; */
+  cursor: pointer;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 100%;
+  box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.11);
+  z-index: 999;
+  border-radius: 10px;
+}
+
+.ty-navbar .dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.ty-navbar .menu {
+  padding: 15px;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
   width: 100%;
+  background: white;
+}
+
+.ty-navbar #nav-header {
+  background-color: rgb(225, 234, 239);
+  border-radius: 0px 0px 0px 30px;
+  padding: 6px 50px !important;
+}
+
+.ty-navbar .dropbtn {
+  background: #146389;
+  border-radius: 50%;
+  height: 50px;
+  width: 50px;
   display: flex;
   align-items: center;
-  justify-content: space-between;
-  box-sizing: border-box;
+  justify-content: center;
+  padding: 9px 9px 10px 10px !important;
 }
 
-.ty-navbar, .navbar-clr-eight, .navbar-clr-seven, .navbar-clr-six, .navbar-cyan-01, .navbar-indigo-01, .navbar-pink, .navbar-white, .navbar-black, .navbar-gray, .navbar-purple, .navbar-orange, .navbar-green, .navbar-yellow, .navbar-red, .navbar-blue-02, .navbar-title-color, .navbar-error, .navbar-clr-five, .navbar-blue-01 {
-  padding: 0.75rem 2.25rem;
-  box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.4);
-}
-.ty-navbar .site-title, .navbar-clr-eight .site-title, .navbar-clr-seven .site-title, .navbar-clr-six .site-title, .navbar-cyan-01 .site-title, .navbar-indigo-01 .site-title, .navbar-pink .site-title, .navbar-white .site-title, .navbar-black .site-title, .navbar-gray .site-title, .navbar-purple .site-title, .navbar-orange .site-title, .navbar-green .site-title, .navbar-yellow .site-title, .navbar-red .site-title, .navbar-blue-02 .site-title, .navbar-title-color .site-title, .navbar-error .site-title, .navbar-clr-five .site-title, .navbar-blue-01 .site-title {
-  font-size: 1.5rem;
-}
-.navbar-blue-01 {
-  background-color: #146389;
+.ty-navbar .dropbtn:hover {
+  background: #fba91e;
 }
 
-.navbar-clr-five {
-  background-color: #ff9800;
+.ty-navbar .fa-bell {
+  color: #146389;
+  font-size: 18px;
+  margin: 0px 20px;
 }
 
-.navbar-error {
-  background-color: #f44336;
+.ty-navbar .nav-link {
+  display: block;
+  padding: 0.5rem 1rem;
+  text-decoration: none;
+  color: #A4A4A4 !important;
 }
 
-.navbar-title-color {
-  background-color: #13357b;
+.ty-navbar .logog h1 .pro {
+  background: #146389;
+  border: 5px solid white;
+  border-right: 0px;
+  padding: 7px 3px 7px 15px;
+  font-size: 28px;
+  color: white;
+  letter-spacing: 4px;
+  font-family: Bahnschrift SemiCondensed;
 }
 
-.navbar-blue-02 {
-  background-color: #14145E;
+.ty-navbar .logog h1 .serv {
+  background: red;
+  border: 5px solid white;
+  border-left: 0px;
+  padding: 7px 15px 7px 5px !important;
+  font-size: 28px;
+  color: white;
+  letter-spacing: 3px;
+  font-family: Bahnschrift SemiCondensed;
 }
 
-.navbar-red {
-  background-color: #ed0000;
+.ty-navbar .logog sup {
+  top: -0.7em !important;
+  font-size: 12px;
+  letter-spacing: 0px;
+  font-family: Bahnschrift SemiCondensed;
 }
 
-.navbar-yellow {
-  background-color: #e6e619;
+.ty-navbar .fa-home, .fa-sign-out {
+  color: #146389;
+  font-size: 18px;
 }
 
-.navbar-green {
-  background-color: #19e635;
+.ty-navbar .dropdown-item {
+  padding: 0.25rem 0.8rem;
+  cursor: pointer;
 }
 
-.navbar-orange {
-  background-color: #ffa600;
+.ty-navbar .dropdown-menu {
+  min-width: 8rem !important;
 }
 
-.navbar-purple {
-  background-color: #9900ff;
+.ty-navbar .dropdown-toggle::after {
+  display: none !important;
 }
 
-.navbar-gray {
-  background-color: #808080;
-}
-
-.navbar-black {
-  background-color: black;
-}
-
-.navbar-white {
-  background-color: white;
-}
-
-.navbar-pink {
-  background-color: #d63384;
-}
-
-.navbar-indigo-01 {
-  background-color: #6610f2;
-}
-
-.navbar-cyan-01 {
-  background-color: #0dcaf0;
-}
-
-.navbar-clr-six {
-  background-color: #629462;
-}
-
-.navbar-clr-seven {
-  background-color: #dba94f;
-}
-
-.navbar-clr-eight {
-  background-color: #eb6e6e;
+.ty-navbar .container-fluid {
+  padding: 0px 30px;
 }
 
 .ty-btn {
@@ -6561,4 +6646,255 @@ a {
   left: 44%;
   width: 6.4%;
   animation: rotate 3s infinite linear backwards;
+}
+
+/*
+ Global/reset css styles, imported from:
+ 'https://dora.michalostamou.me/global.css'
+ @see https://github.com/dora-micha/global-css
+*/
+/*
+  Component styles
+*/
+.stepProgressBar {
+  --stepProgressBar-space-unit: 4px;
+  --stepProgressBar-indicator-size: 16px;
+  --stepProgressBar-font-size: 14px;
+  --stepProgressBar-step-size: 80px;
+  --stepProgressBar-step-line-size: 2px;
+  --stepProgressBar-color-primary: #3F0FFF;
+  --stepProgressBar-color-secondary: #d1d5db;
+  --stepProgressBar-color-neutral: #fff;
+  --stepProgressBar-color-neutral-400: #a3a3a3;
+  --stepProgressBar-color-neutral-800: #262626;
+  display: flex;
+  width: 100%;
+}
+
+.stepProgressBar__step {
+  display: flex;
+}
+
+.stepProgressBar__step:not(:first-child) {
+  width: 100%;
+}
+
+/* --- button ---- */
+.stepProgressBar__step__button {
+  align-items: center;
+  color: var(--stepProgressBar-color-neutral-400);
+  display: flex;
+  font-size: var(--stepProgressBar-font-size);
+  flex-direction: column;
+  flex-shrink: 0;
+  position: relative;
+  transition: color 0.2s ease-in;
+  width: var(--stepProgressBar-step-size);
+}
+
+.stepProgressBar__step--current .stepProgressBar__step__button {
+  color: var(--stepProgressBar-color-neutral-800);
+}
+
+.stepProgressBar__step__button__indicator {
+  align-items: center;
+  background-color: var(--stepProgressBar-color-secondary);
+  border: calc(var(--stepProgressBar-indicator-size) / 3.5) solid var(--stepProgressBar-color-neutral);
+  border-radius: 100%;
+  display: flex;
+  justify-content: center;
+  height: var(--stepProgressBar-indicator-size);
+  transition: background-color 0.3s ease-in;
+  width: var(--stepProgressBar-indicator-size);
+}
+
+.stepProgressBar__step--current .stepProgressBar__step__button__indicator {
+  background-color: var(--stepProgressBar-color-neutral);
+  border: calc(var(--stepProgressBar-indicator-size) / 4) solid var(--stepProgressBar-color-primary);
+  transition: all 0.3s ease-in;
+}
+
+.stepProgressBar__step--completed .stepProgressBar__step__button__indicator {
+  border: 0;
+  transition: all 0.3s ease-in;
+}
+
+.stepProgressBar__step:not(.stepProgressBar__step--current).stepProgressBar__step--navigable .stepProgressBar__step__button__indicator {
+  background-color: var(--stepProgressBar-color-primary);
+  transition: all 0.3s ease-in;
+}
+
+.stepProgressBar__step__button__indicator__icon-completed {
+  fill: transparent;
+}
+
+.stepProgressBar__step--completed .stepProgressBar__step__button__indicator__icon-completed {
+  animation: fillColorChange 0.2s ease-in 0.3s forwards;
+}
+
+.stepProgressBar__step__button__label {
+  margin-top: var(--stepProgressBar-space-unit);
+}
+
+/* --- button states ---- */
+@supports selector(:hover) {
+  .stepProgressBar__step__button:hover {
+    color: var(--stepProgressBar-color-primary);
+  }
+  .stepProgressBar__step:not(.stepProgressBar__step--current) .stepProgressBar__step__button:hover .stepProgressBar__step__button__indicator {
+    background-color: var(--stepProgressBar-color-primary);
+  }
+}
+.stepProgressBar__step__button:focus-visible {
+  border-radius: 4px;
+  outline: var(--stepProgressBar-color-primary) solid 2px;
+}
+
+@supports not selector(:focus-visible) { /* fallback for browsers without focus-visible support */
+  .stepProgressBar__step__button:focus {
+    border-radius: 4px;
+    outline: var(--stepProgressBar-color-primary) solid 2px;
+  }
+}
+/* --- line ---- */
+.stepProgressBar__step__line {
+  background-color: var(--stepProgressBar-color-secondary);
+  height: var(--stepProgressBar-step-line-size);
+  margin-top: calc(var(--stepProgressBar-indicator-size) / 2 - var(--stepProgressBar-step-line-size) / 2);
+  margin-left: calc(var(--stepProgressBar-step-size) / 2 * -1);
+  margin-right: calc(var(--stepProgressBar-step-size) / 2 * -1);
+  transition: background-color 0.3s ease-in;
+  width: 100%;
+}
+
+.stepProgressBar__step--navigable .stepProgressBar__step__line {
+  background-color: var(--stepProgressBar-color-primary);
+  transition: background-color 0.2s ease-in;
+}
+
+/* --- other ---- */
+@keyframes fillColorChange {
+  0% {
+    fill: var(--stepProgressBar-color-primary);
+  }
+  100% {
+    fill: var(--stepProgressBar-color-neutral);
+  }
+}
+/* This media query is based on step-size * 5,
+   if you change the value of it update it here too
+*/
+@media (max-width: 400px) {
+  .stepProgressBar__step__button {
+    width: auto;
+  }
+  .stepProgressBar__step__line {
+    margin-left: 0;
+    margin-right: 0;
+  }
+  .stepProgressBar__step__button__label {
+    display: none;
+  }
+}
+/*
+  Pen styles (ignore these styles)
+*/
+.container {
+  margin: 0 auto;
+  max-width: 1000px;
+  min-width: 320px;
+  padding: 100px 24px;
+  width: 100%;
+}
+
+.ty-sidenav {
+  width: 80px !important;
+  visibility: visible !important;
+  z-index: 1 !important;
+  transform: none;
+  transition: right 250ms ease-in, width 250ms ease-in;
+  box-shadow: 1px -1px 0px lightgrey !important;
+  border-top-right-radius: 15px;
+  margin-top: 10px;
+  background-color: rgba(20, 99, 136, 0.1);
+  color: white;
+  z-index: 1 !important;
+  position: absolute;
+  height: calc(100% - 10px);
+  overflow: hidden;
+}
+
+.ty-sidenav a {
+  cursor: pointer;
+}
+
+:host::ng-deep.mat-list-base {
+  padding-top: 0px !important;
+  overflow: hidden;
+  height: 100vh;
+  overflow-y: scroll;
+}
+
+.ty-sidenav .mat-nav-list {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.ty-sidenav .ty-side-nav-content {
+  color: white;
+  width: 80px;
+  padding: 10px 5px;
+}
+
+.ty-sidenav .mat-list-item {
+  display: flex;
+  height: 50px !important;
+  align-items: center;
+  justify-content: center;
+}
+
+.ty-sidenav .mat-list-item .listName {
+  font-weight: 500;
+  font-size: 14px;
+  color: white;
+  width: 170px;
+  text-transform: capitalize;
+  font-family: Bahnschrift SemiCondensed;
+}
+
+.ty-sidenav .list {
+  margin-left: 40px !important;
+  color: #6B6B6B;
+}
+
+.ty-sidenav .icon {
+  line-height: 25px;
+}
+
+.ty-sidenav .mat-list-item.active img {
+  width: 30px !important;
+  height: 30px;
+}
+
+.ty-sidenav .listname {
+  color: #146389;
+  font-size: 11px;
+  margin-bottom: 20px;
+  text-align: center;
+  font-family: Bahnschrift SemiCondensed;
+}
+
+.ty-sidenav .mat-list-item.active {
+  background: #ff9800;
+  width: 70%;
+  font-weight: 500;
+  border-radius: 10px;
+  height: 50px !important;
+  text-align: center;
+}
+
+::-webkit-scrollbar {
+  width: 0px;
 }

@@ -209,32 +209,35 @@ a {
 }
 
 //logo
-.logo h1 .pro{
+.logo h1 .pro {
     background: #146389;
-    padding: 10px 3px 10px 15px;
     border: 5px solid white;
     border-right: 0px;
-    font-size: 40px;
+    padding: 7px 3px 7px 15px;
+    font-size: 28px;
     color: white;
     letter-spacing: 4px;
     font-family: Bahnschrift SemiCondensed;
   }
-  .logo h1 .serv{
+  
+  .logo h1 .serv {
     background: red;
-    padding: 10px 15px 10px 5px;
     border: 5px solid white;
     border-left: 0px;
-    font-size: 40px;
+    padding: 7px 15px 7px 5px !important;
+    font-size: 28px;
     color: white;
     letter-spacing: 3px;
     font-family: Bahnschrift SemiCondensed;
   }
-  .logo sup{
-    top: -1.2em;
-    font-size: 20px;
+  
+  .logo sup {
+    top: -0.7em !important;
+    font-size: 12px;
     letter-spacing: 0px;
     font-family: Bahnschrift SemiCondensed;
   }
+  
 
 //sidebar
 .ty_sidebar{

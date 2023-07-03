@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../css/index.css">
+</head>
+<body>
+    <div id="app"></div>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/vue/3.2.37/vue.global.prod.min.js"></script>
+
+    <script>
+        const { createApp, defineComponent, reactive } = Vue
+
+// Supports max 5 steps, you can adjust it accordingly
+const StepProgressBar = defineComponent({
+  props: {
+    steps: {
+      type: Array,
+      required: true,
+      validator(arr) {
+        return arr.length <= 6 && arr.every(obj => ['label'].every(key => key in obj))
+      }
+    },
+    currentStep: {
+      type: Number,
+      default: 1
+    },
+    completedStep: {
+      type: Number,
+      default: 0
+    },
+    disableNavigation: {
+      type: Boolean,
+      default: true
+    }
+  },
+  methods: {
+    isStepCurrent(index) {
+      return index + 1 === this.currentStep
+    },
+    isStepCompleted(index) {
+      return index + 1 !== this.currentStep && this.completedStep >= index + 1
+    },
+    isStepNavigable(index){
+      return this.completedStep >= index
+    }
+  },
+  template: `
+    <ol class="stepProgressBar">
+      <li
+        v-for="(step, index) in steps"
+        :key="index"
+        class="stepProgressBar__step"
+        :class="{
+          'stepProgressBar__step--current': isStepCurrent(index),
+          'stepProgressBar__step--completed': isStepCompleted(index),
+          'stepProgressBar__step--navigable': isStepNavigable(index)
+        }"
+      >
+        <div v-if="index > 0" class="stepProgressBar__step__line"></div>
+        <button
+          class="stepProgressBar__step__button"
+          type="button"
+          :disabled="disableNavigation && !isStepNavigable(index)"
+          @click="$emit('step-clicked', index + 1)"
+        >
+          <span class="stepProgressBar__step__button__indicator">
+          
+          </span>
+          <span class="stepProgressBar__step__button__label">
+            {{ step.label }}
+          </span>
+        </button>
+      </li>
+    </ol>
+  `
+})
+
+
+const app = createApp({
+  components: { StepProgressBar },
+  setup() {
+    const state = reactive({
+      currentStep: 1,
+      completedStep: 0
+    })
+    const handleStepClicked = (value) => {
+      state.currentStep = value
+      if (value > state.completedStep) {
+        state.completedStep = value - 1
+      }
+    }
+    const steps = [
+      { label: 'Step 1 👋 welcome' },
+      { label: 'Step 2 👆 you are here' },
+      { label: 'Step 3 💪 almost there' },
+      { label: 'Step 4 🫶 one more' },
+      { label: 'Step 5 👏 you made it' },
+      { label: 'Step 6 👏 you made it' }
+    ]
+    return {
+      state,
+      handleStepClicked,
+      steps
+    }
+  },
+  template: `
+    <div class="container">
+      <StepProgressBar
+        :steps="steps"
+        :current-step="state.currentStep"
+        :completed-step="state.completedStep"
+        :disable-navigation="false"
+        @step-clicked="handleStepClicked"
+      />
+    </div>
+  `
+})
+
+app.mount('#app')
+
+
+
+    </script>
+</body>
+</html>
