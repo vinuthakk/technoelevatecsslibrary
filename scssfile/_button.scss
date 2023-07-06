@@ -1,37 +1,31 @@
-@mixin btn($bg-color: #e2e2e2) {
-    text-decoration: none;
-    cursor: pointer;
-    display: inline-block;
-    border:0;
-    padding: $base-padding $base-padding $base-padding * 2;
-    border-radius: $base-border-radius;
-    background-color: $bg-color;
+
+
+
+.plusicon{
+  background: white;
+  color: #146389;
+  border-radius: 50%;
+  width: 35px;
+  height: 35px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  margin-left: 0px;
 }
-
-.ty-btn{
-    @include btn;
+.btntext{
+  margin-left: 40px;
 }
-
-@each $key, $val in $colors {
-    .ty-btn-#{$key} {
-      @include btn($val);
-      &:hover{
-        background-color: lighten($val,5)
-      }
-    }
-    .ty-btn-outlined-#{$key} {
-      @include  btn(#fff);
-        border: 1px solid $val;
-        &:hover{
-            background-color: $val;
-          }
-    }
-
-    .ty-btn-complement-#{$key}{
-        @include btn($val);
-        color: light-comp();
-        &:hover{
-            color: $val;
-        }
-    }
+.plusicon i{
+  font-size: 20px;
+}
+.tablebtn{
+  background-color: #ff9800 !important;
+    margin: 0px 10px !important;
+    color: white !important;
+    font-size: 14px !important;
+    font-weight: 500 !important;
+    outline: none !important;
+    border-radius: 20px !important;
+  padding: 8px 15px 8px 0px !important;
 }

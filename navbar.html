@@ -13,37 +13,37 @@
 
 <body>
     <div class="ty-navbar">
-        <nav class="navbar navbar-expand laptop  px-2" id="nav-header">
-            <div class="container-fluid">
-                <a href="#">
-                    <div class="logog">
-                        <h1 class="mb-0"><strong class="pro">Pro</strong><strong class="serv">Serv<sup>1.0</sup></strong></h1>
-                      </div>
-                </a>
-                
-              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-              </button>
-              <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                </ul>
-                <form class="d-flex align-items-center" role="search">
-                  <div class="notificationicon d-flex">
-                    <i class="fa fa-bell" aria-hidden="true"></i>
-                  </div>
-                  <div class="dropdown">
-                    <button class="dropbtn dropdown-toggle" id="dropdownMenuButton" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                      <img src="../images/account.png"   class="logout" ></button>
-                         <div  class="dropdown-menu" aria-labelledby="dropdownMenuButton" #menu>
-                          <a  class="dropdown-item"><i class="fa fa-home" aria-hidden="true"></i> <span class="ms-2">Home</span></a>
-                        <a  class="dropdown-item" (click)="logoutFunction()"><i class="fa fa-sign-out" aria-hidden="true"></i> <span class="ms-2"></span>Logout</a>
-                        </div>
-                  </div>
-                  </form>
-              </div>
-            </div>
-          </nav>
        
+  <nav class="navbar navbar-expand laptop  px-2" id="nav-header">
+    <div class="container-fluid">
+      <a href="#" class="navbar-brand text-center">
+        <div class="logo">
+          <h1 class="mb-0"><strong class="pro">Project</strong><strong class="serv">Wise<sup>1.0</sup></strong></h1>
+        </div>
+
+    </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        </ul>
+        <form class="form-inline d-flex align-items-center">
+          <div class="notificationicon d-flex">
+            <i class="fa fa-bell" aria-hidden="true"><sup class="notification">2</sup></i>
+          </div>
+          <div class="dropdown d-flex">
+            <button class="btn dropdown-toggle" id="dropdownMenuButton" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              <i class="fa fa-user-circle-o" aria-hidden="true"></i></button>
+                 <div  class="dropdown-menu" aria-labelledby="dropdownMenuButton" #menu>
+                  <a  class="dropdown-item"><i class="fa fa-home" aria-hidden="true"></i> <span class="ms-2">Home</span></a>
+                <a  class="dropdown-item" (click)="logoutFunction()"><i class="fa fa-sign-out" aria-hidden="true"></i> <span class="ms-2"></span>Logout</a>
+                </div>
+          </div>
+        </form>
+      </div>
+    </div>
+  </nav>
     </div>
 
    
