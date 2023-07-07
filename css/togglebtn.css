@@ -29,17 +29,6 @@
   transition: none !important;
 }
 
-.ty-toggle .switch input:checked + div {
-  background-color: white !important;
-  -webkit-transform: translate3d(100%, 0, 0);
-  -moz-transform: translate3d(100%, 0, 0);
-  transform: translate3d(100%, 0, 0);
-}
-
-.check-box {
-  transform: scale(2);
-}
-
 input[type=checkbox] {
   position: relative;
   appearance: none;
