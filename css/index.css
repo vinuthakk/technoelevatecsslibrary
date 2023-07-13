@@ -5131,15 +5131,19 @@ a {
   background-color: #180b0b;
 }
 
-* {
-  font-family: Bahnschrift SemiCondensed;
+.ty-navbar * {
+  font-family: Bahnschrift SemiCondensed !important;
 }
 
-.fa {
-  font-family: fontawesome !important;
+.ty-navbar .fa {
+  font-family: FontAwesome !important;
 }
 
-ty-navbar .side-nav-button {
+.ty-navbar .logo h1 {
+  line-height: 0.3;
+}
+
+.ty-navbar .side-nav-button {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -5147,12 +5151,22 @@ ty-navbar .side-nav-button {
   cursor: pointer;
 }
 
+.ty-navbar mat-toolbar {
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+.ty-navbar .navbar-brand .logo {
+  margin-left: 50px;
+}
+
 .ty-navbar .logo h1 .pro {
   background: #146389;
   border: 5px solid white;
   border-right: 0px;
-  padding: 7px 3px 7px 15px !important;
-  font-size: 28px !important;
+  padding: 7px 3px 6px 15px !important;
+  font-size: 28px;
   color: white;
   letter-spacing: 4px;
   font-family: Bahnschrift SemiCondensed;
@@ -5162,8 +5176,8 @@ ty-navbar .side-nav-button {
   background: red;
   border: 5px solid white;
   border-left: 0px;
-  padding: 7px 15px 7px 5px !important;
-  font-size: 28px !important;
+  padding: 7px 15px 6px 5px !important;
+  font-size: 28px;
   color: white;
   letter-spacing: 3px;
   font-family: Bahnschrift SemiCondensed;
@@ -5210,6 +5224,11 @@ ty-navbar .side-nav-button {
   border-color: #555 transparent transparent transparent;
 }
 
+.ty-navbar .tooltip:hover .tooltiptext {
+  visibility: visible;
+  opacity: 1;
+}
+
 .ty-navbar ul li {
   margin-left: 20px;
 }
@@ -5241,6 +5260,11 @@ ty-navbar .side-nav-button {
   display: none;
 }
 
+.ty-navbar .disable {
+  background: lightgray;
+  opacity: 0.6;
+}
+
 .ty-navbar :host::ng-deep.navbar-light .navbar-nav .nav-link {
   color: white;
 }
@@ -5254,14 +5278,7 @@ ty-navbar .side-nav-button {
   color: white !important;
 }
 
-/* .logout:hover{
-  background-color:#ff9800 ;
-  color:white !important;
-} */
-/* .logoutfontStyle{
-  color:#ff9800;
-} */
-.dropbtn {
+.ty-navbar .dropbtn {
   background-color: transparent;
   color: white;
   padding: 0px 16px;
@@ -5270,22 +5287,18 @@ ty-navbar .side-nav-button {
   cursor: pointer;
 }
 
-.dropdown {
+.ty-navbar .dropdown {
   position: relative;
   display: inline-block;
 }
 
-.ty-navbar h1 {
-  line-height: 0;
-}
-
-.fa-bell {
+.ty-navbar .fa-bell {
   color: #146389;
   margin: 0px 15px;
-  font-size: 18px !important;
+  font-size: 18px;
 }
 
-.notification {
+.ty-navbar .notification {
   background: red;
   height: 11px;
   width: 11px;
@@ -5302,22 +5315,23 @@ ty-navbar .side-nav-button {
   font-weight: bold;
 }
 
-.dropdown-toggle::after {
-  display: inline-block !important;
-  margin-left: 0.255em !important;
-  vertical-align: 0.35em !important;
+.ty-navbar .dropdown-toggle::after {
+  display: inline-block;
+  margin-left: 0.255em;
+  vertical-align: 0.35em;
   content: "";
-  border-top: 0.3em solid #146389 !important;
-  border-right: 0.3em solid transparent !important;
-  border-bottom: 0 !important;
-  border-left: 0.3em solid transparent !important;
+  border-top: 0.3em solid #146389;
+  border-right: 0.3em solid transparent;
+  border-bottom: 0;
+  border-left: 0.3em solid transparent;
+  display: none;
 }
 
 .btn:focus {
   border: none !important;
 }
 
-.dropdown-content {
+.ty-navbar .dropdown-content {
   /* display: none; */
   cursor: pointer;
   position: absolute;
@@ -5328,21 +5342,21 @@ ty-navbar .side-nav-button {
   border-radius: 10px;
 }
 
-.dropdown-content a {
+.ty-navbar .dropdown-content a {
   color: black;
   padding: 12px 16px;
   text-decoration: none;
   display: block;
 }
 
-.menu {
+.ty-navbar .menu {
   padding: 15px;
   box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
   width: 100%;
   background: white;
 }
 
-.dropbtn {
+.ty-navbar .dropbtn {
   background: #146389;
   border-radius: 50%;
   height: 50px;
@@ -5353,118 +5367,172 @@ ty-navbar .side-nav-button {
   padding: 9px 9px 10px 10px !important;
 }
 
-.fa-home, .fa-sign-out {
+.ty-navbar .fa-home, .fa-sign-out {
   color: #146389;
   font-size: 18px;
 }
 
-.dropdown-item {
+.ty-navbar .fa-th {
+  color: #146389;
+  font-size: 28px;
+}
+
+.ty-navbar .dropdown-item {
   padding: 0.25rem 0.8rem;
   cursor: pointer;
 }
 
-.ty-navbar .dropdown-menu {
-  min-width: 7rem !important;
-  margin-left: -84px !important;
-  margin-top: -22px !important;
+.ty-navbar .dropdown .card {
+  padding: 15px 10px;
+  background-color: #e1eaef;
 }
 
-.dropbtn:hover {
-  background: #fba91e;
+.ty-navbar .dropdown .pro, .dropdown .serv {
+  font-size: 22px !important;
 }
 
-.container-fluid {
-  padding: 0px !important;
+.ty-navbar .menu2 {
+  left: auto !important;
+  right: 0px;
+  width: 30rem;
+  padding: 20px 25px;
 }
 
-.btn:focus {
-  border: none !important;
+.ty-navbar .menu1 {
+  left: auto !important;
+  right: 0px;
+  width: 20rem;
+  padding: 0px 0px;
 }
 
-.btn.show, .btn:first-child:active, :not(.btn-check) + .btn:active {
-  border-color: transparent !important;
-  border: none !important;
-}
-
-/* .logoutfontStyle:hover{
-  color:white;
-} */
-@media only screen and (max-width: 767px) {
-  .laptop {
-    display: none;
-  }
-  .mobile {
-    display: flex !important;
-  }
-}
-@media only screen and (max-width: 605px) {
-  .logout {
-    padding: 5px 8px;
-  }
-}
-@media only screen and (max-width: 570px) {
-  .side-nav-button {
-    margin-right: 0px !important;
-  }
-  .header {
-    font-size: 20px !important;
-  }
-  .navbar-brand {
-    padding-left: 3px !important;
-  }
-  .logout span {
-    margin-left: 3px !important;
-  }
-  .header {
-    font-size: 22px;
-  }
-}
-@media only screen and (max-width: 425px) {
-  .header {
-    font-size: 20px !important;
-  }
-  .logoheader {
-    width: 60%;
-  }
-  .logout {
-    white-space: nowrap;
-    font-size: 14px;
-    padding: 5px 5px !important;
-  }
-  .logout i {
-    font-size: 10px;
-  }
-  .navbar {
-    -ms-flex-wrap: wrap;
-  }
-}
-@media only screen and (max-width: 400px) {
-  .header {
-    font-size: 18px !important;
-  }
-}
-@media only screen and (max-width: 350px) {
-  .header {
-    font-size: 16px !important;
-  }
-}
-#nav-header {
-  background-color: rgb(225, 234, 239);
-  border-radius: 0px 0px 0px 30px;
-  /* padding: 15px 50px !important; */
-  padding: 6px 30px !important;
-}
-
-.fa-user-circle-o {
-  color: #146389;
+.ty-navbar h2 {
+  font-weight: 700 !important;
   font-size: 25px !important;
 }
 
-.nav-link {
+.ty-navbar .profilephoto {
+  width: 80px;
+  height: 80px;
+  border: 1px solid lightgray;
+  border-radius: 50%;
+}
+
+.ty-navbar .profilephoto h1 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: red;
+  font-size: 65px !important;
+  margin-bottom: 0px;
+}
+
+.ty-navbar .btn:focus-visible, .dropdown-toggle:focus-visible {
+  border: none !important;
+  box-shadow: none !important;
+  outline: none !important;
+}
+
+.ty-navbar .menu1 h4 {
+  text-transform: capitalize;
+  margin-bottom: 0px;
+  line-height: 0.8;
+}
+
+.ty-navbar .dropdown-toggle {
+  border: none;
+  outline: none;
+  box-shadow: none;
+  background: none !important;
+  padding: 8px;
+}
+
+.ty-navbar .dropbtn:hover {
+  background: #fba91e;
+}
+
+.ty-navbar .container-fluid {
+  padding: 0px !important;
+}
+
+.ty-navbar .btn:focus {
+  border: none !important;
+}
+
+.ty-navbar .btn.show, .btn:first-child:active, :not(.btn-check) + .btn:active {
+  border-color: transparent !important;
+}
+
+.ty-navbar .background-content {
+  border-radius: 50%;
+  background: green;
+  width: 50px;
+  height: 50px;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.ty-navbar .background-content h2 {
+  margin-bottom: 0px;
+  color: white;
+  text-transform: capitalize;
+  cursor: pointer;
+}
+
+.ty-navbar .content h2 {
+  margin-bottom: 0px;
+  text-transform: capitalize;
+  cursor: pointer;
+}
+
+.ty-navbar .disable {
+  background-color: red;
+  opacity: 1;
+}
+
+.ty-navbar #nav-header {
+  background-color: rgb(225, 234, 239);
+  border-radius: 0px 0px 0px 30px;
+  /* padding: 15px 50px !important; */
+  padding: 3px 30px 7px !important;
+}
+
+.ty-navbar .fa-user-circle-o {
+  color: #146389;
+  font-size: 25px;
+}
+
+.ty-navbar .nav-link {
   display: block;
   padding: 0.5rem 1rem;
   text-decoration: none;
   color: #A4A4A4 !important;
+}
+
+.ty-navbar .menu-icon {
+  width: 30px;
+  height: 30px;
+  position: relative;
+  cursor: pointer;
+}
+
+.ty-navbar .arrow {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 10px;
+  height: 10px;
+  border: solid black;
+  border-width: 0 2px 2px 0;
+  display: inline-block;
+  padding: 3px;
+  transition: transform 0.3s ease;
+}
+
+.ty-navbar .menu-icon:hover .arrow {
+  transform: translate(-50%, -50%) rotate(90deg);
 }
 
 .plusicon {
@@ -5490,6 +5558,7 @@ ty-navbar .side-nav-button {
 
 .tablebtn {
   background-color: #ff9800 !important;
+  position: relative;
   margin: 0px 10px !important;
   color: white !important;
   font-size: 14px !important;
@@ -6354,6 +6423,7 @@ ty-navbar .side-nav-button {
 
 .tablebtn {
   background-color: #ff9800 !important;
+  position: relative;
   margin: 0px 10px !important;
   color: white !important;
   font-size: 14px !important;
@@ -6394,7 +6464,7 @@ ty-navbar .side-nav-button {
   transition: none !important;
 }
 
-input[type=checkbox] {
+.ty-toggle input[type=checkbox] {
   position: relative;
   appearance: none;
   width: 53px;
@@ -6406,11 +6476,11 @@ input[type=checkbox] {
   transition: 0.4s;
 }
 
-input:checked[type=checkbox] {
+.ty-toggle input:checked[type=checkbox] {
   background: #146389;
 }
 
-input[type=checkbox]::after {
+.ty-toggle input[type=checkbox]::after {
   position: absolute;
   content: "";
   width: 25px;
@@ -6424,7 +6494,7 @@ input[type=checkbox]::after {
   transition: 0.4s;
 }
 
-input:checked[type=checkbox]::after {
+.ty-toggle input:checked[type=checkbox]::after {
   left: 51%;
 }
 

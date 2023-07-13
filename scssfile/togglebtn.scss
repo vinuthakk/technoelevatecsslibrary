@@ -26,7 +26,7 @@
 }
 
   
-  input[type="checkbox"] {
+.ty-toggle  input[type="checkbox"] {
     position: relative;
     appearance: none;
     width: 53px;
@@ -38,11 +38,11 @@
     transition: 0.4s;
   }
   
-  input:checked[type="checkbox"] {
+  .ty-toggle input:checked[type="checkbox"] {
     background: #146389;
   }
   
-  input[type="checkbox"]::after {
+  .ty-toggle  input[type="checkbox"]::after {
     position: absolute;
     content: "";
     width: 25px;
@@ -56,7 +56,7 @@
     transition: 0.4s;
   }
   
-  input:checked[type="checkbox"]::after {
+  .ty-toggle input:checked[type="checkbox"]::after {
       left: 51%;
   }
   

@@ -14,36 +14,143 @@
 <body>
     <div class="ty-navbar">
        
-  <nav class="navbar navbar-expand laptop  px-2" id="nav-header">
-    <div class="container-fluid">
-      <a href="#" class="navbar-brand text-center">
+ 
+<nav class="navbar navbar-expand laptop  px-2" id="nav-header">
+  <div class="container-fluid">
+    <div class="d-flex align-items-center">
+      <div class="side-nav-button mr-4">
+        <!-- <i class="fa fa-bars" aria-hidden="true" style="color: #146389;"></i> -->
+        <button type="button" class="btn" (mouseenter)="sideNavToggle()" (mouseleave)="sideNavCollapse()" (click)="pinUnpinSidebar()">
+          <img src="../images/menu.png" class="closeicon" style="width:20px;height: 20px;" >
+        </button>
+       </div>
+       <a href="#" class="navbar-brand text-center">
         <div class="logo">
-          <h1 class="mb-0"><strong class="pro">Project</strong><strong class="serv">Wise<sup>1.0</sup></strong></h1>
+          <h1 class="mb-0"><strong class="pro">TE</strong><strong class="serv">SSO<sup>1.0</sup></strong></h1>
         </div>
 
     </a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarSupportedContent">
-        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-        </ul>
-        <form class="form-inline d-flex align-items-center">
-          <div class="notificationicon d-flex">
-            <i class="fa fa-bell" aria-hidden="true"><sup class="notification">2</sup></i>
-          </div>
-          <div class="dropdown d-flex">
-            <button class="btn dropdown-toggle" id="dropdownMenuButton" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-              <i class="fa fa-user-circle-o" aria-hidden="true"></i></button>
-                 <div  class="dropdown-menu" aria-labelledby="dropdownMenuButton" #menu>
-                  <a  class="dropdown-item"><i class="fa fa-home" aria-hidden="true"></i> <span class="ms-2">Home</span></a>
-                <a  class="dropdown-item" (click)="logoutFunction()"><i class="fa fa-sign-out" aria-hidden="true"></i> <span class="ms-2"></span>Logout</a>
-                </div>
-          </div>
-        </form>
-      </div>
     </div>
-  </nav>
+
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse justify-content-between" id="navbarSupportedContent">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+      </ul>
+      <form class="form-inline d-flex align-items-center justify-content-between">
+        <div class="notificationicon d-flex">
+          <i class="fa fa-bell" aria-hidden="true"><sup class="notification">2</sup></i>
+        </div>
+
+        <div class="dropdown d-flex">
+          <button type="button" class="dropdown-toggle " id="dropdownMenuButton" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            <i class="fa fa-user-circle-o" aria-hidden="true"></i></button>
+               <div  class="dropdown-menu menu1" aria-labelledby="dropdownMenuButton" #menu>
+                <div class="container-fluid d-block p-0">
+                  <div class="p-3">
+                    <div class="row">
+                      <div class="col-md-4">
+                        <div class="profilephoto">
+                          <h1>A</h1>
+                        </div>
+                      </div>
+                      <div class="col-md-8 d-flex flex-column justify-content-center">
+                        <h4>Abc</h4>
+                        <small class="d-block">abc@testyantra.com</small>
+                      </div>
+                    </div>
+                  </div>
+
+                  <hr class="mt-0 mb-0">
+                  <div class="d-block m-2 ml-3">
+                    <button type="button" class="btn" style="font-weight: 500;">Sign Out</button></div>
+                </div>
+              </div>
+        </div>
+        <div class="dropdown d-flex">
+          <button type="button" class="dropdown-toggle d-flex" id="dropdownMenuButton2" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            <i class="fa fa-th" aria-hidden="true"></i></button>
+               <div  class="dropdown-menu menu2" aria-labelledby="dropdownMenuButton2" #menu>
+               <div class="container p-0">
+
+                <div class="row">
+                  <div class="col-md-6 mb-3">
+                     <div class="d-flex align-items-center">
+                      <div class="background-content">
+                        <h2>HW</h2>
+                      </div>
+                      <div class="ms-3 content">
+                        <h2 class="mb-0">Hirewise</h2>
+                      </div>
+                     </div>
+
+                  </div>
+                  <div class="col-md-6 mb-3">
+                    <div class="d-flex align-items-center">
+                      <div class="background-content">
+                        <h2>RH</h2>
+                      </div>
+                      <div class="ms-3 content">
+                        <h2 class="mb-0">Righthire</h2>
+                      </div>
+                     </div>
+                  
+                  </div>
+                  <div class="col-md-6 mb-3">
+                    <div class="d-flex align-items-center">
+                      <div class="background-content">
+                        <h2>RI</h2>
+                      </div>
+                      <div class="ms-3 content">
+                        <h2 class="mb-0">Resourcify</h2>
+                      </div>
+                     </div>
+                  
+                  </div>
+                  <div class="col-md-6 mb-3">
+                    <div class="d-flex align-items-center">
+                      <div class="background-content">
+                        <h2>PW</h2>
+                      </div>
+                      <div class="ms-3 content">
+                        <h2 class="mb-0">Projectwise</h2>
+                      </div>
+                     </div>
+                   
+                  </div>
+                  <div class="col-md-6">
+                    <div class="d-flex align-items-center">
+                      <div class="background-content disable">
+                        <h2>PS</h2>
+                      </div>
+                      <div class="ms-3 content">
+                        <h2 class="mb-0">Proserv</h2>
+                      </div>
+                     </div>
+                   
+                  </div>
+                  <div class="col-md-6">
+                    <div class="d-flex align-items-center">
+                      <div class="background-content">
+                        <h2>CH</h2>
+                      </div>
+                      <div class="ms-3 content">
+                        <h2 class="mb-0">Clienthub</h2>
+                      </div>
+                     </div>
+                   
+                  </div>
+                 
+                </div>
+               </div>
+              </div>
+        </div>
+      </form>
+    </div>
+  </div>
+</nav>
+
     </div>
 
    
