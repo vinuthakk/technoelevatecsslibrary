@@ -140,7 +140,15 @@
   border: none;
   cursor: pointer;
 }
-
+.ty-navbar .viewprofile{
+  background: none;
+  text-align: start;
+  border: none;
+  text-decoration: underline;
+  color: black;
+  font-size: 16px;
+  margin-top: 8px;
+}
 .ty-navbar .dropdown {
   position: relative;
   display: inline-block;
@@ -256,6 +264,17 @@ border: none !important;
   height: 80px;
   border: 1px solid lightgray;
   border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.ty-navbar .emailid{
+  color: gray;
+}
+.ty-navbar .signoutbtn{
+  font-weight: 500;
+  color: rgba(0,0,0,0.6);
+  font-size: 18px;
 }
 .ty-navbar .profilephoto h1{
   display: flex;
