@@ -337,6 +337,13 @@ border: none !important;
   background-color: red;
   opacity: 1;
 }
+.ty-navbar .disable-content{
+  top: 4px;
+    position: relative;
+}
+body{
+  overflow: hidden;
+}
 
 .ty-navbar #nav-header{
   background-color: rgb(225,234,239);
