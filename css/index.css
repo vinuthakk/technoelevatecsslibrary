@@ -5413,7 +5413,7 @@ a {
 
 .ty-navbar h2 {
   font-weight: 700 !important;
-  font-size: 25px !important;
+  font-size: 18px !important;
 }
 
 .ty-navbar .profilephoto {
@@ -5484,8 +5484,8 @@ a {
 .ty-navbar .background-content {
   border-radius: 50%;
   background: green;
-  width: 50px;
-  height: 50px;
+  width: 40px;
+  height: 40px;
   color: white;
   display: flex;
   align-items: center;
